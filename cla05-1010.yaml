@@ -46,63 +46,6 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇺🇸 美国 | USA
-    type: vless
-    server: 104.18.185.26
-    port: 443
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    network: ws
-    servername: l.ayovo.netlib.re
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: l.ayovo.netlib.re
-  - name: 🇩🇪 德国 | DEU
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    sni: dash.cloudflare.com
-    skip-cert-verify: true
-  - name: 🇩🇪 德国 | DEU_1
-    type: vless
-    server: 5.10.214.5
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: _CN_中国
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By DukeMehdi] b2n.ir/v2ray-configs | 402 "
-    skip-cert-verify: true
-    tls: true
-  - name: 🇯🇵 JP日本(TG:@tccjd)
-    type: trojan
-    server: tuntro003.instconn.com
-    port: 443
-    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
-    sni: login-staticjpc.jasmine-douyin.top
-    skip-cert-verify: false
-    tls: true
-  - name: 🇯🇵JP日本2
-    type: trojan
-    server: tuntro003.instconn.com
-    port: 443
-    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
-    sni: login-staticjpc.jasmine-douyin.top
-    skip-cert-verify: false
-    tls: true
   - name: 🇺🇸 US美国(TG:@tccjd)
     type: vmess
     server: 82.198.246.97
@@ -463,51 +406,71 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇭🇰 香港 (TG:@tccjd)
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By EbraSha] b2n.io/v2ray-configs | 160 "
-    skip-cert-verify: true
-    tls: true
-  - name: 🇭🇰 香港4|@ripaojiedian
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: 🇭🇰 香港5|@ripaojiedian
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: 🇭🇰 香港4|@stairnode
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
+  - name: ⚡美国
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国_1
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
   - name: 01(TG:@tccjd)
+    type: ss
+    server: beesyar.org
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 4a2rfixophdjffa8KVA4Aa
+  - name: 香港
+    type: ss
+    server: hk11.network-cdn-gw-yd.net
+    port: 47711
+    cipher: chacha20-ietf-poly1305
+    password: e8911ffe-932a-43f6-b9e8-b59d08e19937
+  - name: 🇺🇸 美国 | USA
     type: vless
-    server: 181.214.99.116
+    server: 104.18.185.26
     port: 443
-    uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
-    network: http
-    servername: statue.lnmarketplace.net
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    network: ws
+    servername: l.ayovo.netlib.re
     tls: true
     client-fingerprint: chrome
-    http-opts:
-      path: /statue
+    ws-opts:
+      path: /?ed=2560
       headers:
-        Host: statue.lnmarketplace.net
+        Host: l.ayovo.netlib.re
+  - name: 🇩🇪 德国 | DEU
+    type: vless
+    server: 5.10.214.5
+    port: 2087
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    network: ws
+    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
   - name: 02(TG:@tccjd)
     type: vless
     server: api.dark-coffe.com
@@ -606,17 +569,6 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 04(TG:@tccjd)_1
-    type: vless
-    server: 167.82.93.227
-    port: 80
-    uuid: Parsashonam-338
-    network: http
-    tls: false
-    http-opts:
-      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
-      headers:
-        Host: Free-V2ray-Bot-Parsashonam4.global.ssl.fastly.net
   - name: 05(TG:@tccjd)_1
     type: vless
     server: ip-range.web3.name.ng
@@ -630,17 +582,6 @@ proxies:
       path: /
       headers:
         Host: hzr46.sepiol.name.ng
-  - name: 06(TG:@tccjd)_1
-    type: vless
-    server: 151.101.105.226
-    port: 80
-    uuid: Parsashonam-338
-    network: http
-    tls: false
-    http-opts:
-      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
-      headers:
-        Host: Free-V2ray-Bot-Parsashonam4.global.ssl.fastly.net
   - name: 07(TG:@tccjd)
     type: vless
     server: 217.16.16.251
@@ -664,48 +605,6 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 09(TG:@tccjd)
-    type: vless
-    server: speedtest.net
-    port: 80
-    uuid: Parsashonam-338
-    network: http
-    tls: false
-    http-opts:
-      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
-      headers:
-        Host: Free-V2ray-Bot-Parsashonam3.global.ssl.fastly.net
-  - name: 01(TG:@tccjd)_2
-    type: ss
-    server: beesyar.org
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: 4a2rfixophdjffa8KVA4Aa
-  - name: 香港（2026.1.12更新）
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By DukeMehdi] trojan-HK "
-    skip-cert-verify: true
-    tls: true
-  - name: 香港
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: ⚡美国
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
   - name: 德國
     type: vless
     server: 5.78.72.175
@@ -720,39 +619,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美国
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
   - name: 美國
-    type: trojan
-    server: 205.185.115.223
-    port: 19258
-    password: iWnFtzMiac
-    sni: cloudflare.com
-    skip-cert-verify: false
-    tls: true
-  - name: 香港_1
-    type: ss
-    server: hk11.network-cdn-gw-yd.net
-    port: 47711
-    cipher: chacha20-ietf-poly1305
-    password: e8911ffe-932a-43f6-b9e8-b59d08e19937
-  - name: 美国_1
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 美國_1
     type: vless
     server: 5.78.72.175
     port: 22955
@@ -766,7 +633,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_2
+  - name: 美國_1
     type: vless
     server: bastion.h3.speed.cloudflare.com
     port: 80
@@ -805,7 +672,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 01(TG:@tccjd)_3
+  - name: 01(TG:@tccjd)_2
     type: vless
     server: octopusss5.info
     port: 22955
@@ -819,23 +686,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_3
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 德國_4
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: 美國_3
+  - name: 美國_2
     type: vless
     server: bastion.h3.speed.cloudflare.com
     port: 80
@@ -846,15 +697,6 @@ proxies:
       path: /www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.bunny.net-www.speedtest.net-www.bunny.net-www.speedtest.net?ed=32143
       headers:
         Host: visvuev-272526281716252527717252.poshakhowdy.ir.
-  - name: 德國_5
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
   - name: 11(TG:@tccjd)
     type: vless
     server: octopusss5.info
@@ -883,7 +725,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_6
+  - name: 德國_3
     type: vless
     server: octopusss5.info
     port: 22955
@@ -897,14 +739,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_7
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 美國_4
+  - name: 美國_3
     type: vless
     server: 5.78.57.125
     port: 22955
@@ -918,7 +753,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_8
+  - name: 德國_4
     type: vless
     server: 152.53.51.24
     port: 22955
@@ -946,15 +781,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 加拿大
-    type: trojan
-    server: tuntro006.instconn.com
-    port: 443
-    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
-    sni: torontorm1.686911.xyz
-    skip-cert-verify: true
-    tls: true
-  - name: 德國_9
+  - name: 德國_5
     type: vless
     server: 178.156.215.143
     port: 22955
@@ -982,7 +809,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_10
+  - name: 德國_6
     type: vless
     server: dfg.octopusss.net
     port: 22955
@@ -996,7 +823,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_11
+  - name: 德國_7
     type: vless
     server: 5.78.54.69
     port: 22955
@@ -1010,7 +837,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_5
+  - name: 美國_4
     type: vless
     server: 79.110.63.79
     port: 2255
@@ -1035,7 +862,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_6
+  - name: 美國_5
     type: vless
     server: dfg.octopusss.net
     port: 22955
@@ -1049,7 +876,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_7
+  - name: 美國_6
     type: vless
     server: 178.156.215.152
     port: 22955
@@ -1063,7 +890,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_8
+  - name: 美國_7
     type: vless
     server: octopusss5.info
     port: 22955
@@ -1103,7 +930,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_12
+  - name: 德國_8
     type: vless
     server: 5.45.109.158
     port: 22955
@@ -1117,7 +944,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_9
+  - name: 美國_8
     type: vless
     server: hazmkardannn.info
     port: 22955
@@ -1131,7 +958,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_10
+  - name: 美國_9
     type: vless
     server: rblx.fasti.win
     port: 443
@@ -1157,7 +984,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_13
+  - name: 德國_9
     type: vless
     server: 152.53.51.24
     port: 22955
@@ -1171,7 +998,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_11
+  - name: 美國_10
     type: vless
     server: 178.156.215.152
     port: 22955
@@ -1185,7 +1012,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_12
+  - name: 美國_11
     type: vless
     server: 5.161.142.186
     port: 22955
@@ -1236,7 +1063,7 @@ proxies:
     reality-opts:
       public-key: Cs7yLk8XXPksSjf6GB1JFYyFICqWVL3nL-10K7jQ7xc
       short-id: 983c9303725c67
-  - name: 美國_13
+  - name: 美國_12
     type: vless
     server: 161.248.63.15
     port: 41579
@@ -1270,7 +1097,7 @@ proxies:
     client-fingerprint: chrome
     reality-opts:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  - name: 美國_14
+  - name: 美國_13
     type: vless
     server: 146.75.119.82
     port: 80
@@ -1304,7 +1131,7 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 德國_14
+  - name: 德國_10
     type: vless
     server: 146.75.119.82
     port: 80
@@ -1315,7 +1142,7 @@ proxies:
       path: /ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
       headers:
         Host: welcomtofreeboarders.com
-  - name: 美國_15
+  - name: 美國_14
     type: vless
     server: 142.91.106.176
     port: 443
@@ -1327,15 +1154,6 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 拉脫維亞_1
-    type: hysteria2
-    server: channel4.saghetalaie.homes
-    port: 46914
-    password: yhqy5AHofQq
-    sni: www.google.com
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: "&O#28YB5qK!5t#U"
   - name: 日本_1
     type: vless
     server: japan.geodema.network
@@ -1360,7 +1178,7 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 美國_16
+  - name: 美國_15
     type: vless
     server: 142.91.106.176
     port: 443
@@ -1372,7 +1190,7 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 美國_17
+  - name: 美國_16
     type: vless
     server: 5.78.135.163
     port: 22955
@@ -1386,7 +1204,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 04(TG:@tccjd)_2
+  - name: 04(TG:@tccjd)_1
     type: vless
     server: japan.geodema.network
     port: 443
@@ -1410,7 +1228,7 @@ proxies:
       path: /
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_15
+  - name: 德國_11
     type: vless
     server: api.dark-coffe.com
     port: 8443
@@ -1422,7 +1240,7 @@ proxies:
       path: /
       headers:
         Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 德國_16
+  - name: 德國_12
     type: vless
     server: api.dark-coffe.com
     port: 8443
@@ -1470,7 +1288,7 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 德國_17
+  - name: 德國_13
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1483,7 +1301,7 @@ proxies:
       path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_18
+  - name: 德國_14
     type: vless
     server: api.dark-coffe.com
     port: 8443
@@ -1509,7 +1327,7 @@ proxies:
       path: /
       headers:
         Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_19
+  - name: 德國_15
     type: vless
     server: api.dark-coffe.com
     port: 443
@@ -1521,7 +1339,7 @@ proxies:
       path: /
       headers:
         Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_20
+  - name: 德國_16
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1534,7 +1352,7 @@ proxies:
       path: /
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_21
+  - name: 德國_17
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1559,7 +1377,7 @@ proxies:
     reality-opts:
       public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
       short-id: fd88bd27db4cc661
-  - name: 06(TG:@tccjd)_2
+  - name: 06(TG:@tccjd)_1
     type: vless
     server: 45.139.26.152
     port: 7443
@@ -1571,7 +1389,7 @@ proxies:
     reality-opts:
       public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
       short-id: fd88bd27db4cc661
-  - name: 德國_22
+  - name: 德國_18
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1584,7 +1402,7 @@ proxies:
       path: /
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_23
+  - name: 德國_19
     type: vless
     server: api.dark-coffe.com
     port: 2096
@@ -1609,7 +1427,7 @@ proxies:
     reality-opts:
       public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
       short-id: fd88bd27db4cc661
-  - name: 德國_24
+  - name: 德國_20
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1620,7 +1438,7 @@ proxies:
     client-fingerprint: chrome
     ws-opts:
       path: /
-  - name: 德國_25
+  - name: 德國_21
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1655,7 +1473,7 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 德國_26
+  - name: 德國_22
     type: vless
     server: api.dark-coffe.com
     port: 8443
@@ -1668,7 +1486,7 @@ proxies:
       path: /
       headers:
         Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 德國_27
+  - name: 德國_23
     type: vless
     server: 5.10.214.5
     port: 2087
@@ -1681,7 +1499,7 @@ proxies:
       path: /
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_28
+  - name: 德國_24
     type: vless
     server: 5.10.214.5
     port: 2087
@@ -1718,7 +1536,7 @@ proxies:
       path: /
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_29
+  - name: 德國_25
     type: vless
     server: 5.10.214.5
     port: 443
@@ -1731,7 +1549,7 @@ proxies:
       path: /
       headers:
         Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_30
+  - name: 德國_26
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1754,7 +1572,7 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 德國_31
+  - name: 德國_27
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1765,7 +1583,7 @@ proxies:
     client-fingerprint: chrome
     ws-opts:
       path: /
-  - name: 德國_32
+  - name: 德國_28
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1775,7 +1593,7 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 德國_33
+  - name: 德國_29
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1787,7 +1605,7 @@ proxies:
       path: /
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_34
+  - name: 德國_30
     type: vless
     server: api.dark-coffe.com
     port: 8443
@@ -1797,15 +1615,7 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 香港_2
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By EbraSha] trojan-HK "
-    skip-cert-verify: true
-    tls: true
-  - name: 德國_35
+  - name: 德國_31
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -1868,7 +1678,7 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_36
+  - name: 德國_32
     type: vless
     server: 5.10.214.5
     port: 443
@@ -1880,7 +1690,7 @@ proxies:
       path: /
       headers:
         Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_37
+  - name: 德國_33
     type: vless
     server: api.dark-coffe.com
     port: 2096
@@ -1916,7 +1726,7 @@ proxies:
     client-fingerprint: chrome
     ws-opts:
       path: /
-  - name: 德國_38
+  - name: 德國_34
     type: vless
     server: 5.10.214.0
     port: 2096
@@ -1929,7 +1739,7 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_39
+  - name: 德國_35
     type: vless
     server: api.dark-coffe.com
     port: 2096
@@ -1939,7 +1749,7 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 德國_40
+  - name: 德國_36
     type: vless
     server: api.dark-coffe.com
     port: 443
@@ -1952,7 +1762,7 @@ proxies:
       path: /
       headers:
         Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_41
+  - name: 德國_37
     type: vless
     server: 5.10.214.0
     port: 2096
@@ -1964,7 +1774,7 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_42
+  - name: 德國_38
     type: vless
     server: api.dark-coffe.com
     port: 443
@@ -1974,7 +1784,7 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 德國_43
+  - name: 德國_39
     type: vless
     server: api.dark-coffe.com
     port: 443
@@ -1985,7 +1795,7 @@ proxies:
     client-fingerprint: chrome
     ws-opts:
       path: /
-  - name: 德國_44
+  - name: 德國_40
     type: vless
     server: api.dark-coffe.com
     port: 2096
@@ -1997,7 +1807,7 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_45
+  - name: 德國_41
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -2009,7 +1819,7 @@ proxies:
       path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_46
+  - name: 德國_42
     type: vless
     server: api.dark-coffe.com
     port: 2096
@@ -2022,7 +1832,7 @@ proxies:
       path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_47
+  - name: 德國_43
     type: vless
     server: api.dark-coffe.com
     port: 8443
@@ -2048,7 +1858,7 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_48
+  - name: 德國_44
     type: vless
     server: api.dark-coffe.com
     port: 2087
@@ -2073,7 +1883,7 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_49
+  - name: 德國_45
     type: vless
     server: 5.10.214.5
     port: 2087
@@ -2086,7 +1896,7 @@ proxies:
       path: /
       headers:
         Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_50
+  - name: 德國_46
     type: vless
     server: api.dark-coffe.com
     port: 2096
@@ -2096,7 +1906,7 @@ proxies:
     tls: true
     ws-opts:
       path: /
-  - name: 德國_51
+  - name: 德國_47
     type: vless
     server: api.dark-coffe.com
     port: 8443
@@ -2162,15 +1972,6 @@ proxies:
     client-fingerprint: chrome
     reality-opts:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  - name: 拉脫維亞_2
-    type: hysteria2
-    server: channel4.saghetalaie.homes
-    port: 46914
-    password: yhqy5AHofQq
-    sni: www.google.com
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: "&O#28YB5qK!5t#U"
   - name: 荷蘭_17
     type: vless
     server: 79.110.63.79
@@ -2182,7 +1983,7 @@ proxies:
     reality-opts:
       public-key: Cs7yLk8XXPksSjf6GB1JFYyFICqWVL3nL-10K7jQ7xc
       short-id: 983c9303725c67
-  - name: 美國_18
+  - name: 美國_17
     type: vless
     server: ip-range.web3.name.ng
     port: 8443
@@ -2254,7 +2055,7 @@ proxies:
     reality-opts:
       public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
       short-id: fd88bd27db4cc661
-  - name: 美國_19
+  - name: 美國_18
     type: vless
     server: sakura.bunnywaffle.org
     port: 26978
@@ -2278,7 +2079,7 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
-  - name: 德國_52
+  - name: 德國_48
     type: vless
     server: 152.53.49.144
     port: 22955
@@ -2292,7 +2093,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_20
+  - name: 美國_19
     type: vless
     server: 5.78.54.69
     port: 22955
@@ -2306,7 +2107,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 德國_53
+  - name: 德國_49
     type: vless
     server: 5.45.109.158
     port: 22955
@@ -2320,14 +2121,6 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 08(TG:@tccjd)_1
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
   - name: 俄羅斯_5
     type: vless
     server: khabarovsk.geodema.network
@@ -2364,7 +2157,7 @@ proxies:
     reality-opts:
       public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
       short-id: c7e42004e5f024be
-  - name: 09(TG:@tccjd)_1
+  - name: 09(TG:@tccjd)
     type: vless
     server: octopusss5.info
     port: 22955
@@ -2414,18 +2207,165 @@ proxies:
     reality-opts:
       public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
       short-id: 1ed136481e0ede74
+  - name: _CN_中国
+    type: trojan
+    server: 58.152.46.60
+    port: 443
+    password: BxceQaOe
+    sni: "       [By DukeMehdi] b2n.ir/v2ray-configs | 402 "
+    skip-cert-verify: true
+    tls: true
+  - name: 🇯🇵 JP日本(TG:@tccjd)
+    type: trojan
+    server: tuntro003.instconn.com
+    port: 443
+    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
+    sni: login-staticjpc.jasmine-douyin.top
+    skip-cert-verify: false
+    tls: true
+  - name: 🇯🇵JP日本2
+    type: trojan
+    server: tuntro003.instconn.com
+    port: 443
+    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
+    sni: login-staticjpc.jasmine-douyin.top
+    skip-cert-verify: false
+    tls: true
+  - name: 🇭🇰 香港 (TG:@tccjd)
+    type: trojan
+    server: 58.152.46.60
+    port: 443
+    password: BxceQaOe
+    sni: "       [By EbraSha] b2n.io/v2ray-configs | 160 "
+    skip-cert-verify: true
+    tls: true
+  - name: 🇭🇰 香港4|@ripaojiedian
+    type: trojan
+    server: 58.152.25.220
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - name: 🇭🇰 香港5|@ripaojiedian
+    type: trojan
+    server: 58.152.25.220
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - name: 🇭🇰 香港4|@stairnode
+    type: trojan
+    server: 58.152.25.220
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - name: 香港（2026.1.12更新）
+    type: trojan
+    server: 58.152.46.60
+    port: 443
+    password: BxceQaOe
+    sni: "       [By DukeMehdi] trojan-HK "
+    skip-cert-verify: true
+    tls: true
+  - name: 香港_1
+    type: trojan
+    server: 58.152.46.60
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - name: 加拿大
+    type: trojan
+    server: tuntro006.instconn.com
+    port: 443
+    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
+    sni: torontorm1.686911.xyz
+    skip-cert-verify: true
+    tls: true
+  - name: 香港_2
+    type: trojan
+    server: 58.152.46.60
+    port: 443
+    password: BxceQaOe
+    sni: "       [By EbraSha] trojan-HK "
+    skip-cert-verify: true
+    tls: true
+  - name: 08(TG:@tccjd)_1
+    type: trojan
+    server: 58.152.25.220
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - name: 🇩🇪 德国 | DEU_1
+    type: hysteria2
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
+    sni: dash.cloudflare.com
+    skip-cert-verify: true
+  - name: 德國_50
+    type: hysteria2
+    server: 89.144.35.25
+    port: 33550
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+  - name: 德國_51
+    type: hysteria2
+    server: 89.144.35.25
+    port: 33550
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+  - name: 德國_52
+    type: hysteria2
+    server: 89.144.35.25
+    port: 33550
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+  - name: 德國_53
+    type: hysteria2
+    server: 89.144.35.25
+    port: 33550
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+  - name: 拉脫維亞_1
+    type: hysteria2
+    server: channel4.saghetalaie.homes
+    port: 46914
+    password: yhqy5AHofQq
+    sni: www.google.com
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: "&O#28YB5qK!5t#U"
+  - name: 拉脫維亞_2
+    type: hysteria2
+    server: channel4.saghetalaie.homes
+    port: 46914
+    password: yhqy5AHofQq
+    sni: www.google.com
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: "&O#28YB5qK!5t#U"
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU_1
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇬🇧 GB英国(TG:@tccjd)
       - 🇫🇷 FR法国(TG:@tccjd)
@@ -2466,11 +2406,13 @@ proxy-groups:
       - 🇺🇸 US美国(TG:@tccjd)_14
       - 🇬🇧 GB英国(TG:@tccjd)_21
       - 🇬🇧 GB英国(TG:@tccjd)_22
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
+      - ⚡美国
+      - 美国
+      - 美国_1
       - 01(TG:@tccjd)
+      - 香港
+      - 🇺🇸 美国 | USA
+      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
@@ -2479,167 +2421,160 @@ proxy-groups:
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
-      - 06(TG:@tccjd)_1
       - 07(TG:@tccjd)
       - 08(TG:@tccjd)
-      - 09(TG:@tccjd)
-      - 01(TG:@tccjd)_2
-      - 香港（2026.1.12更新）
-      - 香港
-      - ⚡美国
       - 德國
-      - 美国
       - 美國
-      - 香港_1
-      - 美国_1
       - 美國_1
-      - 美國_2
       - 德國_1
       - 德國_2
-      - 01(TG:@tccjd)_3
-      - 德國_3
-      - 德國_4
-      - 美國_3
-      - 德國_5
+      - 01(TG:@tccjd)_2
+      - 美國_2
       - 11(TG:@tccjd)
       - 12(TG:@tccjd)
+      - 德國_3
+      - 美國_3
+      - 德國_4
+      - 15(TG:@tccjd)
+      - 德國_5
+      - 14(TG:@tccjd)
       - 德國_6
       - 德國_7
       - 美國_4
-      - 德國_8
-      - 15(TG:@tccjd)
-      - 加拿大
-      - 德國_9
-      - 14(TG:@tccjd)
-      - 德國_10
-      - 德國_11
-      - 美國_5
       - 13(TG:@tccjd)
+      - 美國_5
       - 美國_6
       - 美國_7
-      - 美國_8
       - 拉脫維亞
       - 02(TG:@tccjd)_2
-      - 德國_12
+      - 德國_8
+      - 美國_8
       - 美國_9
-      - 美國_10
       - 奧地利
-      - 德國_13
+      - 德國_9
+      - 美國_10
       - 美國_11
-      - 美國_12
       - 03(TG:@tccjd)_2
       - 日本
       - 荷蘭
-      - 美國_13
+      - 美國_12
       - 荷蘭_1
       - 斯洛維尼亞
-      - 美國_14
+      - 美國_13
       - 荷蘭_2
       - 🇺🇸_US_美国_3
-      - 德國_14
-      - 美國_15
-      - 拉脫維亞_1
+      - 德國_10
+      - 美國_14
       - 日本_1
       - 日本_2
+      - 美國_15
       - 美國_16
-      - 美國_17
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - DE
-      - 德國_15
-      - 德國_16
+      - 德國_11
+      - 德國_12
       - 俄羅斯
       - 🇩🇪_DE_德国
       - 荷蘭_3
-      - 德國_17
-      - 德國_18
+      - 德國_13
+      - 德國_14
       - 05(TG:@tccjd)_2
+      - 德國_15
+      - 德國_16
+      - 德國_17
+      - 荷蘭_4
+      - 06(TG:@tccjd)_1
+      - 德國_18
       - 德國_19
+      - 🇳🇱_NL_荷兰
       - 德國_20
       - 德國_21
-      - 荷蘭_4
-      - 06(TG:@tccjd)_2
-      - 德國_22
-      - 德國_23
-      - 🇳🇱_NL_荷兰
-      - 德國_24
-      - 德國_25
       - 荷蘭_5
       - 07(TG:@tccjd)_1
-      - 德國_26
-      - 德國_27
-      - 德國_28
+      - 德國_22
+      - 德國_23
+      - 德國_24
       - 荷蘭_6
       - 荷蘭_7
+      - 德國_25
+      - 德國_26
+      - 荷蘭_8
+      - 德國_27
+      - 德國_28
       - 德國_29
       - 德國_30
-      - 荷蘭_8
       - 德國_31
-      - 德國_32
-      - 德國_33
-      - 德國_34
-      - 香港_2
-      - 德國_35
       - 荷蘭_9
       - 荷蘭_10
       - 荷蘭_11
       - 荷蘭_12
-      - 德國_36
-      - 德國_37
+      - 德國_32
+      - 德國_33
       - 荷蘭_13
       - 荷蘭_14
+      - 德國_34
+      - 德國_35
+      - 德國_36
+      - 德國_37
       - 德國_38
       - 德國_39
       - 德國_40
       - 德國_41
       - 德國_42
       - 德國_43
+      - 荷蘭_15
       - 德國_44
+      - 🇩🇪_DE_德国_1
       - 德國_45
       - 德國_46
       - 德國_47
-      - 荷蘭_15
-      - 德國_48
-      - 🇩🇪_DE_德国_1
-      - 德國_49
-      - 德國_50
-      - 德國_51
       - 俄羅斯_1
       - 荷蘭_16
       - 美国_2
       - 美国_3
       - 俄羅斯_2
-      - 拉脫維亞_2
       - 荷蘭_17
-      - 美國_18
+      - 美國_17
       - 荷蘭_18
       - 荷蘭_19
       - 英國
       - 法國
       - 俄羅斯_3
-      - 美國_19
+      - 美國_18
       - 俄羅斯_4
-      - 德國_52
-      - 美國_20
-      - 德國_53
-      - 08(TG:@tccjd)_1
+      - 德國_48
+      - 美國_19
+      - 德國_49
       - 俄羅斯_5
       - 俄羅斯_6
       - 俄羅斯_7
-      - 09(TG:@tccjd)_1
+      - 09(TG:@tccjd)
       - 俄羅斯_8
       - 俄羅斯_9
       - 10(TG:@tccjd)
+      - _CN_中国
+      - 🇯🇵 JP日本(TG:@tccjd)
+      - 🇯🇵JP日本2
+      - 🇭🇰 香港 (TG:@tccjd)
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 香港4|@stairnode
+      - 香港（2026.1.12更新）
+      - 香港_1
+      - 加拿大
+      - 香港_2
+      - 08(TG:@tccjd)_1
+      - 🇩🇪 德国 | DEU_1
+      - 德國_50
+      - 德國_51
+      - 德國_52
+      - 德國_53
+      - 拉脫維亞_1
+      - 拉脫維亞_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU_1
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇬🇧 GB英国(TG:@tccjd)
       - 🇫🇷 FR法国(TG:@tccjd)
@@ -2680,11 +2615,13 @@ proxy-groups:
       - 🇺🇸 US美国(TG:@tccjd)_14
       - 🇬🇧 GB英国(TG:@tccjd)_21
       - 🇬🇧 GB英国(TG:@tccjd)_22
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
+      - ⚡美国
+      - 美国
+      - 美国_1
       - 01(TG:@tccjd)
+      - 香港
+      - 🇺🇸 美国 | USA
+      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
@@ -2693,158 +2630,157 @@ proxy-groups:
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
-      - 06(TG:@tccjd)_1
       - 07(TG:@tccjd)
       - 08(TG:@tccjd)
-      - 09(TG:@tccjd)
-      - 01(TG:@tccjd)_2
-      - 香港（2026.1.12更新）
-      - 香港
-      - ⚡美国
       - 德國
-      - 美国
       - 美國
-      - 香港_1
-      - 美国_1
       - 美國_1
-      - 美國_2
       - 德國_1
       - 德國_2
-      - 01(TG:@tccjd)_3
-      - 德國_3
-      - 德國_4
-      - 美國_3
-      - 德國_5
+      - 01(TG:@tccjd)_2
+      - 美國_2
       - 11(TG:@tccjd)
       - 12(TG:@tccjd)
+      - 德國_3
+      - 美國_3
+      - 德國_4
+      - 15(TG:@tccjd)
+      - 德國_5
+      - 14(TG:@tccjd)
       - 德國_6
       - 德國_7
       - 美國_4
-      - 德國_8
-      - 15(TG:@tccjd)
-      - 加拿大
-      - 德國_9
-      - 14(TG:@tccjd)
-      - 德國_10
-      - 德國_11
-      - 美國_5
       - 13(TG:@tccjd)
+      - 美國_5
       - 美國_6
       - 美國_7
-      - 美國_8
       - 拉脫維亞
       - 02(TG:@tccjd)_2
-      - 德國_12
+      - 德國_8
+      - 美國_8
       - 美國_9
-      - 美國_10
       - 奧地利
-      - 德國_13
+      - 德國_9
+      - 美國_10
       - 美國_11
-      - 美國_12
       - 03(TG:@tccjd)_2
       - 日本
       - 荷蘭
-      - 美國_13
+      - 美國_12
       - 荷蘭_1
       - 斯洛維尼亞
-      - 美國_14
+      - 美國_13
       - 荷蘭_2
       - 🇺🇸_US_美国_3
-      - 德國_14
-      - 美國_15
-      - 拉脫維亞_1
+      - 德國_10
+      - 美國_14
       - 日本_1
       - 日本_2
+      - 美國_15
       - 美國_16
-      - 美國_17
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - DE
-      - 德國_15
-      - 德國_16
+      - 德國_11
+      - 德國_12
       - 俄羅斯
       - 🇩🇪_DE_德国
       - 荷蘭_3
-      - 德國_17
-      - 德國_18
+      - 德國_13
+      - 德國_14
       - 05(TG:@tccjd)_2
+      - 德國_15
+      - 德國_16
+      - 德國_17
+      - 荷蘭_4
+      - 06(TG:@tccjd)_1
+      - 德國_18
       - 德國_19
+      - 🇳🇱_NL_荷兰
       - 德國_20
       - 德國_21
-      - 荷蘭_4
-      - 06(TG:@tccjd)_2
-      - 德國_22
-      - 德國_23
-      - 🇳🇱_NL_荷兰
-      - 德國_24
-      - 德國_25
       - 荷蘭_5
       - 07(TG:@tccjd)_1
-      - 德國_26
-      - 德國_27
-      - 德國_28
+      - 德國_22
+      - 德國_23
+      - 德國_24
       - 荷蘭_6
       - 荷蘭_7
+      - 德國_25
+      - 德國_26
+      - 荷蘭_8
+      - 德國_27
+      - 德國_28
       - 德國_29
       - 德國_30
-      - 荷蘭_8
       - 德國_31
-      - 德國_32
-      - 德國_33
-      - 德國_34
-      - 香港_2
-      - 德國_35
       - 荷蘭_9
       - 荷蘭_10
       - 荷蘭_11
       - 荷蘭_12
-      - 德國_36
-      - 德國_37
+      - 德國_32
+      - 德國_33
       - 荷蘭_13
       - 荷蘭_14
+      - 德國_34
+      - 德國_35
+      - 德國_36
+      - 德國_37
       - 德國_38
       - 德國_39
       - 德國_40
       - 德國_41
       - 德國_42
       - 德國_43
+      - 荷蘭_15
       - 德國_44
+      - 🇩🇪_DE_德国_1
       - 德國_45
       - 德國_46
       - 德國_47
-      - 荷蘭_15
-      - 德國_48
-      - 🇩🇪_DE_德国_1
-      - 德國_49
-      - 德國_50
-      - 德國_51
       - 俄羅斯_1
       - 荷蘭_16
       - 美国_2
       - 美国_3
       - 俄羅斯_2
-      - 拉脫維亞_2
       - 荷蘭_17
-      - 美國_18
+      - 美國_17
       - 荷蘭_18
       - 荷蘭_19
       - 英國
       - 法國
       - 俄羅斯_3
-      - 美國_19
+      - 美國_18
       - 俄羅斯_4
-      - 德國_52
-      - 美國_20
-      - 德國_53
-      - 08(TG:@tccjd)_1
+      - 德國_48
+      - 美國_19
+      - 德國_49
       - 俄羅斯_5
       - 俄羅斯_6
       - 俄羅斯_7
-      - 09(TG:@tccjd)_1
+      - 09(TG:@tccjd)
       - 俄羅斯_8
       - 俄羅斯_9
       - 10(TG:@tccjd)
+      - _CN_中国
+      - 🇯🇵 JP日本(TG:@tccjd)
+      - 🇯🇵JP日本2
+      - 🇭🇰 香港 (TG:@tccjd)
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 香港4|@stairnode
+      - 香港（2026.1.12更新）
+      - 香港_1
+      - 加拿大
+      - 香港_2
+      - 08(TG:@tccjd)_1
+      - 🇩🇪 德国 | DEU_1
+      - 德國_50
+      - 德國_51
+      - 德國_52
+      - 德國_53
+      - 拉脫維亞_1
+      - 拉脫維亞_2
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -2854,12 +2790,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU_1
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇬🇧 GB英国(TG:@tccjd)
       - 🇫🇷 FR法国(TG:@tccjd)
@@ -2900,11 +2830,13 @@ proxy-groups:
       - 🇺🇸 US美国(TG:@tccjd)_14
       - 🇬🇧 GB英国(TG:@tccjd)_21
       - 🇬🇧 GB英国(TG:@tccjd)_22
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
+      - ⚡美国
+      - 美国
+      - 美国_1
       - 01(TG:@tccjd)
+      - 香港
+      - 🇺🇸 美国 | USA
+      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
@@ -2913,169 +2845,162 @@ proxy-groups:
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
-      - 06(TG:@tccjd)_1
       - 07(TG:@tccjd)
       - 08(TG:@tccjd)
-      - 09(TG:@tccjd)
-      - 01(TG:@tccjd)_2
-      - 香港（2026.1.12更新）
-      - 香港
-      - ⚡美国
       - 德國
-      - 美国
       - 美國
-      - 香港_1
-      - 美国_1
       - 美國_1
-      - 美國_2
       - 德國_1
       - 德國_2
-      - 01(TG:@tccjd)_3
-      - 德國_3
-      - 德國_4
-      - 美國_3
-      - 德國_5
+      - 01(TG:@tccjd)_2
+      - 美國_2
       - 11(TG:@tccjd)
       - 12(TG:@tccjd)
+      - 德國_3
+      - 美國_3
+      - 德國_4
+      - 15(TG:@tccjd)
+      - 德國_5
+      - 14(TG:@tccjd)
       - 德國_6
       - 德國_7
       - 美國_4
-      - 德國_8
-      - 15(TG:@tccjd)
-      - 加拿大
-      - 德國_9
-      - 14(TG:@tccjd)
-      - 德國_10
-      - 德國_11
-      - 美國_5
       - 13(TG:@tccjd)
+      - 美國_5
       - 美國_6
       - 美國_7
-      - 美國_8
       - 拉脫維亞
       - 02(TG:@tccjd)_2
-      - 德國_12
+      - 德國_8
+      - 美國_8
       - 美國_9
-      - 美國_10
       - 奧地利
-      - 德國_13
+      - 德國_9
+      - 美國_10
       - 美國_11
-      - 美國_12
       - 03(TG:@tccjd)_2
       - 日本
       - 荷蘭
-      - 美國_13
+      - 美國_12
       - 荷蘭_1
       - 斯洛維尼亞
-      - 美國_14
+      - 美國_13
       - 荷蘭_2
       - 🇺🇸_US_美国_3
-      - 德國_14
-      - 美國_15
-      - 拉脫維亞_1
+      - 德國_10
+      - 美國_14
       - 日本_1
       - 日本_2
+      - 美國_15
       - 美國_16
-      - 美國_17
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - DE
-      - 德國_15
-      - 德國_16
+      - 德國_11
+      - 德國_12
       - 俄羅斯
       - 🇩🇪_DE_德国
       - 荷蘭_3
-      - 德國_17
-      - 德國_18
+      - 德國_13
+      - 德國_14
       - 05(TG:@tccjd)_2
+      - 德國_15
+      - 德國_16
+      - 德國_17
+      - 荷蘭_4
+      - 06(TG:@tccjd)_1
+      - 德國_18
       - 德國_19
+      - 🇳🇱_NL_荷兰
       - 德國_20
       - 德國_21
-      - 荷蘭_4
-      - 06(TG:@tccjd)_2
-      - 德國_22
-      - 德國_23
-      - 🇳🇱_NL_荷兰
-      - 德國_24
-      - 德國_25
       - 荷蘭_5
       - 07(TG:@tccjd)_1
-      - 德國_26
-      - 德國_27
-      - 德國_28
+      - 德國_22
+      - 德國_23
+      - 德國_24
       - 荷蘭_6
       - 荷蘭_7
+      - 德國_25
+      - 德國_26
+      - 荷蘭_8
+      - 德國_27
+      - 德國_28
       - 德國_29
       - 德國_30
-      - 荷蘭_8
       - 德國_31
-      - 德國_32
-      - 德國_33
-      - 德國_34
-      - 香港_2
-      - 德國_35
       - 荷蘭_9
       - 荷蘭_10
       - 荷蘭_11
       - 荷蘭_12
-      - 德國_36
-      - 德國_37
+      - 德國_32
+      - 德國_33
       - 荷蘭_13
       - 荷蘭_14
+      - 德國_34
+      - 德國_35
+      - 德國_36
+      - 德國_37
       - 德國_38
       - 德國_39
       - 德國_40
       - 德國_41
       - 德國_42
       - 德國_43
+      - 荷蘭_15
       - 德國_44
+      - 🇩🇪_DE_德国_1
       - 德國_45
       - 德國_46
       - 德國_47
-      - 荷蘭_15
-      - 德國_48
-      - 🇩🇪_DE_德国_1
-      - 德國_49
-      - 德國_50
-      - 德國_51
       - 俄羅斯_1
       - 荷蘭_16
       - 美国_2
       - 美国_3
       - 俄羅斯_2
-      - 拉脫維亞_2
       - 荷蘭_17
-      - 美國_18
+      - 美國_17
       - 荷蘭_18
       - 荷蘭_19
       - 英國
       - 法國
       - 俄羅斯_3
-      - 美國_19
+      - 美國_18
       - 俄羅斯_4
-      - 德國_52
-      - 美國_20
-      - 德國_53
-      - 08(TG:@tccjd)_1
+      - 德國_48
+      - 美國_19
+      - 德國_49
       - 俄羅斯_5
       - 俄羅斯_6
       - 俄羅斯_7
-      - 09(TG:@tccjd)_1
+      - 09(TG:@tccjd)
       - 俄羅斯_8
       - 俄羅斯_9
       - 10(TG:@tccjd)
+      - _CN_中国
+      - 🇯🇵 JP日本(TG:@tccjd)
+      - 🇯🇵JP日本2
+      - 🇭🇰 香港 (TG:@tccjd)
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 香港4|@stairnode
+      - 香港（2026.1.12更新）
+      - 香港_1
+      - 加拿大
+      - 香港_2
+      - 08(TG:@tccjd)_1
+      - 🇩🇪 德国 | DEU_1
+      - 德國_50
+      - 德國_51
+      - 德國_52
+      - 德國_53
+      - 拉脫維亞_1
+      - 拉脫維亞_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU_1
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇬🇧 GB英国(TG:@tccjd)
       - 🇫🇷 FR法国(TG:@tccjd)
@@ -3116,11 +3041,13 @@ proxy-groups:
       - 🇺🇸 US美国(TG:@tccjd)_14
       - 🇬🇧 GB英国(TG:@tccjd)_21
       - 🇬🇧 GB英国(TG:@tccjd)_22
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
+      - ⚡美国
+      - 美国
+      - 美国_1
       - 01(TG:@tccjd)
+      - 香港
+      - 🇺🇸 美国 | USA
+      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
@@ -3129,169 +3056,162 @@ proxy-groups:
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
-      - 06(TG:@tccjd)_1
       - 07(TG:@tccjd)
       - 08(TG:@tccjd)
-      - 09(TG:@tccjd)
-      - 01(TG:@tccjd)_2
-      - 香港（2026.1.12更新）
-      - 香港
-      - ⚡美国
       - 德國
-      - 美国
       - 美國
-      - 香港_1
-      - 美国_1
       - 美國_1
-      - 美國_2
       - 德國_1
       - 德國_2
-      - 01(TG:@tccjd)_3
-      - 德國_3
-      - 德國_4
-      - 美國_3
-      - 德國_5
+      - 01(TG:@tccjd)_2
+      - 美國_2
       - 11(TG:@tccjd)
       - 12(TG:@tccjd)
+      - 德國_3
+      - 美國_3
+      - 德國_4
+      - 15(TG:@tccjd)
+      - 德國_5
+      - 14(TG:@tccjd)
       - 德國_6
       - 德國_7
       - 美國_4
-      - 德國_8
-      - 15(TG:@tccjd)
-      - 加拿大
-      - 德國_9
-      - 14(TG:@tccjd)
-      - 德國_10
-      - 德國_11
-      - 美國_5
       - 13(TG:@tccjd)
+      - 美國_5
       - 美國_6
       - 美國_7
-      - 美國_8
       - 拉脫維亞
       - 02(TG:@tccjd)_2
-      - 德國_12
+      - 德國_8
+      - 美國_8
       - 美國_9
-      - 美國_10
       - 奧地利
-      - 德國_13
+      - 德國_9
+      - 美國_10
       - 美國_11
-      - 美國_12
       - 03(TG:@tccjd)_2
       - 日本
       - 荷蘭
-      - 美國_13
+      - 美國_12
       - 荷蘭_1
       - 斯洛維尼亞
-      - 美國_14
+      - 美國_13
       - 荷蘭_2
       - 🇺🇸_US_美国_3
-      - 德國_14
-      - 美國_15
-      - 拉脫維亞_1
+      - 德國_10
+      - 美國_14
       - 日本_1
       - 日本_2
+      - 美國_15
       - 美國_16
-      - 美國_17
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - DE
-      - 德國_15
-      - 德國_16
+      - 德國_11
+      - 德國_12
       - 俄羅斯
       - 🇩🇪_DE_德国
       - 荷蘭_3
-      - 德國_17
-      - 德國_18
+      - 德國_13
+      - 德國_14
       - 05(TG:@tccjd)_2
+      - 德國_15
+      - 德國_16
+      - 德國_17
+      - 荷蘭_4
+      - 06(TG:@tccjd)_1
+      - 德國_18
       - 德國_19
+      - 🇳🇱_NL_荷兰
       - 德國_20
       - 德國_21
-      - 荷蘭_4
-      - 06(TG:@tccjd)_2
-      - 德國_22
-      - 德國_23
-      - 🇳🇱_NL_荷兰
-      - 德國_24
-      - 德國_25
       - 荷蘭_5
       - 07(TG:@tccjd)_1
-      - 德國_26
-      - 德國_27
-      - 德國_28
+      - 德國_22
+      - 德國_23
+      - 德國_24
       - 荷蘭_6
       - 荷蘭_7
+      - 德國_25
+      - 德國_26
+      - 荷蘭_8
+      - 德國_27
+      - 德國_28
       - 德國_29
       - 德國_30
-      - 荷蘭_8
       - 德國_31
-      - 德國_32
-      - 德國_33
-      - 德國_34
-      - 香港_2
-      - 德國_35
       - 荷蘭_9
       - 荷蘭_10
       - 荷蘭_11
       - 荷蘭_12
-      - 德國_36
-      - 德國_37
+      - 德國_32
+      - 德國_33
       - 荷蘭_13
       - 荷蘭_14
+      - 德國_34
+      - 德國_35
+      - 德國_36
+      - 德國_37
       - 德國_38
       - 德國_39
       - 德國_40
       - 德國_41
       - 德國_42
       - 德國_43
+      - 荷蘭_15
       - 德國_44
+      - 🇩🇪_DE_德国_1
       - 德國_45
       - 德國_46
       - 德國_47
-      - 荷蘭_15
-      - 德國_48
-      - 🇩🇪_DE_德国_1
-      - 德國_49
-      - 德國_50
-      - 德國_51
       - 俄羅斯_1
       - 荷蘭_16
       - 美国_2
       - 美国_3
       - 俄羅斯_2
-      - 拉脫維亞_2
       - 荷蘭_17
-      - 美國_18
+      - 美國_17
       - 荷蘭_18
       - 荷蘭_19
       - 英國
       - 法國
       - 俄羅斯_3
-      - 美國_19
+      - 美國_18
       - 俄羅斯_4
-      - 德國_52
-      - 美國_20
-      - 德國_53
-      - 08(TG:@tccjd)_1
+      - 德國_48
+      - 美國_19
+      - 德國_49
       - 俄羅斯_5
       - 俄羅斯_6
       - 俄羅斯_7
-      - 09(TG:@tccjd)_1
+      - 09(TG:@tccjd)
       - 俄羅斯_8
       - 俄羅斯_9
       - 10(TG:@tccjd)
+      - _CN_中国
+      - 🇯🇵 JP日本(TG:@tccjd)
+      - 🇯🇵JP日本2
+      - 🇭🇰 香港 (TG:@tccjd)
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 香港4|@stairnode
+      - 香港（2026.1.12更新）
+      - 香港_1
+      - 加拿大
+      - 香港_2
+      - 08(TG:@tccjd)_1
+      - 🇩🇪 德国 | DEU_1
+      - 德國_50
+      - 德國_51
+      - 德國_52
+      - 德國_53
+      - 拉脫維亞_1
+      - 拉脫維亞_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU_1
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇬🇧 GB英国(TG:@tccjd)
       - 🇫🇷 FR法国(TG:@tccjd)
@@ -3332,11 +3252,13 @@ proxy-groups:
       - 🇺🇸 US美国(TG:@tccjd)_14
       - 🇬🇧 GB英国(TG:@tccjd)_21
       - 🇬🇧 GB英国(TG:@tccjd)_22
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
+      - ⚡美国
+      - 美国
+      - 美国_1
       - 01(TG:@tccjd)
+      - 香港
+      - 🇺🇸 美国 | USA
+      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
@@ -3345,169 +3267,162 @@ proxy-groups:
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
-      - 06(TG:@tccjd)_1
       - 07(TG:@tccjd)
       - 08(TG:@tccjd)
-      - 09(TG:@tccjd)
-      - 01(TG:@tccjd)_2
-      - 香港（2026.1.12更新）
-      - 香港
-      - ⚡美国
       - 德國
-      - 美国
       - 美國
-      - 香港_1
-      - 美国_1
       - 美國_1
-      - 美國_2
       - 德國_1
       - 德國_2
-      - 01(TG:@tccjd)_3
-      - 德國_3
-      - 德國_4
-      - 美國_3
-      - 德國_5
+      - 01(TG:@tccjd)_2
+      - 美國_2
       - 11(TG:@tccjd)
       - 12(TG:@tccjd)
+      - 德國_3
+      - 美國_3
+      - 德國_4
+      - 15(TG:@tccjd)
+      - 德國_5
+      - 14(TG:@tccjd)
       - 德國_6
       - 德國_7
       - 美國_4
-      - 德國_8
-      - 15(TG:@tccjd)
-      - 加拿大
-      - 德國_9
-      - 14(TG:@tccjd)
-      - 德國_10
-      - 德國_11
-      - 美國_5
       - 13(TG:@tccjd)
+      - 美國_5
       - 美國_6
       - 美國_7
-      - 美國_8
       - 拉脫維亞
       - 02(TG:@tccjd)_2
-      - 德國_12
+      - 德國_8
+      - 美國_8
       - 美國_9
-      - 美國_10
       - 奧地利
-      - 德國_13
+      - 德國_9
+      - 美國_10
       - 美國_11
-      - 美國_12
       - 03(TG:@tccjd)_2
       - 日本
       - 荷蘭
-      - 美國_13
+      - 美國_12
       - 荷蘭_1
       - 斯洛維尼亞
-      - 美國_14
+      - 美國_13
       - 荷蘭_2
       - 🇺🇸_US_美国_3
-      - 德國_14
-      - 美國_15
-      - 拉脫維亞_1
+      - 德國_10
+      - 美國_14
       - 日本_1
       - 日本_2
+      - 美國_15
       - 美國_16
-      - 美國_17
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - DE
-      - 德國_15
-      - 德國_16
+      - 德國_11
+      - 德國_12
       - 俄羅斯
       - 🇩🇪_DE_德国
       - 荷蘭_3
-      - 德國_17
-      - 德國_18
+      - 德國_13
+      - 德國_14
       - 05(TG:@tccjd)_2
+      - 德國_15
+      - 德國_16
+      - 德國_17
+      - 荷蘭_4
+      - 06(TG:@tccjd)_1
+      - 德國_18
       - 德國_19
+      - 🇳🇱_NL_荷兰
       - 德國_20
       - 德國_21
-      - 荷蘭_4
-      - 06(TG:@tccjd)_2
-      - 德國_22
-      - 德國_23
-      - 🇳🇱_NL_荷兰
-      - 德國_24
-      - 德國_25
       - 荷蘭_5
       - 07(TG:@tccjd)_1
-      - 德國_26
-      - 德國_27
-      - 德國_28
+      - 德國_22
+      - 德國_23
+      - 德國_24
       - 荷蘭_6
       - 荷蘭_7
+      - 德國_25
+      - 德國_26
+      - 荷蘭_8
+      - 德國_27
+      - 德國_28
       - 德國_29
       - 德國_30
-      - 荷蘭_8
       - 德國_31
-      - 德國_32
-      - 德國_33
-      - 德國_34
-      - 香港_2
-      - 德國_35
       - 荷蘭_9
       - 荷蘭_10
       - 荷蘭_11
       - 荷蘭_12
-      - 德國_36
-      - 德國_37
+      - 德國_32
+      - 德國_33
       - 荷蘭_13
       - 荷蘭_14
+      - 德國_34
+      - 德國_35
+      - 德國_36
+      - 德國_37
       - 德國_38
       - 德國_39
       - 德國_40
       - 德國_41
       - 德國_42
       - 德國_43
+      - 荷蘭_15
       - 德國_44
+      - 🇩🇪_DE_德国_1
       - 德國_45
       - 德國_46
       - 德國_47
-      - 荷蘭_15
-      - 德國_48
-      - 🇩🇪_DE_德国_1
-      - 德國_49
-      - 德國_50
-      - 德國_51
       - 俄羅斯_1
       - 荷蘭_16
       - 美国_2
       - 美国_3
       - 俄羅斯_2
-      - 拉脫維亞_2
       - 荷蘭_17
-      - 美國_18
+      - 美國_17
       - 荷蘭_18
       - 荷蘭_19
       - 英國
       - 法國
       - 俄羅斯_3
-      - 美國_19
+      - 美國_18
       - 俄羅斯_4
-      - 德國_52
-      - 美國_20
-      - 德國_53
-      - 08(TG:@tccjd)_1
+      - 德國_48
+      - 美國_19
+      - 德國_49
       - 俄羅斯_5
       - 俄羅斯_6
       - 俄羅斯_7
-      - 09(TG:@tccjd)_1
+      - 09(TG:@tccjd)
       - 俄羅斯_8
       - 俄羅斯_9
       - 10(TG:@tccjd)
+      - _CN_中国
+      - 🇯🇵 JP日本(TG:@tccjd)
+      - 🇯🇵JP日本2
+      - 🇭🇰 香港 (TG:@tccjd)
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 香港4|@stairnode
+      - 香港（2026.1.12更新）
+      - 香港_1
+      - 加拿大
+      - 香港_2
+      - 08(TG:@tccjd)_1
+      - 🇩🇪 德国 | DEU_1
+      - 德國_50
+      - 德國_51
+      - 德國_52
+      - 德國_53
+      - 拉脫維亞_1
+      - 拉脫維亞_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU_1
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇬🇧 GB英国(TG:@tccjd)
       - 🇫🇷 FR法国(TG:@tccjd)
@@ -3548,11 +3463,13 @@ proxy-groups:
       - 🇺🇸 US美国(TG:@tccjd)_14
       - 🇬🇧 GB英国(TG:@tccjd)_21
       - 🇬🇧 GB英国(TG:@tccjd)_22
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
+      - ⚡美国
+      - 美国
+      - 美国_1
       - 01(TG:@tccjd)
+      - 香港
+      - 🇺🇸 美国 | USA
+      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
@@ -3561,158 +3478,157 @@ proxy-groups:
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
-      - 06(TG:@tccjd)_1
       - 07(TG:@tccjd)
       - 08(TG:@tccjd)
-      - 09(TG:@tccjd)
-      - 01(TG:@tccjd)_2
-      - 香港（2026.1.12更新）
-      - 香港
-      - ⚡美国
       - 德國
-      - 美国
       - 美國
-      - 香港_1
-      - 美国_1
       - 美國_1
-      - 美國_2
       - 德國_1
       - 德國_2
-      - 01(TG:@tccjd)_3
-      - 德國_3
-      - 德國_4
-      - 美國_3
-      - 德國_5
+      - 01(TG:@tccjd)_2
+      - 美國_2
       - 11(TG:@tccjd)
       - 12(TG:@tccjd)
+      - 德國_3
+      - 美國_3
+      - 德國_4
+      - 15(TG:@tccjd)
+      - 德國_5
+      - 14(TG:@tccjd)
       - 德國_6
       - 德國_7
       - 美國_4
-      - 德國_8
-      - 15(TG:@tccjd)
-      - 加拿大
-      - 德國_9
-      - 14(TG:@tccjd)
-      - 德國_10
-      - 德國_11
-      - 美國_5
       - 13(TG:@tccjd)
+      - 美國_5
       - 美國_6
       - 美國_7
-      - 美國_8
       - 拉脫維亞
       - 02(TG:@tccjd)_2
-      - 德國_12
+      - 德國_8
+      - 美國_8
       - 美國_9
-      - 美國_10
       - 奧地利
-      - 德國_13
+      - 德國_9
+      - 美國_10
       - 美國_11
-      - 美國_12
       - 03(TG:@tccjd)_2
       - 日本
       - 荷蘭
-      - 美國_13
+      - 美國_12
       - 荷蘭_1
       - 斯洛維尼亞
-      - 美國_14
+      - 美國_13
       - 荷蘭_2
       - 🇺🇸_US_美国_3
-      - 德國_14
-      - 美國_15
-      - 拉脫維亞_1
+      - 德國_10
+      - 美國_14
       - 日本_1
       - 日本_2
+      - 美國_15
       - 美國_16
-      - 美國_17
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - DE
-      - 德國_15
-      - 德國_16
+      - 德國_11
+      - 德國_12
       - 俄羅斯
       - 🇩🇪_DE_德国
       - 荷蘭_3
-      - 德國_17
-      - 德國_18
+      - 德國_13
+      - 德國_14
       - 05(TG:@tccjd)_2
+      - 德國_15
+      - 德國_16
+      - 德國_17
+      - 荷蘭_4
+      - 06(TG:@tccjd)_1
+      - 德國_18
       - 德國_19
+      - 🇳🇱_NL_荷兰
       - 德國_20
       - 德國_21
-      - 荷蘭_4
-      - 06(TG:@tccjd)_2
-      - 德國_22
-      - 德國_23
-      - 🇳🇱_NL_荷兰
-      - 德國_24
-      - 德國_25
       - 荷蘭_5
       - 07(TG:@tccjd)_1
-      - 德國_26
-      - 德國_27
-      - 德國_28
+      - 德國_22
+      - 德國_23
+      - 德國_24
       - 荷蘭_6
       - 荷蘭_7
+      - 德國_25
+      - 德國_26
+      - 荷蘭_8
+      - 德國_27
+      - 德國_28
       - 德國_29
       - 德國_30
-      - 荷蘭_8
       - 德國_31
-      - 德國_32
-      - 德國_33
-      - 德國_34
-      - 香港_2
-      - 德國_35
       - 荷蘭_9
       - 荷蘭_10
       - 荷蘭_11
       - 荷蘭_12
-      - 德國_36
-      - 德國_37
+      - 德國_32
+      - 德國_33
       - 荷蘭_13
       - 荷蘭_14
+      - 德國_34
+      - 德國_35
+      - 德國_36
+      - 德國_37
       - 德國_38
       - 德國_39
       - 德國_40
       - 德國_41
       - 德國_42
       - 德國_43
+      - 荷蘭_15
       - 德國_44
+      - 🇩🇪_DE_德国_1
       - 德國_45
       - 德國_46
       - 德國_47
-      - 荷蘭_15
-      - 德國_48
-      - 🇩🇪_DE_德国_1
-      - 德國_49
-      - 德國_50
-      - 德國_51
       - 俄羅斯_1
       - 荷蘭_16
       - 美国_2
       - 美国_3
       - 俄羅斯_2
-      - 拉脫維亞_2
       - 荷蘭_17
-      - 美國_18
+      - 美國_17
       - 荷蘭_18
       - 荷蘭_19
       - 英國
       - 法國
       - 俄羅斯_3
-      - 美國_19
+      - 美國_18
       - 俄羅斯_4
-      - 德國_52
-      - 美國_20
-      - 德國_53
-      - 08(TG:@tccjd)_1
+      - 德國_48
+      - 美國_19
+      - 德國_49
       - 俄羅斯_5
       - 俄羅斯_6
       - 俄羅斯_7
-      - 09(TG:@tccjd)_1
+      - 09(TG:@tccjd)
       - 俄羅斯_8
       - 俄羅斯_9
       - 10(TG:@tccjd)
+      - _CN_中国
+      - 🇯🇵 JP日本(TG:@tccjd)
+      - 🇯🇵JP日本2
+      - 🇭🇰 香港 (TG:@tccjd)
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 香港4|@stairnode
+      - 香港（2026.1.12更新）
+      - 香港_1
+      - 加拿大
+      - 香港_2
+      - 08(TG:@tccjd)_1
+      - 🇩🇪 德国 | DEU_1
+      - 德國_50
+      - 德國_51
+      - 德國_52
+      - 德國_53
+      - 拉脫維亞_1
+      - 拉脫維亞_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -3735,12 +3651,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
-      - 🇩🇪 德国 | DEU_1
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇬🇧 GB英国(TG:@tccjd)
       - 🇫🇷 FR法国(TG:@tccjd)
@@ -3781,11 +3691,13 @@ proxy-groups:
       - 🇺🇸 US美国(TG:@tccjd)_14
       - 🇬🇧 GB英国(TG:@tccjd)_21
       - 🇬🇧 GB英国(TG:@tccjd)_22
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
+      - ⚡美国
+      - 美国
+      - 美国_1
       - 01(TG:@tccjd)
+      - 香港
+      - 🇺🇸 美国 | USA
+      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
@@ -3794,158 +3706,157 @@ proxy-groups:
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
-      - 06(TG:@tccjd)_1
       - 07(TG:@tccjd)
       - 08(TG:@tccjd)
-      - 09(TG:@tccjd)
-      - 01(TG:@tccjd)_2
-      - 香港（2026.1.12更新）
-      - 香港
-      - ⚡美国
       - 德國
-      - 美国
       - 美國
-      - 香港_1
-      - 美国_1
       - 美國_1
-      - 美國_2
       - 德國_1
       - 德國_2
-      - 01(TG:@tccjd)_3
-      - 德國_3
-      - 德國_4
-      - 美國_3
-      - 德國_5
+      - 01(TG:@tccjd)_2
+      - 美國_2
       - 11(TG:@tccjd)
       - 12(TG:@tccjd)
+      - 德國_3
+      - 美國_3
+      - 德國_4
+      - 15(TG:@tccjd)
+      - 德國_5
+      - 14(TG:@tccjd)
       - 德國_6
       - 德國_7
       - 美國_4
-      - 德國_8
-      - 15(TG:@tccjd)
-      - 加拿大
-      - 德國_9
-      - 14(TG:@tccjd)
-      - 德國_10
-      - 德國_11
-      - 美國_5
       - 13(TG:@tccjd)
+      - 美國_5
       - 美國_6
       - 美國_7
-      - 美國_8
       - 拉脫維亞
       - 02(TG:@tccjd)_2
-      - 德國_12
+      - 德國_8
+      - 美國_8
       - 美國_9
-      - 美國_10
       - 奧地利
-      - 德國_13
+      - 德國_9
+      - 美國_10
       - 美國_11
-      - 美國_12
       - 03(TG:@tccjd)_2
       - 日本
       - 荷蘭
-      - 美國_13
+      - 美國_12
       - 荷蘭_1
       - 斯洛維尼亞
-      - 美國_14
+      - 美國_13
       - 荷蘭_2
       - 🇺🇸_US_美国_3
-      - 德國_14
-      - 美國_15
-      - 拉脫維亞_1
+      - 德國_10
+      - 美國_14
       - 日本_1
       - 日本_2
+      - 美國_15
       - 美國_16
-      - 美國_17
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - DE
-      - 德國_15
-      - 德國_16
+      - 德國_11
+      - 德國_12
       - 俄羅斯
       - 🇩🇪_DE_德国
       - 荷蘭_3
-      - 德國_17
-      - 德國_18
+      - 德國_13
+      - 德國_14
       - 05(TG:@tccjd)_2
+      - 德國_15
+      - 德國_16
+      - 德國_17
+      - 荷蘭_4
+      - 06(TG:@tccjd)_1
+      - 德國_18
       - 德國_19
+      - 🇳🇱_NL_荷兰
       - 德國_20
       - 德國_21
-      - 荷蘭_4
-      - 06(TG:@tccjd)_2
-      - 德國_22
-      - 德國_23
-      - 🇳🇱_NL_荷兰
-      - 德國_24
-      - 德國_25
       - 荷蘭_5
       - 07(TG:@tccjd)_1
-      - 德國_26
-      - 德國_27
-      - 德國_28
+      - 德國_22
+      - 德國_23
+      - 德國_24
       - 荷蘭_6
       - 荷蘭_7
+      - 德國_25
+      - 德國_26
+      - 荷蘭_8
+      - 德國_27
+      - 德國_28
       - 德國_29
       - 德國_30
-      - 荷蘭_8
       - 德國_31
-      - 德國_32
-      - 德國_33
-      - 德國_34
-      - 香港_2
-      - 德國_35
       - 荷蘭_9
       - 荷蘭_10
       - 荷蘭_11
       - 荷蘭_12
-      - 德國_36
-      - 德國_37
+      - 德國_32
+      - 德國_33
       - 荷蘭_13
       - 荷蘭_14
+      - 德國_34
+      - 德國_35
+      - 德國_36
+      - 德國_37
       - 德國_38
       - 德國_39
       - 德國_40
       - 德國_41
       - 德國_42
       - 德國_43
+      - 荷蘭_15
       - 德國_44
+      - 🇩🇪_DE_德国_1
       - 德國_45
       - 德國_46
       - 德國_47
-      - 荷蘭_15
-      - 德國_48
-      - 🇩🇪_DE_德国_1
-      - 德國_49
-      - 德國_50
-      - 德國_51
       - 俄羅斯_1
       - 荷蘭_16
       - 美国_2
       - 美国_3
       - 俄羅斯_2
-      - 拉脫維亞_2
       - 荷蘭_17
-      - 美國_18
+      - 美國_17
       - 荷蘭_18
       - 荷蘭_19
       - 英國
       - 法國
       - 俄羅斯_3
-      - 美國_19
+      - 美國_18
       - 俄羅斯_4
-      - 德國_52
-      - 美國_20
-      - 德國_53
-      - 08(TG:@tccjd)_1
+      - 德國_48
+      - 美國_19
+      - 德國_49
       - 俄羅斯_5
       - 俄羅斯_6
       - 俄羅斯_7
-      - 09(TG:@tccjd)_1
+      - 09(TG:@tccjd)
       - 俄羅斯_8
       - 俄羅斯_9
       - 10(TG:@tccjd)
+      - _CN_中国
+      - 🇯🇵 JP日本(TG:@tccjd)
+      - 🇯🇵JP日本2
+      - 🇭🇰 香港 (TG:@tccjd)
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 香港4|@stairnode
+      - 香港（2026.1.12更新）
+      - 香港_1
+      - 加拿大
+      - 香港_2
+      - 08(TG:@tccjd)_1
+      - 🇩🇪 德国 | DEU_1
+      - 德國_50
+      - 德國_51
+      - 德國_52
+      - 德國_53
+      - 拉脫維亞_1
+      - 拉脫維亞_2
 rule-providers:
   LocalAreaNetwork:
     type: http
