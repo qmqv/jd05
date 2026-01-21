@@ -46,18 +46,6 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇩🇪 德国 | DEU
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
   - name: 🇭🇰 香港(TG:@tccjd)
     type: vmess
     server: 47.242.192.233
@@ -67,16 +55,6 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 01(TG:@tccjd)
-    type: trojan
-    server: cf.090227.xyz
-    port: 443
-    password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-    sni: _acme-challenge.2go.cloudns.be
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
   - name: 🇺🇸 US美国(TG:@tccjd)
     type: vmess
     server: 82.198.246.97
@@ -104,20 +82,6 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 02(TG:@tccjd)
-    type: vless
-    server: octopusss5.info
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
   - name: 🇺🇸 US美国(TG:@tccjd)_3
     type: vmess
     server: 82.198.246.97
@@ -136,14 +100,50 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: _CN_中国
-    type: trojan
-    server: 58.152.18.124
-    port: 443
-    password: 4843e94d205f3893f588255a591abe94
-    sni: 58.152.18.124
-    skip-cert-verify: true
+  - name: 🇨🇳 广东省湛江市(TG:@tccjd)
+    type: vmess
+    server: oss-4.qqa678.com
+    port: 47081
+    uuid: 7d3b2ea8-337b-4979-948f-bc1c1e72b6d5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇩🇪 德国 | DEU
+    type: vless
+    server: api.dark-coffe.com
+    port: 8443
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    network: ws
+    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
     tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+  - name: 02(TG:@tccjd)
+    type: vless
+    server: octopusss5.info
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
   - name: 03(TG:@tccjd)
     type: vless
     server: 45.82.255.32
@@ -168,15 +168,6 @@ proxies:
     reality-opts:
       public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
       short-id: aa7e96542880027a
-  - name: 🇨🇳 广东省湛江市(TG:@tccjd)
-    type: vmess
-    server: oss-4.qqa678.com
-    port: 47081
-    uuid: 7d3b2ea8-337b-4979-948f-bc1c1e72b6d5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
   - name: 05(TG:@tccjd)
     type: vless
     server: 45.82.246.114
@@ -189,7 +180,7 @@ proxies:
     reality-opts:
       public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
       short-id: aa7e96542880027a
-  - name: 01(TG:@tccjd)_1
+  - name: 01(TG:@tccjd)
     type: vless
     server: 104.19.73.126
     port: 2053
@@ -225,19 +216,6 @@ proxies:
       path: /
       headers:
         Host: sni.111000.v6.rocks
-  - name: 04(TG:@tccjd)_1
-    type: vless
-    server: 181.214.99.116
-    port: 443
-    uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
-    network: http
-    servername: statue.lnmarketplace.net
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path: /statue
-      headers:
-        Host: statue.lnmarketplace.net
   - name: 05(TG:@tccjd)_1
     type: vless
     server: 104.18.32.47
@@ -277,7 +255,7 @@ proxies:
       path: /
       headers:
         Host: cellf.parhamm1.ir
-  - name: 01(TG:@tccjd)_2
+  - name: 01(TG:@tccjd)_1
     type: vless
     server: rohin.ns.cloudflare.com
     port: 443
@@ -325,14 +303,6 @@ proxies:
     reality-opts:
       public-key: fW43MXDdfHEKYdq8-YWvTsl4-h-2BFE69W1ZGuLg6lI
       short-id: 86473f2d52494ed4
-  - name: 香港（2026.1.21更新）
-    type: trojan
-    server: 58.152.18.124
-    port: 443
-    password: 4843e94d205f3893f588255a591abe94
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    tls: true
   - name: 韓國
     type: vless
     server: 222.102.51.111
@@ -345,23 +315,6 @@ proxies:
     reality-opts:
       public-key: PPZbDAYSwCYnPCF8BxguTFfAAZTnLnzpsHePCkGZYxo
       short-id: "34"
-  - name: 美國
-    type: trojan
-    server: 205.185.115.223
-    port: 19258
-    password: iWnFtzMiac
-    sni: cloudflare.com
-    skip-cert-verify: false
-    tls: true
-  - name: 美国
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
   - name: 德國
     type: vless
     server: 37.120.164.43
@@ -388,7 +341,7 @@ proxies:
     reality-opts:
       public-key: PPZbDAYSwCYnPCF8BxguTFfAAZTnLnzpsHePCkGZYxo
       short-id: "34"
-  - name: 01(TG:@tccjd)_3
+  - name: 01(TG:@tccjd)_2
     type: vless
     server: octopusss5.info
     port: 22955
@@ -444,7 +397,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_1
+  - name: 美國
     type: vless
     server: octopusss5.info
     port: 22955
@@ -500,7 +453,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 04(TG:@tccjd)_2
+  - name: 04(TG:@tccjd)_1
     type: vless
     server: octopusss5.info
     port: 22955
@@ -581,14 +534,6 @@ proxies:
     client-fingerprint: chrome
     reality-opts:
       public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
-  - name: 香港
-    type: trojan
-    server: 58.152.18.124
-    port: 443
-    password: 4843e94d205f3893f588255a591abe94
-    sni: 58.152.18.124
-    skip-cert-verify: true
-    tls: true
   - name: 06(TG:@tccjd)_1
     type: vless
     server: octopusss5.info
@@ -685,7 +630,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_2
+  - name: 美國_1
     type: vless
     server: 46.183.217.234
     port: 443
@@ -709,7 +654,7 @@ proxies:
     reality-opts:
       public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
       short-id: 00684d2eae2cdd16
-  - name: 美國_3
+  - name: 美國_2
     type: vless
     server: 144.31.19.193
     port: 443
@@ -819,7 +764,7 @@ proxies:
     reality-opts:
       public-key: Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM
       short-id: aabbccdd
-  - name: 美國_4
+  - name: 美國_3
     type: vless
     server: 185.94.29.250
     port: 443
@@ -831,7 +776,7 @@ proxies:
     reality-opts:
       public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
       short-id: 00684d2eae2cdd16
-  - name: 美國_5
+  - name: 美國_4
     type: vless
     server: plcdn1.suio.me
     port: 443
@@ -884,14 +829,14 @@ proxies:
     reality-opts:
       public-key: UeBcV1nVO3N5d8Ng15MviC_hCnFO3zc0vrB5ykUaGRE
       short-id: 93ac39ad3731f745
-  - name: 美國_6
+  - name: 美國_5
     type: vless
     server: ficdn19.suio.me
     port: 443
     uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
     servername: ficdn19.suio.me
     tls: true
-  - name: 美國_7
+  - name: 美國_6
     type: vless
     server: plcdn14.suio.me
     port: 443
@@ -899,21 +844,21 @@ proxies:
     servername: plcdn14.suio.me
     tls: true
     client-fingerprint: chrome
-  - name: 美國_8
+  - name: 美國_7
     type: vless
     server: 144.31.1.127
     port: 443
     uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
     servername: plcdn13.suio.me
     tls: true
-  - name: 美國_9
+  - name: 美國_8
     type: vless
     server: 144.31.1.167
     port: 443
     uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
     servername: plcdn14.suio.me
     tls: true
-  - name: 美國_10
+  - name: 美國_9
     type: vless
     server: 144.31.1.167
     port: 443
@@ -933,7 +878,7 @@ proxies:
     reality-opts:
       public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
       short-id: 4a3ad88ff867a295
-  - name: 美國_11
+  - name: 美國_10
     type: vless
     server: plcdn5.suio.me
     port: 443
@@ -941,7 +886,7 @@ proxies:
     servername: plcdn5.suio.me
     tls: true
     client-fingerprint: chrome
-  - name: 美國_12
+  - name: 美國_11
     type: vless
     server: 144.31.0.228
     port: 443
@@ -949,7 +894,7 @@ proxies:
     servername: plcdn5.suio.me
     tls: true
     client-fingerprint: chrome
-  - name: 美國_13
+  - name: 美國_12
     type: vless
     server: plcdn20.suio.me
     port: 443
@@ -963,7 +908,7 @@ proxies:
     uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
     servername: ficdn19.suio.me
     tls: true
-  - name: 美國_14
+  - name: 美國_13
     type: vless
     server: 144.31.0.228
     port: 443
@@ -997,7 +942,7 @@ proxies:
     reality-opts:
       public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
       short-id: 048fe5c8be4bb687
-  - name: 美國_15
+  - name: 美國_14
     type: vless
     server: 144.31.0.64
     port: 443
@@ -1183,7 +1128,7 @@ proxies:
     reality-opts:
       public-key: HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc
       short-id: 916e8258c4a01b02
-  - name: 美國_16
+  - name: 美國_15
     type: vless
     server: kz.fasti.win
     port: 443
@@ -1293,7 +1238,7 @@ proxies:
       path: /?ed=2048
       headers:
         Host: speed1.best-cloud.ir
-  - name: 美國_17
+  - name: 美國_16
     type: vless
     server: www.speedtest.net
     port: 80
@@ -1346,58 +1291,86 @@ proxies:
     reality-opts:
       public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
       short-id: c7e42004e5f024be
+  - name: 01(TG:@tccjd)_3
+    type: trojan
+    server: cf.090227.xyz
+    port: 443
+    password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+    sni: _acme-challenge.2go.cloudns.be
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+  - name: _CN_中国
+    type: trojan
+    server: 58.152.18.124
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: 58.152.18.124
+    skip-cert-verify: true
+    tls: true
+  - name: 香港（2026.1.21更新）
+    type: trojan
+    server: 58.152.18.124
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: 香港
+    type: trojan
+    server: 58.152.18.124
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: 58.152.18.124
+    skip-cert-verify: true
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇩🇪 德国 | DEU
       - 🇭🇰 香港(TG:@tccjd)
-      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 02(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_3
       - 🇺🇸 US美国(TG:@tccjd)_4
-      - _CN_中国
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
+      - 美国
+      - 🇩🇪 德国 | DEU
+      - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
-      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 01(TG:@tccjd)_1
+      - 01(TG:@tccjd)
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 01(TG:@tccjd)_2
+      - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_2
       - 03(TG:@tccjd)_2
       - 04TG:@tccjd)
-      - 香港（2026.1.21更新）
       - 韓國
-      - 美國
-      - 美国
       - 德國
       - 韓國_1
-      - 01(TG:@tccjd)_3
+      - 01(TG:@tccjd)_2
       - 02(TG:@tccjd)_3
       - 奧地利
       - 德國_1
-      - 美國_1
+      - 美國
       - 德國_2
       - 03(TG:@tccjd)_3
       - 德國_3
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_2
       - 德國_4
       - 德國_5
       - 奧地利_1
       - 德國_6
-      - 香港
       - 06(TG:@tccjd)_1
       - 德國_7
       - 07(TG:@tccjd)_1
@@ -1405,9 +1378,9 @@ proxy-groups:
       - 德國_8
       - 德國_9
       - 09(TG:@tccjd)
-      - 美國_2
+      - 美國_1
       - 10(TG:@tccjd)
-      - 美國_3
+      - 美國_2
       - 11(TG:@tccjd)
       - 拉脱维亞
       - 土耳其
@@ -1416,27 +1389,27 @@ proxy-groups:
       - 德國_10
       - 荷蘭
       - 荷蘭_1
+      - 美國_3
       - 美國_4
-      - 美國_5
       - 俄羅斯
       - 12(TG:@tccjd)
       - 波蘭
       - 拉脫維亞
+      - 美國_5
       - 美國_6
       - 美國_7
       - 美國_8
       - 美國_9
-      - 美國_10
       - 俄羅斯_1
+      - 美國_10
       - 美國_11
       - 美國_12
-      - 美國_13
       - 波蘭_1
-      - 美國_14
+      - 美國_13
       - 波蘭_2
       - 波蘭_3
       - 俄羅斯_2
-      - 美國_15
+      - 美國_14
       - 波蘭_4
       - 美国_1
       - 芬蘭
@@ -1453,7 +1426,7 @@ proxy-groups:
       - 英國_1
       - 哈薩克
       - 伊朗
-      - 美國_16
+      - 美國_15
       - 德國_13
       - 美国_3
       - 日本
@@ -1462,60 +1435,58 @@ proxy-groups:
       - 俄羅斯_7
       - 哈薩克_1
       - 英國_2
-      - 美國_17
+      - 美國_16
       - 俄羅斯_8
       - 17(TG:@tccjd)
       - 伊朗_1
       - 俄羅斯_9
+      - 01(TG:@tccjd)_3
+      - _CN_中国
+      - 香港（2026.1.21更新）
+      - 香港
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇩🇪 德国 | DEU
       - 🇭🇰 香港(TG:@tccjd)
-      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 02(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_3
       - 🇺🇸 US美国(TG:@tccjd)_4
-      - _CN_中国
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
+      - 美国
+      - 🇩🇪 德国 | DEU
+      - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
-      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 01(TG:@tccjd)_1
+      - 01(TG:@tccjd)
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 01(TG:@tccjd)_2
+      - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_2
       - 03(TG:@tccjd)_2
       - 04TG:@tccjd)
-      - 香港（2026.1.21更新）
       - 韓國
-      - 美國
-      - 美国
       - 德國
       - 韓國_1
-      - 01(TG:@tccjd)_3
+      - 01(TG:@tccjd)_2
       - 02(TG:@tccjd)_3
       - 奧地利
       - 德國_1
-      - 美國_1
+      - 美國
       - 德國_2
       - 03(TG:@tccjd)_3
       - 德國_3
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_2
       - 德國_4
       - 德國_5
       - 奧地利_1
       - 德國_6
-      - 香港
       - 06(TG:@tccjd)_1
       - 德國_7
       - 07(TG:@tccjd)_1
@@ -1523,9 +1494,9 @@ proxy-groups:
       - 德國_8
       - 德國_9
       - 09(TG:@tccjd)
-      - 美國_2
+      - 美國_1
       - 10(TG:@tccjd)
-      - 美國_3
+      - 美國_2
       - 11(TG:@tccjd)
       - 拉脱维亞
       - 土耳其
@@ -1534,27 +1505,27 @@ proxy-groups:
       - 德國_10
       - 荷蘭
       - 荷蘭_1
+      - 美國_3
       - 美國_4
-      - 美國_5
       - 俄羅斯
       - 12(TG:@tccjd)
       - 波蘭
       - 拉脫維亞
+      - 美國_5
       - 美國_6
       - 美國_7
       - 美國_8
       - 美國_9
-      - 美國_10
       - 俄羅斯_1
+      - 美國_10
       - 美國_11
       - 美國_12
-      - 美國_13
       - 波蘭_1
-      - 美國_14
+      - 美國_13
       - 波蘭_2
       - 波蘭_3
       - 俄羅斯_2
-      - 美國_15
+      - 美國_14
       - 波蘭_4
       - 美国_1
       - 芬蘭
@@ -1571,7 +1542,7 @@ proxy-groups:
       - 英國_1
       - 哈薩克
       - 伊朗
-      - 美國_16
+      - 美國_15
       - 德國_13
       - 美国_3
       - 日本
@@ -1580,11 +1551,15 @@ proxy-groups:
       - 俄羅斯_7
       - 哈薩克_1
       - 英國_2
-      - 美國_17
+      - 美國_16
       - 俄羅斯_8
       - 17(TG:@tccjd)
       - 伊朗_1
       - 俄羅斯_9
+      - 01(TG:@tccjd)_3
+      - _CN_中国
+      - 香港（2026.1.21更新）
+      - 香港
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -1594,52 +1569,46 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 德国 | DEU
       - 🇭🇰 香港(TG:@tccjd)
-      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 02(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_3
       - 🇺🇸 US美国(TG:@tccjd)_4
-      - _CN_中国
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
+      - 美国
+      - 🇩🇪 德国 | DEU
+      - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
-      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 01(TG:@tccjd)_1
+      - 01(TG:@tccjd)
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 01(TG:@tccjd)_2
+      - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_2
       - 03(TG:@tccjd)_2
       - 04TG:@tccjd)
-      - 香港（2026.1.21更新）
       - 韓國
-      - 美國
-      - 美国
       - 德國
       - 韓國_1
-      - 01(TG:@tccjd)_3
+      - 01(TG:@tccjd)_2
       - 02(TG:@tccjd)_3
       - 奧地利
       - 德國_1
-      - 美國_1
+      - 美國
       - 德國_2
       - 03(TG:@tccjd)_3
       - 德國_3
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_2
       - 德國_4
       - 德國_5
       - 奧地利_1
       - 德國_6
-      - 香港
       - 06(TG:@tccjd)_1
       - 德國_7
       - 07(TG:@tccjd)_1
@@ -1647,9 +1616,9 @@ proxy-groups:
       - 德國_8
       - 德國_9
       - 09(TG:@tccjd)
-      - 美國_2
+      - 美國_1
       - 10(TG:@tccjd)
-      - 美國_3
+      - 美國_2
       - 11(TG:@tccjd)
       - 拉脱维亞
       - 土耳其
@@ -1658,27 +1627,27 @@ proxy-groups:
       - 德國_10
       - 荷蘭
       - 荷蘭_1
+      - 美國_3
       - 美國_4
-      - 美國_5
       - 俄羅斯
       - 12(TG:@tccjd)
       - 波蘭
       - 拉脫維亞
+      - 美國_5
       - 美國_6
       - 美國_7
       - 美國_8
       - 美國_9
-      - 美國_10
       - 俄羅斯_1
+      - 美國_10
       - 美國_11
       - 美國_12
-      - 美國_13
       - 波蘭_1
-      - 美國_14
+      - 美國_13
       - 波蘭_2
       - 波蘭_3
       - 俄羅斯_2
-      - 美國_15
+      - 美國_14
       - 波蘭_4
       - 美国_1
       - 芬蘭
@@ -1695,7 +1664,7 @@ proxy-groups:
       - 英國_1
       - 哈薩克
       - 伊朗
-      - 美國_16
+      - 美國_15
       - 德國_13
       - 美国_3
       - 日本
@@ -1704,62 +1673,60 @@ proxy-groups:
       - 俄羅斯_7
       - 哈薩克_1
       - 英國_2
-      - 美國_17
+      - 美國_16
       - 俄羅斯_8
       - 17(TG:@tccjd)
       - 伊朗_1
       - 俄羅斯_9
+      - 01(TG:@tccjd)_3
+      - _CN_中国
+      - 香港（2026.1.21更新）
+      - 香港
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪 德国 | DEU
       - 🇭🇰 香港(TG:@tccjd)
-      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 02(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_3
       - 🇺🇸 US美国(TG:@tccjd)_4
-      - _CN_中国
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
+      - 美国
+      - 🇩🇪 德国 | DEU
+      - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
-      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 01(TG:@tccjd)_1
+      - 01(TG:@tccjd)
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 01(TG:@tccjd)_2
+      - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_2
       - 03(TG:@tccjd)_2
       - 04TG:@tccjd)
-      - 香港（2026.1.21更新）
       - 韓國
-      - 美國
-      - 美国
       - 德國
       - 韓國_1
-      - 01(TG:@tccjd)_3
+      - 01(TG:@tccjd)_2
       - 02(TG:@tccjd)_3
       - 奧地利
       - 德國_1
-      - 美國_1
+      - 美國
       - 德國_2
       - 03(TG:@tccjd)_3
       - 德國_3
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_2
       - 德國_4
       - 德國_5
       - 奧地利_1
       - 德國_6
-      - 香港
       - 06(TG:@tccjd)_1
       - 德國_7
       - 07(TG:@tccjd)_1
@@ -1767,9 +1734,9 @@ proxy-groups:
       - 德國_8
       - 德國_9
       - 09(TG:@tccjd)
-      - 美國_2
+      - 美國_1
       - 10(TG:@tccjd)
-      - 美國_3
+      - 美國_2
       - 11(TG:@tccjd)
       - 拉脱维亞
       - 土耳其
@@ -1778,27 +1745,27 @@ proxy-groups:
       - 德國_10
       - 荷蘭
       - 荷蘭_1
+      - 美國_3
       - 美國_4
-      - 美國_5
       - 俄羅斯
       - 12(TG:@tccjd)
       - 波蘭
       - 拉脫維亞
+      - 美國_5
       - 美國_6
       - 美國_7
       - 美國_8
       - 美國_9
-      - 美國_10
       - 俄羅斯_1
+      - 美國_10
       - 美國_11
       - 美國_12
-      - 美國_13
       - 波蘭_1
-      - 美國_14
+      - 美國_13
       - 波蘭_2
       - 波蘭_3
       - 俄羅斯_2
-      - 美國_15
+      - 美國_14
       - 波蘭_4
       - 美国_1
       - 芬蘭
@@ -1815,7 +1782,7 @@ proxy-groups:
       - 英國_1
       - 哈薩克
       - 伊朗
-      - 美國_16
+      - 美國_15
       - 德國_13
       - 美国_3
       - 日本
@@ -1824,62 +1791,60 @@ proxy-groups:
       - 俄羅斯_7
       - 哈薩克_1
       - 英國_2
-      - 美國_17
+      - 美國_16
       - 俄羅斯_8
       - 17(TG:@tccjd)
       - 伊朗_1
       - 俄羅斯_9
+      - 01(TG:@tccjd)_3
+      - _CN_中国
+      - 香港（2026.1.21更新）
+      - 香港
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇩🇪 德国 | DEU
       - 🇭🇰 香港(TG:@tccjd)
-      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 02(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_3
       - 🇺🇸 US美国(TG:@tccjd)_4
-      - _CN_中国
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
+      - 美国
+      - 🇩🇪 德国 | DEU
+      - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
-      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 01(TG:@tccjd)_1
+      - 01(TG:@tccjd)
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 01(TG:@tccjd)_2
+      - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_2
       - 03(TG:@tccjd)_2
       - 04TG:@tccjd)
-      - 香港（2026.1.21更新）
       - 韓國
-      - 美國
-      - 美国
       - 德國
       - 韓國_1
-      - 01(TG:@tccjd)_3
+      - 01(TG:@tccjd)_2
       - 02(TG:@tccjd)_3
       - 奧地利
       - 德國_1
-      - 美國_1
+      - 美國
       - 德國_2
       - 03(TG:@tccjd)_3
       - 德國_3
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_2
       - 德國_4
       - 德國_5
       - 奧地利_1
       - 德國_6
-      - 香港
       - 06(TG:@tccjd)_1
       - 德國_7
       - 07(TG:@tccjd)_1
@@ -1887,9 +1852,9 @@ proxy-groups:
       - 德國_8
       - 德國_9
       - 09(TG:@tccjd)
-      - 美國_2
+      - 美國_1
       - 10(TG:@tccjd)
-      - 美國_3
+      - 美國_2
       - 11(TG:@tccjd)
       - 拉脱维亞
       - 土耳其
@@ -1898,27 +1863,27 @@ proxy-groups:
       - 德國_10
       - 荷蘭
       - 荷蘭_1
+      - 美國_3
       - 美國_4
-      - 美國_5
       - 俄羅斯
       - 12(TG:@tccjd)
       - 波蘭
       - 拉脫維亞
+      - 美國_5
       - 美國_6
       - 美國_7
       - 美國_8
       - 美國_9
-      - 美國_10
       - 俄羅斯_1
+      - 美國_10
       - 美國_11
       - 美國_12
-      - 美國_13
       - 波蘭_1
-      - 美國_14
+      - 美國_13
       - 波蘭_2
       - 波蘭_3
       - 俄羅斯_2
-      - 美國_15
+      - 美國_14
       - 波蘭_4
       - 美国_1
       - 芬蘭
@@ -1935,7 +1900,7 @@ proxy-groups:
       - 英國_1
       - 哈薩克
       - 伊朗
-      - 美國_16
+      - 美國_15
       - 德國_13
       - 美国_3
       - 日本
@@ -1944,62 +1909,60 @@ proxy-groups:
       - 俄羅斯_7
       - 哈薩克_1
       - 英國_2
-      - 美國_17
+      - 美國_16
       - 俄羅斯_8
       - 17(TG:@tccjd)
       - 伊朗_1
       - 俄羅斯_9
+      - 01(TG:@tccjd)_3
+      - _CN_中国
+      - 香港（2026.1.21更新）
+      - 香港
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪 德国 | DEU
       - 🇭🇰 香港(TG:@tccjd)
-      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 02(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_3
       - 🇺🇸 US美国(TG:@tccjd)_4
-      - _CN_中国
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
+      - 美国
+      - 🇩🇪 德国 | DEU
+      - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
-      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 01(TG:@tccjd)_1
+      - 01(TG:@tccjd)
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 01(TG:@tccjd)_2
+      - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_2
       - 03(TG:@tccjd)_2
       - 04TG:@tccjd)
-      - 香港（2026.1.21更新）
       - 韓國
-      - 美國
-      - 美国
       - 德國
       - 韓國_1
-      - 01(TG:@tccjd)_3
+      - 01(TG:@tccjd)_2
       - 02(TG:@tccjd)_3
       - 奧地利
       - 德國_1
-      - 美國_1
+      - 美國
       - 德國_2
       - 03(TG:@tccjd)_3
       - 德國_3
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_2
       - 德國_4
       - 德國_5
       - 奧地利_1
       - 德國_6
-      - 香港
       - 06(TG:@tccjd)_1
       - 德國_7
       - 07(TG:@tccjd)_1
@@ -2007,9 +1970,9 @@ proxy-groups:
       - 德國_8
       - 德國_9
       - 09(TG:@tccjd)
-      - 美國_2
+      - 美國_1
       - 10(TG:@tccjd)
-      - 美國_3
+      - 美國_2
       - 11(TG:@tccjd)
       - 拉脱维亞
       - 土耳其
@@ -2018,27 +1981,27 @@ proxy-groups:
       - 德國_10
       - 荷蘭
       - 荷蘭_1
+      - 美國_3
       - 美國_4
-      - 美國_5
       - 俄羅斯
       - 12(TG:@tccjd)
       - 波蘭
       - 拉脫維亞
+      - 美國_5
       - 美國_6
       - 美國_7
       - 美國_8
       - 美國_9
-      - 美國_10
       - 俄羅斯_1
+      - 美國_10
       - 美國_11
       - 美國_12
-      - 美國_13
       - 波蘭_1
-      - 美國_14
+      - 美國_13
       - 波蘭_2
       - 波蘭_3
       - 俄羅斯_2
-      - 美國_15
+      - 美國_14
       - 波蘭_4
       - 美国_1
       - 芬蘭
@@ -2055,7 +2018,7 @@ proxy-groups:
       - 英國_1
       - 哈薩克
       - 伊朗
-      - 美國_16
+      - 美國_15
       - 德國_13
       - 美国_3
       - 日本
@@ -2064,11 +2027,15 @@ proxy-groups:
       - 俄羅斯_7
       - 哈薩克_1
       - 英國_2
-      - 美國_17
+      - 美國_16
       - 俄羅斯_8
       - 17(TG:@tccjd)
       - 伊朗_1
       - 俄羅斯_9
+      - 01(TG:@tccjd)_3
+      - _CN_中国
+      - 香港（2026.1.21更新）
+      - 香港
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2091,52 +2058,46 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 德国 | DEU
       - 🇭🇰 香港(TG:@tccjd)
-      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 02(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_3
       - 🇺🇸 US美国(TG:@tccjd)_4
-      - _CN_中国
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
+      - 美国
+      - 🇩🇪 德国 | DEU
+      - 02(TG:@tccjd)
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
-      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 01(TG:@tccjd)_1
+      - 01(TG:@tccjd)
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
-      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 01(TG:@tccjd)_2
+      - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_2
       - 03(TG:@tccjd)_2
       - 04TG:@tccjd)
-      - 香港（2026.1.21更新）
       - 韓國
-      - 美國
-      - 美国
       - 德國
       - 韓國_1
-      - 01(TG:@tccjd)_3
+      - 01(TG:@tccjd)_2
       - 02(TG:@tccjd)_3
       - 奧地利
       - 德國_1
-      - 美國_1
+      - 美國
       - 德國_2
       - 03(TG:@tccjd)_3
       - 德國_3
-      - 04(TG:@tccjd)_2
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_2
       - 德國_4
       - 德國_5
       - 奧地利_1
       - 德國_6
-      - 香港
       - 06(TG:@tccjd)_1
       - 德國_7
       - 07(TG:@tccjd)_1
@@ -2144,9 +2105,9 @@ proxy-groups:
       - 德國_8
       - 德國_9
       - 09(TG:@tccjd)
-      - 美國_2
+      - 美國_1
       - 10(TG:@tccjd)
-      - 美國_3
+      - 美國_2
       - 11(TG:@tccjd)
       - 拉脱维亞
       - 土耳其
@@ -2155,27 +2116,27 @@ proxy-groups:
       - 德國_10
       - 荷蘭
       - 荷蘭_1
+      - 美國_3
       - 美國_4
-      - 美國_5
       - 俄羅斯
       - 12(TG:@tccjd)
       - 波蘭
       - 拉脫維亞
+      - 美國_5
       - 美國_6
       - 美國_7
       - 美國_8
       - 美國_9
-      - 美國_10
       - 俄羅斯_1
+      - 美國_10
       - 美國_11
       - 美國_12
-      - 美國_13
       - 波蘭_1
-      - 美國_14
+      - 美國_13
       - 波蘭_2
       - 波蘭_3
       - 俄羅斯_2
-      - 美國_15
+      - 美國_14
       - 波蘭_4
       - 美国_1
       - 芬蘭
@@ -2192,7 +2153,7 @@ proxy-groups:
       - 英國_1
       - 哈薩克
       - 伊朗
-      - 美國_16
+      - 美國_15
       - 德國_13
       - 美国_3
       - 日本
@@ -2201,11 +2162,15 @@ proxy-groups:
       - 俄羅斯_7
       - 哈薩克_1
       - 英國_2
-      - 美國_17
+      - 美國_16
       - 俄羅斯_8
       - 17(TG:@tccjd)
       - 伊朗_1
       - 俄羅斯_9
+      - 01(TG:@tccjd)_3
+      - _CN_中国
+      - 香港（2026.1.21更新）
+      - 香港
 rule-providers:
   LocalAreaNetwork:
     type: http
