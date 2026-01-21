@@ -46,25 +46,38 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 🇩🇪 德国 | DEU
+    type: vless
+    server: api.dark-coffe.com
+    port: 8443
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    network: ws
+    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+  - name: 🇭🇰 香港(TG:@tccjd)
+    type: vmess
+    server: 47.242.192.233
+    port: 52190
+    uuid: 98689724-deb2-4a3d-b83b-602221995baf
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 01(TG:@tccjd)
+    type: trojan
+    server: cf.090227.xyz
+    port: 443
+    password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+    sni: _acme-challenge.2go.cloudns.be
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
   - name: 🇺🇸 US美国(TG:@tccjd)
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇫🇷 FR法国(TG:@tccjd)
     type: vmess
     server: 82.198.246.97
     port: 180
@@ -91,52 +104,21 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
+  - name: 02(TG:@tccjd)
+    type: vless
+    server: octopusss5.info
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
   - name: 🇺🇸 US美国(TG:@tccjd)_3
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇫🇷 FR法国(TG:@tccjd)_1
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_1
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_2
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_3
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_4
     type: vmess
     server: 82.198.246.97
     port: 180
@@ -154,267 +136,223 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_5
+  - name: _CN_中国
+    type: trojan
+    server: 58.152.18.124
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: 58.152.18.124
+    skip-cert-verify: true
+    tls: true
+  - name: 03(TG:@tccjd)
+    type: vless
+    server: 45.82.255.32
+    port: 4443
+    uuid: 3f688b2a-373a-4be1-846d-b159404b73b2
+    servername: github.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+      short-id: aa7e96542880027a
+  - name: 04(TG:@tccjd)
+    type: vless
+    server: 82.97.252.100
+    port: 4443
+    uuid: 3f688b2a-373a-4be1-846d-b159404b73b2
+    servername: github.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+      short-id: aa7e96542880027a
+  - name: 🇨🇳 广东省湛江市(TG:@tccjd)
     type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    server: oss-4.qqa678.com
+    port: 47081
+    uuid: 7d3b2ea8-337b-4979-948f-bc1c1e72b6d5
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_6
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
+  - name: 05(TG:@tccjd)
+    type: vless
+    server: 45.82.246.114
+    port: 4443
+    uuid: 3f688b2a-373a-4be1-846d-b159404b73b2
+    servername: github.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+      short-id: aa7e96542880027a
+  - name: 01(TG:@tccjd)_1
+    type: vless
+    server: 104.19.73.126
+    port: 2053
+    uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+    network: ws
+    servername: sni.111000.dynv6.net
+    tls: true
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 02(TG:@tccjd)_1
+    type: vless
+    server: 25.129.197.138
+    port: 2096
+    uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+    network: ws
+    servername: sni.111000.dns.army
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.dns.army
+  - name: 03(TG:@tccjd)_1
+    type: vless
+    server: 25.129.197.138
+    port: 2096
+    uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+    network: ws
+    servername: sni.111000.v6.rocks
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 04(TG:@tccjd)_1
+    type: vless
+    server: 181.214.99.116
+    port: 443
+    uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
+    network: http
+    servername: statue.lnmarketplace.net
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path: /statue
+      headers:
+        Host: statue.lnmarketplace.net
+  - name: 05(TG:@tccjd)_1
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 6abc75eb-b58b-4e28-af59-20f41bdf7a2a
+    network: ws
+    servername: last.ownlink.pro
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /restart
+      headers:
+        Host: last.ownlink.pro
+  - name: 06(TG:@tccjd)
+    type: vless
+    server: lord.kokopit.info
+    port: 2096
+    uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
+    network: ws
+    servername: 18XaCgNj9C.bAsErTy.InFo
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 18XaCgNj9C.bAsErTy.InFo
+  - name: 07(TG:@tccjd)
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 20d41fce-f96c-4f0e-9111-5c911369f4e5
+    network: ws
+    servername: cell.parhamm1.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: cellf.parhamm1.ir
+  - name: 01(TG:@tccjd)_2
+    type: vless
+    server: rohin.ns.cloudflare.com
+    port: 443
+    uuid: c9b0932d-8d1c-43c5-b64b-e9a74719c76d
+    network: ws
+    servername: forreest.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /hsdgsws
+      headers:
+        Host: forreest.info
+  - name: 02(TG:@tccjd)_2
+    type: vless
+    server: 77.238.231.179
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: all.aniuge.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: all.aniuge.qzz.io
+  - name: 03(TG:@tccjd)_2
+    type: vless
+    server: 194.117.64.92
+    port: 443
+    uuid: cb418edc-f6e1-4c79-a81f-946eb958f0ab
+    servername: www.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: fW43MXDdfHEKYdq8-YWvTsl4-h-2BFE69W1ZGuLg6lI
+      short-id: 86473f2d52494ed4
+  - name: 04TG:@tccjd)
+    type: vless
+    server: 194.117.64.92
+    port: 443
+    uuid: 86c408d1-8bca-424e-8c66-0be5c9b776a6
+    servername: www.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: fW43MXDdfHEKYdq8-YWvTsl4-h-2BFE69W1ZGuLg6lI
+      short-id: 86473f2d52494ed4
+  - name: 香港（2026.1.21更新）
+    type: trojan
+    server: 58.152.18.124
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: 韓國
+    type: vless
+    server: 222.102.51.111
+    port: 51698
+    uuid: 5d42cfef-0556-4f0c-bfb7-161aef500ab5
+    network: grpc
+    servername: lenovoglobal.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PPZbDAYSwCYnPCF8BxguTFfAAZTnLnzpsHePCkGZYxo
+      short-id: "34"
+  - name: 美國
+    type: trojan
+    server: 205.185.115.223
+    port: 19258
+    password: iWnFtzMiac
+    sni: cloudflare.com
     skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_7
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_8
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_9
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_5
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_10
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_6
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_7
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_11
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_8
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_12
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_13
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_9
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_10
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_11
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_14
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_12
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_15
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_16
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_17
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_13
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_18
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_19
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_20
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇺🇸 US美国(TG:@tccjd)_14
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_21
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 🇬🇧 GB英国(TG:@tccjd)_22
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: ⚡美国
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
+    tls: true
   - name: 美国
     type: vmess
     server: 82.198.246.97
@@ -424,190 +362,9 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - name: 美国_1
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: 01(TG:@tccjd)
-    type: ss
-    server: beesyar.org
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: 4a2rfixophdjffa8KVA4Aa
-  - name: 香港
-    type: ss
-    server: hk11.network-cdn-gw-yd.net
-    port: 47711
-    cipher: chacha20-ietf-poly1305
-    password: e8911ffe-932a-43f6-b9e8-b59d08e19937
-  - name: 🇺🇸 美国 | USA
-    type: vless
-    server: 104.18.185.26
-    port: 443
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    network: ws
-    servername: l.ayovo.netlib.re
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: l.ayovo.netlib.re
-  - name: 🇩🇪 德国 | DEU
-    type: vless
-    server: 5.10.214.5
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 02(TG:@tccjd)
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 03(TG:@tccjd)
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 04(TG:@tccjd)
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 05(TG:@tccjd)
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-  - name: 06(TG:@tccjd)
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 01(TG:@tccjd)_1
-    type: vless
-    server: 188.114.98.224
-    port: 443
-    uuid: 95fd8ed6-0c48-41be-ae26-dfea82fa67ad
-    network: ws
-    servername: hetzner.rahedarro.com
-    tls: true
-    ws-opts:
-      path: /dar
-      headers:
-        Host: hetzner.rahedarro.com
-  - name: 02(TG:@tccjd)_1
-    type: vless
-    server: 83.219.97.166
-    port: 30297
-    uuid: f3b47775-edd2-42f8-94ac-9d315ae5463d
-    servername: google.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: j07H9kYduVQkwjQw-7PW0um-0FUeCNe9J70oLv8I03I
-      short-id: 626617b8f5c8
-  - name: 03(TG:@tccjd)_1
-    type: vless
-    server: japan.geodema.network
-    port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 05(TG:@tccjd)_1
-    type: vless
-    server: ip-range.web3.name.ng
-    port: 8443
-    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
-    network: ws
-    servername: hzr46.sepiol.name.ng
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: hzr46.sepiol.name.ng
-  - name: 07(TG:@tccjd)
-    type: vless
-    server: 217.16.16.251
-    port: 8443
-    uuid: d63129ab-04a5-4797-8a70-84f4ab610ca9
-    servername: eh.vk.vom
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: bPN2gQ-96uG3DZONnduotvwViMDsUsN2XZnRkzXcMxk
-      short-id: edc87d796657fbe5
-  - name: 08(TG:@tccjd)
-    type: vless
-    server: 91.243.82.82
-    port: 443
-    uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-    servername: khabarovsk.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
   - name: 德國
     type: vless
-    server: 5.78.72.175
+    server: 37.120.164.43
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -619,9 +376,63 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國
+  - name: 韓國_1
     type: vless
-    server: 5.78.72.175
+    server: 121.154.180.50
+    port: 51698
+    uuid: 5d42cfef-0556-4f0c-bfb7-161aef500ab5
+    network: grpc
+    servername: lenovoglobal.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PPZbDAYSwCYnPCF8BxguTFfAAZTnLnzpsHePCkGZYxo
+      short-id: "34"
+  - name: 01(TG:@tccjd)_3
+    type: vless
+    server: octopusss5.info
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+  - name: 02(TG:@tccjd)_3
+    type: vless
+    server: octopusss5.info
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+  - name: 奧地利
+    type: vless
+    server: 152.53.48.224
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+  - name: 德國_1
+    type: vless
+    server: 152.53.51.24
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -635,18 +446,7 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 美國_1
     type: vless
-    server: bastion.h3.speed.cloudflare.com
-    port: 80
-    uuid: 👉👉BanV2ray👈👈
-    network: ws
-    tls: false
-    ws-opts:
-      path: /www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.bunny.net-www.speedtest.net-www.bunny.net-www.speedtest.net?ed=32143
-      headers:
-        Host: visvuev-272526281716252527717252.poshakhowdy.ir.
-  - name: 德國_1
-    type: vless
-    server: 5.78.57.125
+    server: octopusss5.info
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -660,7 +460,7 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 德國_2
     type: vless
-    server: 5.78.135.163
+    server: 37.120.164.120
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -672,46 +472,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 01(TG:@tccjd)_2
-    type: vless
-    server: octopusss5.info
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 美國_2
-    type: vless
-    server: bastion.h3.speed.cloudflare.com
-    port: 80
-    uuid: 👉👉BanV2ray👈👈
-    network: ws
-    tls: false
-    ws-opts:
-      path: /www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.bunny.net-www.speedtest.net-www.bunny.net-www.speedtest.net?ed=32143
-      headers:
-        Host: visvuev-272526281716252527717252.poshakhowdy.ir.
-  - name: 11(TG:@tccjd)
-    type: vless
-    server: octopusss5.info
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 12(TG:@tccjd)
+  - name: 03(TG:@tccjd)_3
     type: vless
     server: octopusss5.info
     port: 22955
@@ -727,6 +488,20 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 德國_3
     type: vless
+    server: 5.45.109.158
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+  - name: 04(TG:@tccjd)_2
+    type: vless
     server: octopusss5.info
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
@@ -739,9 +514,9 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_3
+  - name: 05(TG:@tccjd)_2
     type: vless
-    server: 5.78.57.125
+    server: octopusss5.info
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -755,21 +530,7 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 德國_4
     type: vless
-    server: 152.53.51.24
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 15(TG:@tccjd)
-    type: vless
-    server: picassooo.info
+    server: 37.120.175.246
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -783,7 +544,7 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 德國_5
     type: vless
-    server: 178.156.215.143
+    server: dfg.octopusss.net
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -795,9 +556,9 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 14(TG:@tccjd)
+  - name: 奧地利_1
     type: vless
-    server: dfg.octopusss.net
+    server: 152.53.48.237
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -811,7 +572,26 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 德國_6
     type: vless
-    server: dfg.octopusss.net
+    server: 159.195.26.28
+    port: 443
+    uuid: 84f66368-8a37-468e-ae95-5622255fd4db
+    servername: live.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+  - name: 香港
+    type: trojan
+    server: 58.152.18.124
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: 58.152.18.124
+    skip-cert-verify: true
+    tls: true
+  - name: 06(TG:@tccjd)_1
+    type: vless
+    server: octopusss5.info
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -825,7 +605,7 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 德國_7
     type: vless
-    server: 5.78.54.69
+    server: octopusss5.info
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -837,18 +617,7 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_4
-    type: vless
-    server: 79.110.63.79
-    port: 2255
-    uuid: 02b320ce-09f8-4cb5-9c46-9024f5585881
-    servername: radar.arvancloud.ir
-    tls: true
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: Cs7yLk8XXPksSjf6GB1JFYyFICqWVL3nL-10K7jQ7xc
-      short-id: 983c9303725c67
-  - name: 13(TG:@tccjd)
+  - name: 07(TG:@tccjd)_1
     type: vless
     server: octopusss5.info
     port: 22955
@@ -862,63 +631,9 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_5
-    type: vless
-    server: dfg.octopusss.net
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 美國_6
-    type: vless
-    server: 178.156.215.152
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 美國_7
+  - name: 08(TG:@tccjd)
     type: vless
     server: octopusss5.info
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 拉脫維亞
-    type: vless
-    server: lv.fasti.win
-    port: 443
-    uuid: 0d93b787-b66b-4696-a036-a0f549764f69
-    servername: lv.fasti.win
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY
-      short-id: 0a50b13e8fa3a7ef
-  - name: 02(TG:@tccjd)_2
-    type: vless
-    server: dfg.octopusss.net
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -932,21 +647,19 @@ proxies:
       short-id: 6ba85179e30d4fc2
   - name: 德國_8
     type: vless
-    server: 5.45.109.158
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
+    server: 78.153.139.68
+    port: 8443
+    uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
+    servername: images.apple.com
     tls: true
+    flow: xtls-rprx-vision
     client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
     reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 美國_8
+      public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+      short-id: 58c512b4422e2517
+  - name: 德國_9
     type: vless
-    server: hazmkardannn.info
+    server: 37.120.172.115
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -958,7 +671,71 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
-  - name: 美國_9
+  - name: 09(TG:@tccjd)
+    type: vless
+    server: dfg.octopusss.net
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+  - name: 美國_2
+    type: vless
+    server: 46.183.217.234
+    port: 443
+    uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+    servername: rblx.fasti.win
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY
+      short-id: 0a50b13e8fa3a7ef
+  - name: 10(TG:@tccjd)
+    type: vless
+    server: 144.31.119.84
+    port: 443
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    servername: st.ozone.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
+      short-id: 00684d2eae2cdd16
+  - name: 美國_3
+    type: vless
+    server: 144.31.19.193
+    port: 443
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    servername: st.ozone.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
+      short-id: 00684d2eae2cdd16
+  - name: 11(TG:@tccjd)
+    type: vless
+    server: dfg.octopusss.net
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+  - name: 拉脱维亞
     type: vless
     server: rblx.fasti.win
     port: 443
@@ -970,987 +747,292 @@ proxies:
     reality-opts:
       public-key: 9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY
       short-id: 0a50b13e8fa3a7ef
-  - name: 奧地利
+  - name: 土耳其
     type: vless
-    server: 152.53.49.144
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 德國_9
-    type: vless
-    server: 152.53.51.24
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 美國_10
-    type: vless
-    server: 178.156.215.152
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 美國_11
-    type: vless
-    server: 5.161.142.186
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 03(TG:@tccjd)_2
-    type: vless
-    server: picassooo.info
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 日本
-    type: vless
-    server: japan.geodema.network
-    port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 荷蘭
-    type: vless
-    server: free1.barayekhudam.ir
-    port: 2255
-    uuid: 02b320ce-09f8-4cb5-9c46-9024f5585881
-    servername: radar.arvancloud.ir
+    server: turkiye.torprospeed.ir
+    port: 587
+    uuid: 65a1e22c-d37e-4b92-b6ca-1d09dcd1d441
+    servername: excoino.com
     tls: true
     client-fingerprint: firefox
     reality-opts:
-      public-key: Cs7yLk8XXPksSjf6GB1JFYyFICqWVL3nL-10K7jQ7xc
-      short-id: 983c9303725c67
-  - name: 美國_12
+      public-key: HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc
+      short-id: 916e8258c4a01b02
+  - name: 丹麥
     type: vless
-    server: 161.248.63.15
-    port: 41579
-    uuid: f64cdd9d-57c3-45b2-e999-c46006719646
-    servername: www.icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3W_eKpL975AF7oI-mkgVtf2iK954luxwaT6C41re0RI
-      short-id: 2efb6c97c1
-  - name: 荷蘭_1
-    type: vless
-    server: 45.144.52.37
+    server: 159.195.26.28
     port: 443
-    uuid: d684cb56-e4b8-4453-8a7b-a1ad8c81935a
-    servername: fi.reality.tv123.ru
+    uuid: 84f66368-8a37-468e-ae95-5622255fd4db
+    servername: live.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  - name: 斯洛維尼亞
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+  - name: 奧地利_2
     type: vless
-    server: 45.144.52.37
-    port: 443
-    uuid: d684cb56-e4b8-4453-8a7b-a1ad8c81935a
-    servername: fi.reality.tv123.ru
+    server: 152.53.50.126
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    network: grpc
+    servername: one-piece.com
     tls: true
-    flow: xtls-rprx-vision
     client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
     reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  - name: 美國_13
-    type: vless
-    server: 146.75.119.82
-    port: 80
-    uuid: 74542945-0d84-4797-a56e-e7f31b84c5be
-    network: ws
-    tls: false
-    ws-opts:
-      path: /ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
-      headers:
-        Host: welcomtofreeboarders.com
-  - name: 荷蘭_2
-    type: vless
-    server: free1.barayekhudam.ir
-    port: 2255
-    uuid: 02b320ce-09f8-4cb5-9c46-9024f5585881
-    servername: radar.arvancloud.ir
-    tls: true
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: Cs7yLk8XXPksSjf6GB1JFYyFICqWVL3nL-10K7jQ7xc
-      short-id: 983c9303725c67
-  - name: 🇺🇸_US_美国_3
-    type: vless
-    server: 142.91.106.176
-    port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
   - name: 德國_10
     type: vless
-    server: 146.75.119.82
-    port: 80
-    uuid: 74542945-0d84-4797-a56e-e7f31b84c5be
-    network: ws
-    tls: false
-    ws-opts:
-      path: /ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
-      headers:
-        Host: welcomtofreeboarders.com
-  - name: 美國_14
-    type: vless
-    server: 142.91.106.176
+    server: desrv.fasti.win
     port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
+    uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+    servername: desrv.fasti.win
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 日本_1
+      public-key: THd83pRAiz68QKKNCzCdj3hvVq9Wy7NIFeIk1WjRJ1c
+      short-id: 15cdd4ff88310cf0
+  - name: 荷蘭
     type: vless
-    server: japan.geodema.network
-    port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
+    server: nl11.odavpn.online
+    port: 56824
+    uuid: af1a9622-5deb-480c-8539-d8763f59e012
+    servername: ya.ru
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 日本_2
+      public-key: Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM
+      short-id: aabbccdd
+  - name: 荷蘭_1
     type: vless
-    server: japan.geodema.network
-    port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 美國_15
-    type: vless
-    server: 142.91.106.176
-    port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
+    server: nl11.odavpn.online
+    port: 56824
+    uuid: af1a9622-5deb-480c-8539-d8763f59e012
+    servername: ya.ru
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 美國_16
+      public-key: Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM
+      short-id: aabbccdd
+  - name: 美國_4
     type: vless
-    server: 5.78.135.163
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    server: 185.94.29.250
+    port: 443
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
+      short-id: 00684d2eae2cdd16
+  - name: 美國_5
+    type: vless
+    server: plcdn1.suio.me
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn1.suio.me
+    tls: true
+  - name: 俄羅斯
+    type: vless
+    server: 185.221.222.206
+    port: 56824
+    uuid: af1a9622-5deb-480c-8539-d8763f59e012
+    servername: ya.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM
+      short-id: aabbccdd
+  - name: 12(TG:@tccjd)
+    type: vless
+    server: 213.176.73.206
+    port: 2083
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
     network: grpc
-    servername: one-piece.com
+    servername: apple.com
     tls: true
     client-fingerprint: chrome
     grpc-opts:
-      grpc-service-name: grpc
+      grpc-service-name: UpdateService
     reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 04(TG:@tccjd)_1
+      public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+      short-id: 6da16b1335651b38
+  - name: 波蘭
     type: vless
-    server: japan.geodema.network
+    server: 144.31.1.127
     port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn13.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 拉脫維亞
+    type: vless
+    server: pl.connect-iskra.cv
+    port: 8443
+    uuid: 535235d3-5088-4746-8722-8720e820c043
+    servername: powodzenia.xyz
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: qq
     reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: DE
+      public-key: UeBcV1nVO3N5d8Ng15MviC_hCnFO3zc0vrB5ykUaGRE
+      short-id: 93ac39ad3731f745
+  - name: 美國_6
     type: vless
-    server: 5.10.214.5
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_11
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 德國_12
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 俄羅斯
-    type: vless
-    server: 45.139.26.152
-    port: 7443
-    uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
-    servername: eh.vk.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
-      short-id: fd88bd27db4cc661
-  - name: 🇩🇪_DE_德国
-    type: vless
-    server: api.dark-coffe.com
+    server: ficdn19.suio.me
     port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: ficdn19.suio.me
     tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 荷蘭_3
+  - name: 美國_7
     type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /
-  - name: 德國_13
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_14
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 05(TG:@tccjd)_2
-    type: vless
-    server: api.dark-coffe.com
+    server: plcdn14.suio.me
     port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn14.suio.me
     tls: true
     client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_15
+  - name: 美國_8
     type: vless
-    server: api.dark-coffe.com
+    server: 144.31.1.127
     port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn13.suio.me
     tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_16
+  - name: 美國_9
     type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_17
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 荷蘭_4
-    type: vless
-    server: 45.139.26.152
-    port: 7443
-    uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
-    servername: eh.vk.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: random
-    reality-opts:
-      public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
-      short-id: fd88bd27db4cc661
-  - name: 06(TG:@tccjd)_1
-    type: vless
-    server: 45.139.26.152
-    port: 7443
-    uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
-    servername: eh.vk.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: random
-    reality-opts:
-      public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
-      short-id: fd88bd27db4cc661
-  - name: 德國_18
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_19
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 🇳🇱_NL_荷兰
-    type: vless
-    server: 45.139.26.152
-    port: 7443
-    uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
-    servername: eh.vk.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: random
-    reality-opts:
-      public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
-      short-id: fd88bd27db4cc661
-  - name: 德國_20
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-  - name: 德國_21
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 荷蘭_5
-    type: vless
-    server: api.dark-coffe.com
+    server: 144.31.1.167
     port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn14.suio.me
     tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-  - name: 07(TG:@tccjd)_1
+  - name: 美國_10
     type: vless
-    server: japan.geodema.network
+    server: 144.31.1.167
     port: 443
-    uuid: a11ab9c5-4155-430b-9efc-7a7122531382
-    servername: japan.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: qq
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 德國_22
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn14.suio.me
     tls: true
     client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 德國_23
-    type: vless
-    server: 5.10.214.5
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_24
-    type: vless
-    server: 5.10.214.5
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 荷蘭_6
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 荷蘭_7
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_25
-    type: vless
-    server: 5.10.214.5
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_26
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 荷蘭_8
-    type: vless
-    server: 5.10.214.0
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-  - name: 德國_27
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-  - name: 德國_28
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /
-  - name: 德國_29
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_30
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-  - name: 德國_31
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 荷蘭_9
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 荷蘭_10
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 荷蘭_11
-    type: vless
-    server: 5.10.214.0
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 荷蘭_12
-    type: vless
-    server: 5.10.214.0
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_32
-    type: vless
-    server: 5.10.214.5
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_33
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 荷蘭_13
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 荷蘭_14
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-  - name: 德國_34
-    type: vless
-    server: 5.10.214.0
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_35
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-  - name: 德國_36
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 德國_37
-    type: vless
-    server: 5.10.214.0
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_38
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-  - name: 德國_39
-    type: vless
-    server: api.dark-coffe.com
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-  - name: 德國_40
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_41
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_42
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_43
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 荷蘭_15
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_44
-    type: vless
-    server: api.dark-coffe.com
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.InFo
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 🇩🇪_DE_德国_1
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 德國_45
-    type: vless
-    server: 5.10.214.5
-    port: 2087
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  - name: 德國_46
-    type: vless
-    server: api.dark-coffe.com
-    port: 2096
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
-  - name: 德國_47
-    type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-    tls: true
-    ws-opts:
-      path: /
   - name: 俄羅斯_1
     type: vless
-    server: 158.160.135.161
+    server: 37.18.15.139
     port: 443
-    uuid: d684cb56-e4b8-4453-8a7b-a1ad8c81935a
-    servername: cdnv-img.perekrestok.ru
+    uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
+    servername: max.ru
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  - name: 荷蘭_16
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 4a3ad88ff867a295
+  - name: 美國_11
     type: vless
-    server: api.dark-coffe.com
-    port: 8443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+    server: plcdn5.suio.me
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn5.suio.me
     tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
-  - name: 美国_2
+    client-fingerprint: chrome
+  - name: 美國_12
     type: vless
-    server: ip-range.web3.name.ng
-    port: 8443
-    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
-    network: ws
-    servername: hzr50.sepiol.name.ng
+    server: 144.31.0.228
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn5.suio.me
     tls: true
-    client-fingerprint: firefox
-    ws-opts:
-      path: /
-  - name: 美国_3
+    client-fingerprint: chrome
+  - name: 美國_13
+    type: vless
+    server: plcdn20.suio.me
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn20.suio.me
+    tls: true
+  - name: 波蘭_1
+    type: vless
+    server: 144.31.90.215
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: ficdn19.suio.me
+    tls: true
+  - name: 美國_14
+    type: vless
+    server: 144.31.0.228
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn5.suio.me
+    tls: true
+  - name: 波蘭_2
+    type: vless
+    server: plcdn14.suio.me
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn14.suio.me
+    tls: true
+  - name: 波蘭_3
+    type: vless
+    server: 144.31.0.64
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn1.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 俄羅斯_2
+    type: vless
+    server: 217.12.40.76
+    port: 443
+    uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
+    servername: sun9-38.userapi.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 048fe5c8be4bb687
+  - name: 美國_15
+    type: vless
+    server: 144.31.0.64
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn1.suio.me
+    tls: true
+  - name: 波蘭_4
+    type: vless
+    server: plcdn20.suio.me
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: plcdn20.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 美国_1
+    type: vless
+    server: 51.250.43.188
+    port: 51191
+    uuid: 62770d79-dc4d-07d0-b01c-ea30399725aa
+    servername: ads.x5.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+      short-id: d8c6b58bcbb0c323
+  - name: 芬蘭
+    type: vless
+    server: 144.31.90.215
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    servername: ficdn19.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 德國_11
     type: vless
     server: 178.17.53.28
     port: 47539
@@ -1961,205 +1043,209 @@ proxies:
     reality-opts:
       public-key: uapzi5mhLkADHuak0eXEKq9vIl2A8IGrMhjdIG-tn3U
       short-id: 82a55f31981ea6be
-  - name: 俄羅斯_2
+  - name: 13(TG:@tccjd)
     type: vless
-    server: 158.160.135.161
+    server: 51.250.38.137
+    port: 4443
+    uuid: 71031aa1-067e-425e-97f5-37875f838a10
+    servername: eh.vk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 2W9bsI7dX2ryZNdv_GLh3YuO2ynFGsdu3Iz3fgWU5CQ
+      short-id: cee8
+  - name: 14(TG:@tccjd)
+    type: vless
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
     port: 443
-    uuid: d684cb56-e4b8-4453-8a7b-a1ad8c81935a
-    servername: cdnv-img.perekrestok.ru
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    servername: i2pd.website
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  - name: 荷蘭_17
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+  - name: 美国_2
     type: vless
-    server: 79.110.63.79
-    port: 2255
-    uuid: 02b320ce-09f8-4cb5-9c46-9024f5585881
-    servername: radar.arvancloud.ir
-    tls: true
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: Cs7yLk8XXPksSjf6GB1JFYyFICqWVL3nL-10K7jQ7xc
-      short-id: 983c9303725c67
-  - name: 美國_17
-    type: vless
-    server: ip-range.web3.name.ng
-    port: 8443
-    uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
-    network: ws
-    servername: hzr50.sepiol.name.ng
-    tls: true
-    client-fingerprint: firefox
-    ws-opts:
-      path: /
-  - name: 荷蘭_18
-    type: vless
-    server: 185.239.50.16
-    port: 443
-    uuid: d7af1bfd-3dea-4a46-9b54-524462f6645b
-    servername: free.dlntch.ru
+    server: 51.250.41.54
+    port: 47051
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    servername: api.security.max.ru
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: Ir8aVlMrWZv9xjSbcYXdZJ7F6BaNNNz0rtrX7SgzF1w
-      short-id: 03f19541765dff24
-  - name: 荷蘭_19
-    type: vless
-    server: 5.10.214.5
-    port: 443
-    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-    network: ws
-    servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 英國
-    type: vless
-    server: 5.39.253.14
-    port: 443
-    uuid: db912ae7-7c2e-4777-897c-c49201e48cb9
-    servername: vk.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: VRZ6ZwSsMA9K5f7aoJ9KvQgQ4xoSaF792mcNbeh-TQ4
-      short-id: f12d61f4
-  - name: 法國
-    type: vless
-    server: 5.39.253.14
-    port: 443
-    uuid: db912ae7-7c2e-4777-897c-c49201e48cb9
-    servername: vk.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: VRZ6ZwSsMA9K5f7aoJ9KvQgQ4xoSaF792mcNbeh-TQ4
-      short-id: f12d61f4
+      public-key: y8f0sznQFqvSOPFcFvPcQFfXbz0Ag10ySB4A88OXMy0
+      short-id: effab4f3a0ed698e
   - name: 俄羅斯_3
     type: vless
-    server: 45.139.26.152
+    server: 51.250.42.73
+    port: 8443
+    uuid: 71031aa1-067e-425e-97f5-37875f838a10
+    servername: api-maps.yandex.ru
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8j9xx2O2pywcSy1EiGsMALbyzZXLs2EEbihC-E9E7nw
+      short-id: c2ec7bbfdbbad490
+  - name: 俄羅斯_4
+    type: vless
+    server: 51.250.16.8
     port: 7443
-    uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
+    uuid: 87d58e85-a4b3-4187-9fb7-6f0a73b21a6b
+    servername: ads.x5.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+      short-id: a20d3ed244c76426
+  - name: 俄羅斯_5
+    type: vless
+    server: 95.163.209.178
+    port: 2083
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    network: grpc
+    servername: ads.x5.ru
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: UpdateService
+    reality-opts:
+      public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+      short-id: 6da16b1335651b38
+  - name: 德國_12
+    type: vless
+    server: 51.250.33.87
+    port: 443
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
     servername: eh.vk.com
     tls: true
     flow: xtls-rprx-vision
-    client-fingerprint: random
-    reality-opts:
-      public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
-      short-id: fd88bd27db4cc661
-  - name: 美國_18
-    type: vless
-    server: sakura.bunnywaffle.org
-    port: 26978
-    uuid: 9042affd-0ad3-4014-adbc-e52f00891ea2
-    servername: tesla.com
-    tls: true
-    flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: n2w4hj7Q7wN6P21LSJJwIPitfYZbwWh5a2seJHH58SE
-      short-id: 28bf
-  - name: 俄羅斯_4
-    type: vless
-    server: 91.243.82.82
-    port: 443
-    uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-    servername: khabarovsk.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: 德國_48
-    type: vless
-    server: 152.53.49.144
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 美國_19
-    type: vless
-    server: 5.78.54.69
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 德國_49
-    type: vless
-    server: 5.45.109.158
-    port: 22955
-    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-    network: grpc
-    servername: one-piece.com
-    tls: true
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: grpc
-    reality-opts:
-      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-      short-id: 6ba85179e30d4fc2
-  - name: 俄羅斯_5
-    type: vless
-    server: khabarovsk.geodema.network
-    port: 443
-    uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-    servername: khabarovsk.geodema.network
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
+      public-key: Uwz6QjH6QTonKba4RVv35LNmhJLA6c2kxtI2nXRQWTg
+      short-id: 2c60d62e1d95c07a
   - name: 俄羅斯_6
+    type: vless
+    server: 178.154.202.184
+    port: 8443
+    uuid: 4fe214fb-048e-431f-b939-4518dc9df6a2
+    network: ws
+    servername: chat.speedload.ru
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /ws
+      headers:
+        Host: chat.speedload.ru
+  - name: 英國
+    type: vless
+    server: 25.129.197.138
+    port: 2096
+    uuid: 0e0bf934-1942-4379-9c98-5cd9aa93140a
+    network: ws
+    servername: speed1.best-cloud.ir
+    tls: true
+    ws-opts:
+      path: /?ed=2048
+  - name: 英國_1
+    type: vless
+    server: 25.129.197.138
+    port: 2096
+    uuid: 0e0bf934-1942-4379-9c98-5cd9aa93140a
+    network: ws
+    servername: speed1.best-cloud.ir
+    tls: true
+    ws-opts:
+      path: /
+  - name: 哈薩克
+    type: vless
+    server: 91.217.10.68
+    port: 443
+    uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+    servername: kz.fasti.win
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rmjxUM7tGXK1tCx9DN6LujbEflBHixsg8oTsVrdTrDM
+      short-id: a28842ab2911096b
+  - name: 伊朗
+    type: vless
+    server: uae.torprospeed.ir
+    port: 587
+    uuid: 65a1e22c-d37e-4b92-b6ca-1d09dcd1d441
+    servername: excoino.com
+    tls: true
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc
+      short-id: 916e8258c4a01b02
+  - name: 美國_16
+    type: vless
+    server: kz.fasti.win
+    port: 443
+    uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+    servername: kz.fasti.win
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rmjxUM7tGXK1tCx9DN6LujbEflBHixsg8oTsVrdTrDM
+      short-id: a28842ab2911096b
+  - name: 德國_13
     type: vless
     server: 95.174.92.156
     port: 443
     uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
-    servername: sun6-21.userapi.com
+    servername: carreta.ru
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
       public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-      short-id: c7e42004e5f024be
-  - name: 俄羅斯_7
+      short-id: 2f3e735aedc55aaf
+  - name: 美国_3
     type: vless
-    server: 176.109.104.107
+    server: 5.101.36.154
     port: 443
-    uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
-    servername: sun6-21.userapi.com
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    servername: apple.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-      short-id: c7e42004e5f024be
-  - name: 09(TG:@tccjd)
+      public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
+      short-id: 00684d2eae2cdd16
+  - name: 日本
     type: vless
-    server: octopusss5.info
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+    port: 443
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    servername: i2pd.website
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+  - name: 美国_4
+    type: vless
+    server: 5.101.36.152
+    port: 443
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
+      short-id: 00684d2eae2cdd16
+  - name: 16(TG:@tccjd)
+    type: vless
+    server: dfg.octopusss.net
     port: 22955
     uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
     network: grpc
@@ -2171,6 +1257,53 @@ proxies:
     reality-opts:
       public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
       short-id: 6ba85179e30d4fc2
+  - name: 俄羅斯_7
+    type: vless
+    server: 5.101.36.153
+    port: 443
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
+      short-id: 00684d2eae2cdd16
+  - name: 哈薩克_1
+    type: vless
+    server: 91.224.74.91
+    port: 443
+    uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+    servername: kz.fasti.win
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rmjxUM7tGXK1tCx9DN6LujbEflBHixsg8oTsVrdTrDM
+      short-id: a28842ab2911096b
+  - name: 英國_2
+    type: vless
+    server: 25.129.197.138
+    port: 2096
+    uuid: 0e0bf934-1942-4379-9c98-5cd9aa93140a
+    network: ws
+    servername: speed1.best-cloud.ir
+    tls: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: speed1.best-cloud.ir
+  - name: 美國_17
+    type: vless
+    server: www.speedtest.net
+    port: 80
+    uuid: be38fcfb-6bef-4bad-b0ec-3bfd0a8d6265
+    network: ws
+    tls: false
+    ws-opts:
+      path: /vless/?JoinBede--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY
+      headers:
+        Host: 3h-kAzakhStan1.09vPn.cOm.
   - name: 俄羅斯_8
     type: vless
     server: 176.109.104.107
@@ -2183,9 +1316,9 @@ proxies:
     reality-opts:
       public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
       short-id: c7e42004e5f024be
-  - name: 俄羅斯_9
+  - name: 17(TG:@tccjd)
     type: vless
-    server: 84.23.53.252
+    server: 176.109.104.107
     port: 443
     uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
     servername: sun6-21.userapi.com
@@ -2195,592 +1328,263 @@ proxies:
     reality-opts:
       public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
       short-id: c7e42004e5f024be
-  - name: 10(TG:@tccjd)
+  - name: 伊朗_1
     type: vless
-    server: khabarovsk.geodema.network
+    server: 85.133.204.131
+    port: 2024
+    uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
+    tls: false
+  - name: 俄羅斯_9
+    type: vless
+    server: 95.174.92.156
     port: 443
-    uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-    servername: khabarovsk.geodema.network
+    uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
+    servername: sun6-21.userapi.com
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-      short-id: 1ed136481e0ede74
-  - name: _CN_中国
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By DukeMehdi] b2n.ir/v2ray-configs | 402 "
-    skip-cert-verify: true
-    tls: true
-  - name: 🇯🇵 JP日本(TG:@tccjd)
-    type: trojan
-    server: tuntro003.instconn.com
-    port: 443
-    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
-    sni: login-staticjpc.jasmine-douyin.top
-    skip-cert-verify: false
-    tls: true
-  - name: 🇯🇵JP日本2
-    type: trojan
-    server: tuntro003.instconn.com
-    port: 443
-    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
-    sni: login-staticjpc.jasmine-douyin.top
-    skip-cert-verify: false
-    tls: true
-  - name: 🇭🇰 香港 (TG:@tccjd)
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By EbraSha] b2n.io/v2ray-configs | 160 "
-    skip-cert-verify: true
-    tls: true
-  - name: 🇭🇰 香港4|@ripaojiedian
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: 🇭🇰 香港5|@ripaojiedian
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: 🇭🇰 香港4|@stairnode
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: 香港（2026.1.12更新）
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By DukeMehdi] trojan-HK "
-    skip-cert-verify: true
-    tls: true
-  - name: 香港_1
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: 加拿大
-    type: trojan
-    server: tuntro006.instconn.com
-    port: 443
-    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
-    sni: torontorm1.686911.xyz
-    skip-cert-verify: true
-    tls: true
-  - name: 香港_2
-    type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: "       [By EbraSha] trojan-HK "
-    skip-cert-verify: true
-    tls: true
-  - name: 08(TG:@tccjd)_1
-    type: trojan
-    server: 58.152.25.220
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
-  - name: 🇩🇪 德国 | DEU_1
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    sni: dash.cloudflare.com
-    skip-cert-verify: true
-  - name: 德國_50
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 德國_51
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: 德國_52
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: 德國_53
-    type: hysteria2
-    server: 89.144.35.25
-    port: 33550
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 拉脫維亞_1
-    type: hysteria2
-    server: channel4.saghetalaie.homes
-    port: 46914
-    password: yhqy5AHofQq
-    sni: www.google.com
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: "&O#28YB5qK!5t#U"
-  - name: 拉脫維亞_2
-    type: hysteria2
-    server: channel4.saghetalaie.homes
-    port: 46914
-    password: yhqy5AHofQq
-    sni: www.google.com
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: "&O#28YB5qK!5t#U"
+      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+      short-id: c7e42004e5f024be
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港(TG:@tccjd)
+      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
-      - 🇬🇧 GB英国(TG:@tccjd)
-      - 🇫🇷 FR法国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 🇺🇸 US美国(TG:@tccjd)_3
-      - 🇫🇷 FR法国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_2
-      - 🇬🇧 GB英国(TG:@tccjd)_3
-      - 🇬🇧 GB英国(TG:@tccjd)_4
-      - 🇺🇸 US美国(TG:@tccjd)_4
-      - 🇬🇧 GB英国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_6
-      - 🇬🇧 GB英国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_6
-      - 🇺🇸 US美国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_11
-      - 🇺🇸 US美国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_13
-      - 🇺🇸 US美国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_11
-      - 🇬🇧 GB英国(TG:@tccjd)_14
-      - 🇺🇸 US美国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_15
-      - 🇬🇧 GB英国(TG:@tccjd)_16
-      - 🇬🇧 GB英国(TG:@tccjd)_17
-      - 🇺🇸 US美国(TG:@tccjd)_13
-      - 🇬🇧 GB英国(TG:@tccjd)_18
-      - 🇬🇧 GB英国(TG:@tccjd)_19
-      - 🇬🇧 GB英国(TG:@tccjd)_20
-      - 🇺🇸 US美国(TG:@tccjd)_14
-      - 🇬🇧 GB英国(TG:@tccjd)_21
-      - 🇬🇧 GB英国(TG:@tccjd)_22
-      - ⚡美国
-      - 美国
-      - 美国_1
-      - 01(TG:@tccjd)
-      - 香港
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
+      - 🇺🇸 US美国(TG:@tccjd)_3
+      - 🇺🇸 US美国(TG:@tccjd)_4
+      - _CN_中国
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 06(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
+      - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 08(TG:@tccjd)
-      - 德國
-      - 美國
-      - 美國_1
-      - 德國_1
-      - 德國_2
       - 01(TG:@tccjd)_2
-      - 美國_2
-      - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
+      - 02(TG:@tccjd)_2
+      - 03(TG:@tccjd)_2
+      - 04TG:@tccjd)
+      - 香港（2026.1.21更新）
+      - 韓國
+      - 美國
+      - 美国
+      - 德國
+      - 韓國_1
+      - 01(TG:@tccjd)_3
+      - 02(TG:@tccjd)_3
+      - 奧地利
+      - 德國_1
+      - 美國_1
+      - 德國_2
+      - 03(TG:@tccjd)_3
       - 德國_3
-      - 美國_3
+      - 04(TG:@tccjd)_2
+      - 05(TG:@tccjd)_2
       - 德國_4
-      - 15(TG:@tccjd)
       - 德國_5
-      - 14(TG:@tccjd)
+      - 奧地利_1
       - 德國_6
+      - 香港
+      - 06(TG:@tccjd)_1
       - 德國_7
+      - 07(TG:@tccjd)_1
+      - 08(TG:@tccjd)
+      - 德國_8
+      - 德國_9
+      - 09(TG:@tccjd)
+      - 美國_2
+      - 10(TG:@tccjd)
+      - 美國_3
+      - 11(TG:@tccjd)
+      - 拉脱维亞
+      - 土耳其
+      - 丹麥
+      - 奧地利_2
+      - 德國_10
+      - 荷蘭
+      - 荷蘭_1
       - 美國_4
-      - 13(TG:@tccjd)
       - 美國_5
+      - 俄羅斯
+      - 12(TG:@tccjd)
+      - 波蘭
+      - 拉脫維亞
       - 美國_6
       - 美國_7
-      - 拉脫維亞
-      - 02(TG:@tccjd)_2
-      - 德國_8
       - 美國_8
       - 美國_9
-      - 奧地利
-      - 德國_9
       - 美國_10
-      - 美國_11
-      - 03(TG:@tccjd)_2
-      - 日本
-      - 荷蘭
-      - 美國_12
-      - 荷蘭_1
-      - 斯洛維尼亞
-      - 美國_13
-      - 荷蘭_2
-      - 🇺🇸_US_美国_3
-      - 德國_10
-      - 美國_14
-      - 日本_1
-      - 日本_2
-      - 美國_15
-      - 美國_16
-      - 04(TG:@tccjd)_1
-      - DE
-      - 德國_11
-      - 德國_12
-      - 俄羅斯
-      - 🇩🇪_DE_德国
-      - 荷蘭_3
-      - 德國_13
-      - 德國_14
-      - 05(TG:@tccjd)_2
-      - 德國_15
-      - 德國_16
-      - 德國_17
-      - 荷蘭_4
-      - 06(TG:@tccjd)_1
-      - 德國_18
-      - 德國_19
-      - 🇳🇱_NL_荷兰
-      - 德國_20
-      - 德國_21
-      - 荷蘭_5
-      - 07(TG:@tccjd)_1
-      - 德國_22
-      - 德國_23
-      - 德國_24
-      - 荷蘭_6
-      - 荷蘭_7
-      - 德國_25
-      - 德國_26
-      - 荷蘭_8
-      - 德國_27
-      - 德國_28
-      - 德國_29
-      - 德國_30
-      - 德國_31
-      - 荷蘭_9
-      - 荷蘭_10
-      - 荷蘭_11
-      - 荷蘭_12
-      - 德國_32
-      - 德國_33
-      - 荷蘭_13
-      - 荷蘭_14
-      - 德國_34
-      - 德國_35
-      - 德國_36
-      - 德國_37
-      - 德國_38
-      - 德國_39
-      - 德國_40
-      - 德國_41
-      - 德國_42
-      - 德國_43
-      - 荷蘭_15
-      - 德國_44
-      - 🇩🇪_DE_德国_1
-      - 德國_45
-      - 德國_46
-      - 德國_47
       - 俄羅斯_1
-      - 荷蘭_16
-      - 美国_2
-      - 美国_3
+      - 美國_11
+      - 美國_12
+      - 美國_13
+      - 波蘭_1
+      - 美國_14
+      - 波蘭_2
+      - 波蘭_3
       - 俄羅斯_2
-      - 荷蘭_17
-      - 美國_17
-      - 荷蘭_18
-      - 荷蘭_19
-      - 英國
-      - 法國
+      - 美國_15
+      - 波蘭_4
+      - 美国_1
+      - 芬蘭
+      - 德國_11
+      - 13(TG:@tccjd)
+      - 14(TG:@tccjd)
+      - 美国_2
       - 俄羅斯_3
-      - 美國_18
       - 俄羅斯_4
-      - 德國_48
-      - 美國_19
-      - 德國_49
       - 俄羅斯_5
+      - 德國_12
       - 俄羅斯_6
+      - 英國
+      - 英國_1
+      - 哈薩克
+      - 伊朗
+      - 美國_16
+      - 德國_13
+      - 美国_3
+      - 日本
+      - 美国_4
+      - 16(TG:@tccjd)
       - 俄羅斯_7
-      - 09(TG:@tccjd)
+      - 哈薩克_1
+      - 英國_2
+      - 美國_17
       - 俄羅斯_8
+      - 17(TG:@tccjd)
+      - 伊朗_1
       - 俄羅斯_9
-      - 10(TG:@tccjd)
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
-      - 香港（2026.1.12更新）
-      - 香港_1
-      - 加拿大
-      - 香港_2
-      - 08(TG:@tccjd)_1
-      - 🇩🇪 德国 | DEU_1
-      - 德國_50
-      - 德國_51
-      - 德國_52
-      - 德國_53
-      - 拉脫維亞_1
-      - 拉脫維亞_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港(TG:@tccjd)
+      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
-      - 🇬🇧 GB英国(TG:@tccjd)
-      - 🇫🇷 FR法国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 🇺🇸 US美国(TG:@tccjd)_3
-      - 🇫🇷 FR法国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_2
-      - 🇬🇧 GB英国(TG:@tccjd)_3
-      - 🇬🇧 GB英国(TG:@tccjd)_4
-      - 🇺🇸 US美国(TG:@tccjd)_4
-      - 🇬🇧 GB英国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_6
-      - 🇬🇧 GB英国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_6
-      - 🇺🇸 US美国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_11
-      - 🇺🇸 US美国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_13
-      - 🇺🇸 US美国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_11
-      - 🇬🇧 GB英国(TG:@tccjd)_14
-      - 🇺🇸 US美国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_15
-      - 🇬🇧 GB英国(TG:@tccjd)_16
-      - 🇬🇧 GB英国(TG:@tccjd)_17
-      - 🇺🇸 US美国(TG:@tccjd)_13
-      - 🇬🇧 GB英国(TG:@tccjd)_18
-      - 🇬🇧 GB英国(TG:@tccjd)_19
-      - 🇬🇧 GB英国(TG:@tccjd)_20
-      - 🇺🇸 US美国(TG:@tccjd)_14
-      - 🇬🇧 GB英国(TG:@tccjd)_21
-      - 🇬🇧 GB英国(TG:@tccjd)_22
-      - ⚡美国
-      - 美国
-      - 美国_1
-      - 01(TG:@tccjd)
-      - 香港
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
+      - 🇺🇸 US美国(TG:@tccjd)_3
+      - 🇺🇸 US美国(TG:@tccjd)_4
+      - _CN_中国
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 06(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
+      - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 08(TG:@tccjd)
-      - 德國
-      - 美國
-      - 美國_1
-      - 德國_1
-      - 德國_2
       - 01(TG:@tccjd)_2
-      - 美國_2
-      - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
+      - 02(TG:@tccjd)_2
+      - 03(TG:@tccjd)_2
+      - 04TG:@tccjd)
+      - 香港（2026.1.21更新）
+      - 韓國
+      - 美國
+      - 美国
+      - 德國
+      - 韓國_1
+      - 01(TG:@tccjd)_3
+      - 02(TG:@tccjd)_3
+      - 奧地利
+      - 德國_1
+      - 美國_1
+      - 德國_2
+      - 03(TG:@tccjd)_3
       - 德國_3
-      - 美國_3
+      - 04(TG:@tccjd)_2
+      - 05(TG:@tccjd)_2
       - 德國_4
-      - 15(TG:@tccjd)
       - 德國_5
-      - 14(TG:@tccjd)
+      - 奧地利_1
       - 德國_6
+      - 香港
+      - 06(TG:@tccjd)_1
       - 德國_7
+      - 07(TG:@tccjd)_1
+      - 08(TG:@tccjd)
+      - 德國_8
+      - 德國_9
+      - 09(TG:@tccjd)
+      - 美國_2
+      - 10(TG:@tccjd)
+      - 美國_3
+      - 11(TG:@tccjd)
+      - 拉脱维亞
+      - 土耳其
+      - 丹麥
+      - 奧地利_2
+      - 德國_10
+      - 荷蘭
+      - 荷蘭_1
       - 美國_4
-      - 13(TG:@tccjd)
       - 美國_5
+      - 俄羅斯
+      - 12(TG:@tccjd)
+      - 波蘭
+      - 拉脫維亞
       - 美國_6
       - 美國_7
-      - 拉脫維亞
-      - 02(TG:@tccjd)_2
-      - 德國_8
       - 美國_8
       - 美國_9
-      - 奧地利
-      - 德國_9
       - 美國_10
-      - 美國_11
-      - 03(TG:@tccjd)_2
-      - 日本
-      - 荷蘭
-      - 美國_12
-      - 荷蘭_1
-      - 斯洛維尼亞
-      - 美國_13
-      - 荷蘭_2
-      - 🇺🇸_US_美国_3
-      - 德國_10
-      - 美國_14
-      - 日本_1
-      - 日本_2
-      - 美國_15
-      - 美國_16
-      - 04(TG:@tccjd)_1
-      - DE
-      - 德國_11
-      - 德國_12
-      - 俄羅斯
-      - 🇩🇪_DE_德国
-      - 荷蘭_3
-      - 德國_13
-      - 德國_14
-      - 05(TG:@tccjd)_2
-      - 德國_15
-      - 德國_16
-      - 德國_17
-      - 荷蘭_4
-      - 06(TG:@tccjd)_1
-      - 德國_18
-      - 德國_19
-      - 🇳🇱_NL_荷兰
-      - 德國_20
-      - 德國_21
-      - 荷蘭_5
-      - 07(TG:@tccjd)_1
-      - 德國_22
-      - 德國_23
-      - 德國_24
-      - 荷蘭_6
-      - 荷蘭_7
-      - 德國_25
-      - 德國_26
-      - 荷蘭_8
-      - 德國_27
-      - 德國_28
-      - 德國_29
-      - 德國_30
-      - 德國_31
-      - 荷蘭_9
-      - 荷蘭_10
-      - 荷蘭_11
-      - 荷蘭_12
-      - 德國_32
-      - 德國_33
-      - 荷蘭_13
-      - 荷蘭_14
-      - 德國_34
-      - 德國_35
-      - 德國_36
-      - 德國_37
-      - 德國_38
-      - 德國_39
-      - 德國_40
-      - 德國_41
-      - 德國_42
-      - 德國_43
-      - 荷蘭_15
-      - 德國_44
-      - 🇩🇪_DE_德国_1
-      - 德國_45
-      - 德國_46
-      - 德國_47
       - 俄羅斯_1
-      - 荷蘭_16
-      - 美国_2
-      - 美国_3
+      - 美國_11
+      - 美國_12
+      - 美國_13
+      - 波蘭_1
+      - 美國_14
+      - 波蘭_2
+      - 波蘭_3
       - 俄羅斯_2
-      - 荷蘭_17
-      - 美國_17
-      - 荷蘭_18
-      - 荷蘭_19
-      - 英國
-      - 法國
+      - 美國_15
+      - 波蘭_4
+      - 美国_1
+      - 芬蘭
+      - 德國_11
+      - 13(TG:@tccjd)
+      - 14(TG:@tccjd)
+      - 美国_2
       - 俄羅斯_3
-      - 美國_18
       - 俄羅斯_4
-      - 德國_48
-      - 美國_19
-      - 德國_49
       - 俄羅斯_5
+      - 德國_12
       - 俄羅斯_6
+      - 英國
+      - 英國_1
+      - 哈薩克
+      - 伊朗
+      - 美國_16
+      - 德國_13
+      - 美国_3
+      - 日本
+      - 美国_4
+      - 16(TG:@tccjd)
       - 俄羅斯_7
-      - 09(TG:@tccjd)
+      - 哈薩克_1
+      - 英國_2
+      - 美國_17
       - 俄羅斯_8
+      - 17(TG:@tccjd)
+      - 伊朗_1
       - 俄羅斯_9
-      - 10(TG:@tccjd)
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
-      - 香港（2026.1.12更新）
-      - 香港_1
-      - 加拿大
-      - 香港_2
-      - 08(TG:@tccjd)_1
-      - 🇩🇪 德国 | DEU_1
-      - 德國_50
-      - 德國_51
-      - 德國_52
-      - 德國_53
-      - 拉脫維亞_1
-      - 拉脫維亞_2
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -2790,845 +1594,481 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港(TG:@tccjd)
+      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
-      - 🇬🇧 GB英国(TG:@tccjd)
-      - 🇫🇷 FR法国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 🇺🇸 US美国(TG:@tccjd)_3
-      - 🇫🇷 FR法国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_2
-      - 🇬🇧 GB英国(TG:@tccjd)_3
-      - 🇬🇧 GB英国(TG:@tccjd)_4
-      - 🇺🇸 US美国(TG:@tccjd)_4
-      - 🇬🇧 GB英国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_6
-      - 🇬🇧 GB英国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_6
-      - 🇺🇸 US美国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_11
-      - 🇺🇸 US美国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_13
-      - 🇺🇸 US美国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_11
-      - 🇬🇧 GB英国(TG:@tccjd)_14
-      - 🇺🇸 US美国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_15
-      - 🇬🇧 GB英国(TG:@tccjd)_16
-      - 🇬🇧 GB英国(TG:@tccjd)_17
-      - 🇺🇸 US美国(TG:@tccjd)_13
-      - 🇬🇧 GB英国(TG:@tccjd)_18
-      - 🇬🇧 GB英国(TG:@tccjd)_19
-      - 🇬🇧 GB英国(TG:@tccjd)_20
-      - 🇺🇸 US美国(TG:@tccjd)_14
-      - 🇬🇧 GB英国(TG:@tccjd)_21
-      - 🇬🇧 GB英国(TG:@tccjd)_22
-      - ⚡美国
-      - 美国
-      - 美国_1
-      - 01(TG:@tccjd)
-      - 香港
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
+      - 🇺🇸 US美国(TG:@tccjd)_3
+      - 🇺🇸 US美国(TG:@tccjd)_4
+      - _CN_中国
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 06(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
+      - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 08(TG:@tccjd)
-      - 德國
-      - 美國
-      - 美國_1
-      - 德國_1
-      - 德國_2
       - 01(TG:@tccjd)_2
-      - 美國_2
-      - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
+      - 02(TG:@tccjd)_2
+      - 03(TG:@tccjd)_2
+      - 04TG:@tccjd)
+      - 香港（2026.1.21更新）
+      - 韓國
+      - 美國
+      - 美国
+      - 德國
+      - 韓國_1
+      - 01(TG:@tccjd)_3
+      - 02(TG:@tccjd)_3
+      - 奧地利
+      - 德國_1
+      - 美國_1
+      - 德國_2
+      - 03(TG:@tccjd)_3
       - 德國_3
-      - 美國_3
+      - 04(TG:@tccjd)_2
+      - 05(TG:@tccjd)_2
       - 德國_4
-      - 15(TG:@tccjd)
       - 德國_5
-      - 14(TG:@tccjd)
+      - 奧地利_1
       - 德國_6
+      - 香港
+      - 06(TG:@tccjd)_1
       - 德國_7
+      - 07(TG:@tccjd)_1
+      - 08(TG:@tccjd)
+      - 德國_8
+      - 德國_9
+      - 09(TG:@tccjd)
+      - 美國_2
+      - 10(TG:@tccjd)
+      - 美國_3
+      - 11(TG:@tccjd)
+      - 拉脱维亞
+      - 土耳其
+      - 丹麥
+      - 奧地利_2
+      - 德國_10
+      - 荷蘭
+      - 荷蘭_1
       - 美國_4
-      - 13(TG:@tccjd)
       - 美國_5
+      - 俄羅斯
+      - 12(TG:@tccjd)
+      - 波蘭
+      - 拉脫維亞
       - 美國_6
       - 美國_7
-      - 拉脫維亞
-      - 02(TG:@tccjd)_2
-      - 德國_8
       - 美國_8
       - 美國_9
-      - 奧地利
-      - 德國_9
       - 美國_10
-      - 美國_11
-      - 03(TG:@tccjd)_2
-      - 日本
-      - 荷蘭
-      - 美國_12
-      - 荷蘭_1
-      - 斯洛維尼亞
-      - 美國_13
-      - 荷蘭_2
-      - 🇺🇸_US_美国_3
-      - 德國_10
-      - 美國_14
-      - 日本_1
-      - 日本_2
-      - 美國_15
-      - 美國_16
-      - 04(TG:@tccjd)_1
-      - DE
-      - 德國_11
-      - 德國_12
-      - 俄羅斯
-      - 🇩🇪_DE_德国
-      - 荷蘭_3
-      - 德國_13
-      - 德國_14
-      - 05(TG:@tccjd)_2
-      - 德國_15
-      - 德國_16
-      - 德國_17
-      - 荷蘭_4
-      - 06(TG:@tccjd)_1
-      - 德國_18
-      - 德國_19
-      - 🇳🇱_NL_荷兰
-      - 德國_20
-      - 德國_21
-      - 荷蘭_5
-      - 07(TG:@tccjd)_1
-      - 德國_22
-      - 德國_23
-      - 德國_24
-      - 荷蘭_6
-      - 荷蘭_7
-      - 德國_25
-      - 德國_26
-      - 荷蘭_8
-      - 德國_27
-      - 德國_28
-      - 德國_29
-      - 德國_30
-      - 德國_31
-      - 荷蘭_9
-      - 荷蘭_10
-      - 荷蘭_11
-      - 荷蘭_12
-      - 德國_32
-      - 德國_33
-      - 荷蘭_13
-      - 荷蘭_14
-      - 德國_34
-      - 德國_35
-      - 德國_36
-      - 德國_37
-      - 德國_38
-      - 德國_39
-      - 德國_40
-      - 德國_41
-      - 德國_42
-      - 德國_43
-      - 荷蘭_15
-      - 德國_44
-      - 🇩🇪_DE_德国_1
-      - 德國_45
-      - 德國_46
-      - 德國_47
       - 俄羅斯_1
-      - 荷蘭_16
-      - 美国_2
-      - 美国_3
+      - 美國_11
+      - 美國_12
+      - 美國_13
+      - 波蘭_1
+      - 美國_14
+      - 波蘭_2
+      - 波蘭_3
       - 俄羅斯_2
-      - 荷蘭_17
-      - 美國_17
-      - 荷蘭_18
-      - 荷蘭_19
-      - 英國
-      - 法國
+      - 美國_15
+      - 波蘭_4
+      - 美国_1
+      - 芬蘭
+      - 德國_11
+      - 13(TG:@tccjd)
+      - 14(TG:@tccjd)
+      - 美国_2
       - 俄羅斯_3
-      - 美國_18
       - 俄羅斯_4
-      - 德國_48
-      - 美國_19
-      - 德國_49
       - 俄羅斯_5
+      - 德國_12
       - 俄羅斯_6
+      - 英國
+      - 英國_1
+      - 哈薩克
+      - 伊朗
+      - 美國_16
+      - 德國_13
+      - 美国_3
+      - 日本
+      - 美国_4
+      - 16(TG:@tccjd)
       - 俄羅斯_7
-      - 09(TG:@tccjd)
+      - 哈薩克_1
+      - 英國_2
+      - 美國_17
       - 俄羅斯_8
+      - 17(TG:@tccjd)
+      - 伊朗_1
       - 俄羅斯_9
-      - 10(TG:@tccjd)
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
-      - 香港（2026.1.12更新）
-      - 香港_1
-      - 加拿大
-      - 香港_2
-      - 08(TG:@tccjd)_1
-      - 🇩🇪 德国 | DEU_1
-      - 德國_50
-      - 德國_51
-      - 德國_52
-      - 德國_53
-      - 拉脫維亞_1
-      - 拉脫維亞_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港(TG:@tccjd)
+      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
-      - 🇬🇧 GB英国(TG:@tccjd)
-      - 🇫🇷 FR法国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 🇺🇸 US美国(TG:@tccjd)_3
-      - 🇫🇷 FR法国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_2
-      - 🇬🇧 GB英国(TG:@tccjd)_3
-      - 🇬🇧 GB英国(TG:@tccjd)_4
-      - 🇺🇸 US美国(TG:@tccjd)_4
-      - 🇬🇧 GB英国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_6
-      - 🇬🇧 GB英国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_6
-      - 🇺🇸 US美国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_11
-      - 🇺🇸 US美国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_13
-      - 🇺🇸 US美国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_11
-      - 🇬🇧 GB英国(TG:@tccjd)_14
-      - 🇺🇸 US美国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_15
-      - 🇬🇧 GB英国(TG:@tccjd)_16
-      - 🇬🇧 GB英国(TG:@tccjd)_17
-      - 🇺🇸 US美国(TG:@tccjd)_13
-      - 🇬🇧 GB英国(TG:@tccjd)_18
-      - 🇬🇧 GB英国(TG:@tccjd)_19
-      - 🇬🇧 GB英国(TG:@tccjd)_20
-      - 🇺🇸 US美国(TG:@tccjd)_14
-      - 🇬🇧 GB英国(TG:@tccjd)_21
-      - 🇬🇧 GB英国(TG:@tccjd)_22
-      - ⚡美国
-      - 美国
-      - 美国_1
-      - 01(TG:@tccjd)
-      - 香港
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
+      - 🇺🇸 US美国(TG:@tccjd)_3
+      - 🇺🇸 US美国(TG:@tccjd)_4
+      - _CN_中国
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 06(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
+      - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 08(TG:@tccjd)
-      - 德國
-      - 美國
-      - 美國_1
-      - 德國_1
-      - 德國_2
       - 01(TG:@tccjd)_2
-      - 美國_2
-      - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
+      - 02(TG:@tccjd)_2
+      - 03(TG:@tccjd)_2
+      - 04TG:@tccjd)
+      - 香港（2026.1.21更新）
+      - 韓國
+      - 美國
+      - 美国
+      - 德國
+      - 韓國_1
+      - 01(TG:@tccjd)_3
+      - 02(TG:@tccjd)_3
+      - 奧地利
+      - 德國_1
+      - 美國_1
+      - 德國_2
+      - 03(TG:@tccjd)_3
       - 德國_3
-      - 美國_3
+      - 04(TG:@tccjd)_2
+      - 05(TG:@tccjd)_2
       - 德國_4
-      - 15(TG:@tccjd)
       - 德國_5
-      - 14(TG:@tccjd)
+      - 奧地利_1
       - 德國_6
+      - 香港
+      - 06(TG:@tccjd)_1
       - 德國_7
+      - 07(TG:@tccjd)_1
+      - 08(TG:@tccjd)
+      - 德國_8
+      - 德國_9
+      - 09(TG:@tccjd)
+      - 美國_2
+      - 10(TG:@tccjd)
+      - 美國_3
+      - 11(TG:@tccjd)
+      - 拉脱维亞
+      - 土耳其
+      - 丹麥
+      - 奧地利_2
+      - 德國_10
+      - 荷蘭
+      - 荷蘭_1
       - 美國_4
-      - 13(TG:@tccjd)
       - 美國_5
+      - 俄羅斯
+      - 12(TG:@tccjd)
+      - 波蘭
+      - 拉脫維亞
       - 美國_6
       - 美國_7
-      - 拉脫維亞
-      - 02(TG:@tccjd)_2
-      - 德國_8
       - 美國_8
       - 美國_9
-      - 奧地利
-      - 德國_9
       - 美國_10
-      - 美國_11
-      - 03(TG:@tccjd)_2
-      - 日本
-      - 荷蘭
-      - 美國_12
-      - 荷蘭_1
-      - 斯洛維尼亞
-      - 美國_13
-      - 荷蘭_2
-      - 🇺🇸_US_美国_3
-      - 德國_10
-      - 美國_14
-      - 日本_1
-      - 日本_2
-      - 美國_15
-      - 美國_16
-      - 04(TG:@tccjd)_1
-      - DE
-      - 德國_11
-      - 德國_12
-      - 俄羅斯
-      - 🇩🇪_DE_德国
-      - 荷蘭_3
-      - 德國_13
-      - 德國_14
-      - 05(TG:@tccjd)_2
-      - 德國_15
-      - 德國_16
-      - 德國_17
-      - 荷蘭_4
-      - 06(TG:@tccjd)_1
-      - 德國_18
-      - 德國_19
-      - 🇳🇱_NL_荷兰
-      - 德國_20
-      - 德國_21
-      - 荷蘭_5
-      - 07(TG:@tccjd)_1
-      - 德國_22
-      - 德國_23
-      - 德國_24
-      - 荷蘭_6
-      - 荷蘭_7
-      - 德國_25
-      - 德國_26
-      - 荷蘭_8
-      - 德國_27
-      - 德國_28
-      - 德國_29
-      - 德國_30
-      - 德國_31
-      - 荷蘭_9
-      - 荷蘭_10
-      - 荷蘭_11
-      - 荷蘭_12
-      - 德國_32
-      - 德國_33
-      - 荷蘭_13
-      - 荷蘭_14
-      - 德國_34
-      - 德國_35
-      - 德國_36
-      - 德國_37
-      - 德國_38
-      - 德國_39
-      - 德國_40
-      - 德國_41
-      - 德國_42
-      - 德國_43
-      - 荷蘭_15
-      - 德國_44
-      - 🇩🇪_DE_德国_1
-      - 德國_45
-      - 德國_46
-      - 德國_47
       - 俄羅斯_1
-      - 荷蘭_16
-      - 美国_2
-      - 美国_3
+      - 美國_11
+      - 美國_12
+      - 美國_13
+      - 波蘭_1
+      - 美國_14
+      - 波蘭_2
+      - 波蘭_3
       - 俄羅斯_2
-      - 荷蘭_17
-      - 美國_17
-      - 荷蘭_18
-      - 荷蘭_19
-      - 英國
-      - 法國
+      - 美國_15
+      - 波蘭_4
+      - 美国_1
+      - 芬蘭
+      - 德國_11
+      - 13(TG:@tccjd)
+      - 14(TG:@tccjd)
+      - 美国_2
       - 俄羅斯_3
-      - 美國_18
       - 俄羅斯_4
-      - 德國_48
-      - 美國_19
-      - 德國_49
       - 俄羅斯_5
+      - 德國_12
       - 俄羅斯_6
+      - 英國
+      - 英國_1
+      - 哈薩克
+      - 伊朗
+      - 美國_16
+      - 德國_13
+      - 美国_3
+      - 日本
+      - 美国_4
+      - 16(TG:@tccjd)
       - 俄羅斯_7
-      - 09(TG:@tccjd)
+      - 哈薩克_1
+      - 英國_2
+      - 美國_17
       - 俄羅斯_8
+      - 17(TG:@tccjd)
+      - 伊朗_1
       - 俄羅斯_9
-      - 10(TG:@tccjd)
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
-      - 香港（2026.1.12更新）
-      - 香港_1
-      - 加拿大
-      - 香港_2
-      - 08(TG:@tccjd)_1
-      - 🇩🇪 德国 | DEU_1
-      - 德國_50
-      - 德國_51
-      - 德國_52
-      - 德國_53
-      - 拉脫維亞_1
-      - 拉脫維亞_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港(TG:@tccjd)
+      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
-      - 🇬🇧 GB英国(TG:@tccjd)
-      - 🇫🇷 FR法国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 🇺🇸 US美国(TG:@tccjd)_3
-      - 🇫🇷 FR法国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_2
-      - 🇬🇧 GB英国(TG:@tccjd)_3
-      - 🇬🇧 GB英国(TG:@tccjd)_4
-      - 🇺🇸 US美国(TG:@tccjd)_4
-      - 🇬🇧 GB英国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_6
-      - 🇬🇧 GB英国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_6
-      - 🇺🇸 US美国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_11
-      - 🇺🇸 US美国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_13
-      - 🇺🇸 US美国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_11
-      - 🇬🇧 GB英国(TG:@tccjd)_14
-      - 🇺🇸 US美国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_15
-      - 🇬🇧 GB英国(TG:@tccjd)_16
-      - 🇬🇧 GB英国(TG:@tccjd)_17
-      - 🇺🇸 US美国(TG:@tccjd)_13
-      - 🇬🇧 GB英国(TG:@tccjd)_18
-      - 🇬🇧 GB英国(TG:@tccjd)_19
-      - 🇬🇧 GB英国(TG:@tccjd)_20
-      - 🇺🇸 US美国(TG:@tccjd)_14
-      - 🇬🇧 GB英国(TG:@tccjd)_21
-      - 🇬🇧 GB英国(TG:@tccjd)_22
-      - ⚡美国
-      - 美国
-      - 美国_1
-      - 01(TG:@tccjd)
-      - 香港
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
+      - 🇺🇸 US美国(TG:@tccjd)_3
+      - 🇺🇸 US美国(TG:@tccjd)_4
+      - _CN_中国
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 06(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
+      - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 08(TG:@tccjd)
-      - 德國
-      - 美國
-      - 美國_1
-      - 德國_1
-      - 德國_2
       - 01(TG:@tccjd)_2
-      - 美國_2
-      - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
+      - 02(TG:@tccjd)_2
+      - 03(TG:@tccjd)_2
+      - 04TG:@tccjd)
+      - 香港（2026.1.21更新）
+      - 韓國
+      - 美國
+      - 美国
+      - 德國
+      - 韓國_1
+      - 01(TG:@tccjd)_3
+      - 02(TG:@tccjd)_3
+      - 奧地利
+      - 德國_1
+      - 美國_1
+      - 德國_2
+      - 03(TG:@tccjd)_3
       - 德國_3
-      - 美國_3
+      - 04(TG:@tccjd)_2
+      - 05(TG:@tccjd)_2
       - 德國_4
-      - 15(TG:@tccjd)
       - 德國_5
-      - 14(TG:@tccjd)
+      - 奧地利_1
       - 德國_6
+      - 香港
+      - 06(TG:@tccjd)_1
       - 德國_7
+      - 07(TG:@tccjd)_1
+      - 08(TG:@tccjd)
+      - 德國_8
+      - 德國_9
+      - 09(TG:@tccjd)
+      - 美國_2
+      - 10(TG:@tccjd)
+      - 美國_3
+      - 11(TG:@tccjd)
+      - 拉脱维亞
+      - 土耳其
+      - 丹麥
+      - 奧地利_2
+      - 德國_10
+      - 荷蘭
+      - 荷蘭_1
       - 美國_4
-      - 13(TG:@tccjd)
       - 美國_5
+      - 俄羅斯
+      - 12(TG:@tccjd)
+      - 波蘭
+      - 拉脫維亞
       - 美國_6
       - 美國_7
-      - 拉脫維亞
-      - 02(TG:@tccjd)_2
-      - 德國_8
       - 美國_8
       - 美國_9
-      - 奧地利
-      - 德國_9
       - 美國_10
-      - 美國_11
-      - 03(TG:@tccjd)_2
-      - 日本
-      - 荷蘭
-      - 美國_12
-      - 荷蘭_1
-      - 斯洛維尼亞
-      - 美國_13
-      - 荷蘭_2
-      - 🇺🇸_US_美国_3
-      - 德國_10
-      - 美國_14
-      - 日本_1
-      - 日本_2
-      - 美國_15
-      - 美國_16
-      - 04(TG:@tccjd)_1
-      - DE
-      - 德國_11
-      - 德國_12
-      - 俄羅斯
-      - 🇩🇪_DE_德国
-      - 荷蘭_3
-      - 德國_13
-      - 德國_14
-      - 05(TG:@tccjd)_2
-      - 德國_15
-      - 德國_16
-      - 德國_17
-      - 荷蘭_4
-      - 06(TG:@tccjd)_1
-      - 德國_18
-      - 德國_19
-      - 🇳🇱_NL_荷兰
-      - 德國_20
-      - 德國_21
-      - 荷蘭_5
-      - 07(TG:@tccjd)_1
-      - 德國_22
-      - 德國_23
-      - 德國_24
-      - 荷蘭_6
-      - 荷蘭_7
-      - 德國_25
-      - 德國_26
-      - 荷蘭_8
-      - 德國_27
-      - 德國_28
-      - 德國_29
-      - 德國_30
-      - 德國_31
-      - 荷蘭_9
-      - 荷蘭_10
-      - 荷蘭_11
-      - 荷蘭_12
-      - 德國_32
-      - 德國_33
-      - 荷蘭_13
-      - 荷蘭_14
-      - 德國_34
-      - 德國_35
-      - 德國_36
-      - 德國_37
-      - 德國_38
-      - 德國_39
-      - 德國_40
-      - 德國_41
-      - 德國_42
-      - 德國_43
-      - 荷蘭_15
-      - 德國_44
-      - 🇩🇪_DE_德国_1
-      - 德國_45
-      - 德國_46
-      - 德國_47
       - 俄羅斯_1
-      - 荷蘭_16
-      - 美国_2
-      - 美国_3
+      - 美國_11
+      - 美國_12
+      - 美國_13
+      - 波蘭_1
+      - 美國_14
+      - 波蘭_2
+      - 波蘭_3
       - 俄羅斯_2
-      - 荷蘭_17
-      - 美國_17
-      - 荷蘭_18
-      - 荷蘭_19
-      - 英國
-      - 法國
+      - 美國_15
+      - 波蘭_4
+      - 美国_1
+      - 芬蘭
+      - 德國_11
+      - 13(TG:@tccjd)
+      - 14(TG:@tccjd)
+      - 美国_2
       - 俄羅斯_3
-      - 美國_18
       - 俄羅斯_4
-      - 德國_48
-      - 美國_19
-      - 德國_49
       - 俄羅斯_5
+      - 德國_12
       - 俄羅斯_6
+      - 英國
+      - 英國_1
+      - 哈薩克
+      - 伊朗
+      - 美國_16
+      - 德國_13
+      - 美国_3
+      - 日本
+      - 美国_4
+      - 16(TG:@tccjd)
       - 俄羅斯_7
-      - 09(TG:@tccjd)
+      - 哈薩克_1
+      - 英國_2
+      - 美國_17
       - 俄羅斯_8
+      - 17(TG:@tccjd)
+      - 伊朗_1
       - 俄羅斯_9
-      - 10(TG:@tccjd)
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
-      - 香港（2026.1.12更新）
-      - 香港_1
-      - 加拿大
-      - 香港_2
-      - 08(TG:@tccjd)_1
-      - 🇩🇪 德国 | DEU_1
-      - 德國_50
-      - 德國_51
-      - 德國_52
-      - 德國_53
-      - 拉脫維亞_1
-      - 拉脫維亞_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港(TG:@tccjd)
+      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
-      - 🇬🇧 GB英国(TG:@tccjd)
-      - 🇫🇷 FR法国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 🇺🇸 US美国(TG:@tccjd)_3
-      - 🇫🇷 FR法国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_2
-      - 🇬🇧 GB英国(TG:@tccjd)_3
-      - 🇬🇧 GB英国(TG:@tccjd)_4
-      - 🇺🇸 US美国(TG:@tccjd)_4
-      - 🇬🇧 GB英国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_6
-      - 🇬🇧 GB英国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_6
-      - 🇺🇸 US美国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_11
-      - 🇺🇸 US美国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_13
-      - 🇺🇸 US美国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_11
-      - 🇬🇧 GB英国(TG:@tccjd)_14
-      - 🇺🇸 US美国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_15
-      - 🇬🇧 GB英国(TG:@tccjd)_16
-      - 🇬🇧 GB英国(TG:@tccjd)_17
-      - 🇺🇸 US美国(TG:@tccjd)_13
-      - 🇬🇧 GB英国(TG:@tccjd)_18
-      - 🇬🇧 GB英国(TG:@tccjd)_19
-      - 🇬🇧 GB英国(TG:@tccjd)_20
-      - 🇺🇸 US美国(TG:@tccjd)_14
-      - 🇬🇧 GB英国(TG:@tccjd)_21
-      - 🇬🇧 GB英国(TG:@tccjd)_22
-      - ⚡美国
-      - 美国
-      - 美国_1
-      - 01(TG:@tccjd)
-      - 香港
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
+      - 🇺🇸 US美国(TG:@tccjd)_3
+      - 🇺🇸 US美国(TG:@tccjd)_4
+      - _CN_中国
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 06(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
+      - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 08(TG:@tccjd)
-      - 德國
-      - 美國
-      - 美國_1
-      - 德國_1
-      - 德國_2
       - 01(TG:@tccjd)_2
-      - 美國_2
-      - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
+      - 02(TG:@tccjd)_2
+      - 03(TG:@tccjd)_2
+      - 04TG:@tccjd)
+      - 香港（2026.1.21更新）
+      - 韓國
+      - 美國
+      - 美国
+      - 德國
+      - 韓國_1
+      - 01(TG:@tccjd)_3
+      - 02(TG:@tccjd)_3
+      - 奧地利
+      - 德國_1
+      - 美國_1
+      - 德國_2
+      - 03(TG:@tccjd)_3
       - 德國_3
-      - 美國_3
+      - 04(TG:@tccjd)_2
+      - 05(TG:@tccjd)_2
       - 德國_4
-      - 15(TG:@tccjd)
       - 德國_5
-      - 14(TG:@tccjd)
+      - 奧地利_1
       - 德國_6
+      - 香港
+      - 06(TG:@tccjd)_1
       - 德國_7
+      - 07(TG:@tccjd)_1
+      - 08(TG:@tccjd)
+      - 德國_8
+      - 德國_9
+      - 09(TG:@tccjd)
+      - 美國_2
+      - 10(TG:@tccjd)
+      - 美國_3
+      - 11(TG:@tccjd)
+      - 拉脱维亞
+      - 土耳其
+      - 丹麥
+      - 奧地利_2
+      - 德國_10
+      - 荷蘭
+      - 荷蘭_1
       - 美國_4
-      - 13(TG:@tccjd)
       - 美國_5
+      - 俄羅斯
+      - 12(TG:@tccjd)
+      - 波蘭
+      - 拉脫維亞
       - 美國_6
       - 美國_7
-      - 拉脫維亞
-      - 02(TG:@tccjd)_2
-      - 德國_8
       - 美國_8
       - 美國_9
-      - 奧地利
-      - 德國_9
       - 美國_10
-      - 美國_11
-      - 03(TG:@tccjd)_2
-      - 日本
-      - 荷蘭
-      - 美國_12
-      - 荷蘭_1
-      - 斯洛維尼亞
-      - 美國_13
-      - 荷蘭_2
-      - 🇺🇸_US_美国_3
-      - 德國_10
-      - 美國_14
-      - 日本_1
-      - 日本_2
-      - 美國_15
-      - 美國_16
-      - 04(TG:@tccjd)_1
-      - DE
-      - 德國_11
-      - 德國_12
-      - 俄羅斯
-      - 🇩🇪_DE_德国
-      - 荷蘭_3
-      - 德國_13
-      - 德國_14
-      - 05(TG:@tccjd)_2
-      - 德國_15
-      - 德國_16
-      - 德國_17
-      - 荷蘭_4
-      - 06(TG:@tccjd)_1
-      - 德國_18
-      - 德國_19
-      - 🇳🇱_NL_荷兰
-      - 德國_20
-      - 德國_21
-      - 荷蘭_5
-      - 07(TG:@tccjd)_1
-      - 德國_22
-      - 德國_23
-      - 德國_24
-      - 荷蘭_6
-      - 荷蘭_7
-      - 德國_25
-      - 德國_26
-      - 荷蘭_8
-      - 德國_27
-      - 德國_28
-      - 德國_29
-      - 德國_30
-      - 德國_31
-      - 荷蘭_9
-      - 荷蘭_10
-      - 荷蘭_11
-      - 荷蘭_12
-      - 德國_32
-      - 德國_33
-      - 荷蘭_13
-      - 荷蘭_14
-      - 德國_34
-      - 德國_35
-      - 德國_36
-      - 德國_37
-      - 德國_38
-      - 德國_39
-      - 德國_40
-      - 德國_41
-      - 德國_42
-      - 德國_43
-      - 荷蘭_15
-      - 德國_44
-      - 🇩🇪_DE_德国_1
-      - 德國_45
-      - 德國_46
-      - 德國_47
       - 俄羅斯_1
-      - 荷蘭_16
-      - 美国_2
-      - 美国_3
+      - 美國_11
+      - 美國_12
+      - 美國_13
+      - 波蘭_1
+      - 美國_14
+      - 波蘭_2
+      - 波蘭_3
       - 俄羅斯_2
-      - 荷蘭_17
-      - 美國_17
-      - 荷蘭_18
-      - 荷蘭_19
-      - 英國
-      - 法國
+      - 美國_15
+      - 波蘭_4
+      - 美国_1
+      - 芬蘭
+      - 德國_11
+      - 13(TG:@tccjd)
+      - 14(TG:@tccjd)
+      - 美国_2
       - 俄羅斯_3
-      - 美國_18
       - 俄羅斯_4
-      - 德國_48
-      - 美國_19
-      - 德國_49
       - 俄羅斯_5
+      - 德國_12
       - 俄羅斯_6
+      - 英國
+      - 英國_1
+      - 哈薩克
+      - 伊朗
+      - 美國_16
+      - 德國_13
+      - 美国_3
+      - 日本
+      - 美国_4
+      - 16(TG:@tccjd)
       - 俄羅斯_7
-      - 09(TG:@tccjd)
+      - 哈薩克_1
+      - 英國_2
+      - 美國_17
       - 俄羅斯_8
+      - 17(TG:@tccjd)
+      - 伊朗_1
       - 俄羅斯_9
-      - 10(TG:@tccjd)
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
-      - 香港（2026.1.12更新）
-      - 香港_1
-      - 加拿大
-      - 香港_2
-      - 08(TG:@tccjd)_1
-      - 🇩🇪 德国 | DEU_1
-      - 德國_50
-      - 德國_51
-      - 德國_52
-      - 德國_53
-      - 拉脫維亞_1
-      - 拉脫維亞_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -3651,212 +2091,121 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港(TG:@tccjd)
+      - 01(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)
-      - 🇬🇧 GB英国(TG:@tccjd)
-      - 🇫🇷 FR法国(TG:@tccjd)
       - 🇺🇸 US美国(TG:@tccjd)_1
       - 🇺🇸 US美国(TG:@tccjd)_2
-      - 🇺🇸 US美国(TG:@tccjd)_3
-      - 🇫🇷 FR法国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_1
-      - 🇬🇧 GB英国(TG:@tccjd)_2
-      - 🇬🇧 GB英国(TG:@tccjd)_3
-      - 🇬🇧 GB英国(TG:@tccjd)_4
-      - 🇺🇸 US美国(TG:@tccjd)_4
-      - 🇬🇧 GB英国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_6
-      - 🇬🇧 GB英国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_5
-      - 🇬🇧 GB英国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_6
-      - 🇺🇸 US美国(TG:@tccjd)_7
-      - 🇬🇧 GB英国(TG:@tccjd)_11
-      - 🇺🇸 US美国(TG:@tccjd)_8
-      - 🇬🇧 GB英国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_13
-      - 🇺🇸 US美国(TG:@tccjd)_9
-      - 🇺🇸 US美国(TG:@tccjd)_10
-      - 🇺🇸 US美国(TG:@tccjd)_11
-      - 🇬🇧 GB英国(TG:@tccjd)_14
-      - 🇺🇸 US美国(TG:@tccjd)_12
-      - 🇬🇧 GB英国(TG:@tccjd)_15
-      - 🇬🇧 GB英国(TG:@tccjd)_16
-      - 🇬🇧 GB英国(TG:@tccjd)_17
-      - 🇺🇸 US美国(TG:@tccjd)_13
-      - 🇬🇧 GB英国(TG:@tccjd)_18
-      - 🇬🇧 GB英国(TG:@tccjd)_19
-      - 🇬🇧 GB英国(TG:@tccjd)_20
-      - 🇺🇸 US美国(TG:@tccjd)_14
-      - 🇬🇧 GB英国(TG:@tccjd)_21
-      - 🇬🇧 GB英国(TG:@tccjd)_22
-      - ⚡美国
-      - 美国
-      - 美国_1
-      - 01(TG:@tccjd)
-      - 香港
-      - 🇺🇸 美国 | USA
-      - 🇩🇪 德国 | DEU
       - 02(TG:@tccjd)
+      - 🇺🇸 US美国(TG:@tccjd)_3
+      - 🇺🇸 US美国(TG:@tccjd)_4
+      - _CN_中国
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
+      - 🇨🇳 广东省湛江市(TG:@tccjd)
       - 05(TG:@tccjd)
-      - 06(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)_1
+      - 04(TG:@tccjd)_1
       - 05(TG:@tccjd)_1
+      - 06(TG:@tccjd)
       - 07(TG:@tccjd)
-      - 08(TG:@tccjd)
-      - 德國
-      - 美國
-      - 美國_1
-      - 德國_1
-      - 德國_2
       - 01(TG:@tccjd)_2
-      - 美國_2
-      - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
+      - 02(TG:@tccjd)_2
+      - 03(TG:@tccjd)_2
+      - 04TG:@tccjd)
+      - 香港（2026.1.21更新）
+      - 韓國
+      - 美國
+      - 美国
+      - 德國
+      - 韓國_1
+      - 01(TG:@tccjd)_3
+      - 02(TG:@tccjd)_3
+      - 奧地利
+      - 德國_1
+      - 美國_1
+      - 德國_2
+      - 03(TG:@tccjd)_3
       - 德國_3
-      - 美國_3
+      - 04(TG:@tccjd)_2
+      - 05(TG:@tccjd)_2
       - 德國_4
-      - 15(TG:@tccjd)
       - 德國_5
-      - 14(TG:@tccjd)
+      - 奧地利_1
       - 德國_6
+      - 香港
+      - 06(TG:@tccjd)_1
       - 德國_7
+      - 07(TG:@tccjd)_1
+      - 08(TG:@tccjd)
+      - 德國_8
+      - 德國_9
+      - 09(TG:@tccjd)
+      - 美國_2
+      - 10(TG:@tccjd)
+      - 美國_3
+      - 11(TG:@tccjd)
+      - 拉脱维亞
+      - 土耳其
+      - 丹麥
+      - 奧地利_2
+      - 德國_10
+      - 荷蘭
+      - 荷蘭_1
       - 美國_4
-      - 13(TG:@tccjd)
       - 美國_5
+      - 俄羅斯
+      - 12(TG:@tccjd)
+      - 波蘭
+      - 拉脫維亞
       - 美國_6
       - 美國_7
-      - 拉脫維亞
-      - 02(TG:@tccjd)_2
-      - 德國_8
       - 美國_8
       - 美國_9
-      - 奧地利
-      - 德國_9
       - 美國_10
-      - 美國_11
-      - 03(TG:@tccjd)_2
-      - 日本
-      - 荷蘭
-      - 美國_12
-      - 荷蘭_1
-      - 斯洛維尼亞
-      - 美國_13
-      - 荷蘭_2
-      - 🇺🇸_US_美国_3
-      - 德國_10
-      - 美國_14
-      - 日本_1
-      - 日本_2
-      - 美國_15
-      - 美國_16
-      - 04(TG:@tccjd)_1
-      - DE
-      - 德國_11
-      - 德國_12
-      - 俄羅斯
-      - 🇩🇪_DE_德国
-      - 荷蘭_3
-      - 德國_13
-      - 德國_14
-      - 05(TG:@tccjd)_2
-      - 德國_15
-      - 德國_16
-      - 德國_17
-      - 荷蘭_4
-      - 06(TG:@tccjd)_1
-      - 德國_18
-      - 德國_19
-      - 🇳🇱_NL_荷兰
-      - 德國_20
-      - 德國_21
-      - 荷蘭_5
-      - 07(TG:@tccjd)_1
-      - 德國_22
-      - 德國_23
-      - 德國_24
-      - 荷蘭_6
-      - 荷蘭_7
-      - 德國_25
-      - 德國_26
-      - 荷蘭_8
-      - 德國_27
-      - 德國_28
-      - 德國_29
-      - 德國_30
-      - 德國_31
-      - 荷蘭_9
-      - 荷蘭_10
-      - 荷蘭_11
-      - 荷蘭_12
-      - 德國_32
-      - 德國_33
-      - 荷蘭_13
-      - 荷蘭_14
-      - 德國_34
-      - 德國_35
-      - 德國_36
-      - 德國_37
-      - 德國_38
-      - 德國_39
-      - 德國_40
-      - 德國_41
-      - 德國_42
-      - 德國_43
-      - 荷蘭_15
-      - 德國_44
-      - 🇩🇪_DE_德国_1
-      - 德國_45
-      - 德國_46
-      - 德國_47
       - 俄羅斯_1
-      - 荷蘭_16
-      - 美国_2
-      - 美国_3
+      - 美國_11
+      - 美國_12
+      - 美國_13
+      - 波蘭_1
+      - 美國_14
+      - 波蘭_2
+      - 波蘭_3
       - 俄羅斯_2
-      - 荷蘭_17
-      - 美國_17
-      - 荷蘭_18
-      - 荷蘭_19
-      - 英國
-      - 法國
+      - 美國_15
+      - 波蘭_4
+      - 美国_1
+      - 芬蘭
+      - 德國_11
+      - 13(TG:@tccjd)
+      - 14(TG:@tccjd)
+      - 美国_2
       - 俄羅斯_3
-      - 美國_18
       - 俄羅斯_4
-      - 德國_48
-      - 美國_19
-      - 德國_49
       - 俄羅斯_5
+      - 德國_12
       - 俄羅斯_6
+      - 英國
+      - 英國_1
+      - 哈薩克
+      - 伊朗
+      - 美國_16
+      - 德國_13
+      - 美国_3
+      - 日本
+      - 美国_4
+      - 16(TG:@tccjd)
       - 俄羅斯_7
-      - 09(TG:@tccjd)
+      - 哈薩克_1
+      - 英國_2
+      - 美國_17
       - 俄羅斯_8
+      - 17(TG:@tccjd)
+      - 伊朗_1
       - 俄羅斯_9
-      - 10(TG:@tccjd)
-      - _CN_中国
-      - 🇯🇵 JP日本(TG:@tccjd)
-      - 🇯🇵JP日本2
-      - 🇭🇰 香港 (TG:@tccjd)
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港4|@stairnode
-      - 香港（2026.1.12更新）
-      - 香港_1
-      - 加拿大
-      - 香港_2
-      - 08(TG:@tccjd)_1
-      - 🇩🇪 德国 | DEU_1
-      - 德國_50
-      - 德國_51
-      - 德國_52
-      - 德國_53
-      - 拉脫維亞_1
-      - 拉脫維亞_2
 rule-providers:
   LocalAreaNetwork:
     type: http
