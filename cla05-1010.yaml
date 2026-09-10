@@ -24,6 +24,16 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
+  - name: (TG:@tccjd) Nofound
+    type: vmess
+    server: 165.140.217.2
+    port: 443
+    uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
   - name: 🇮🇳 印度 | IND
     type: vless
     server: 65.20.85.14
@@ -48,14 +58,6 @@ proxies:
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    skip-cert-verify: true
-    udp: true
-  - name: 🇳🇱 荷兰 | NLD
-    type: hysteria2
-    server: 46.229.243.145
-    port: 8443
-    password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-    sni: grape-turbo-fr.roxa.org
     skip-cert-verify: true
     udp: true
   - name: 🇦🇹 奥地利 | AUT
@@ -106,7 +108,7 @@ proxies:
       public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
     skip-cert-verify: true
     udp: true
-  - name: 🇳🇱 荷兰 | NLD_1
+  - name: 🇳🇱 荷兰 | NLD
     type: vless
     server: 188.114.97.6
     port: 8080
@@ -128,6 +130,465 @@ proxies:
     tls: true
     flow: xtls-rprx-vision
     client-fingerprint: firefox
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)
+    type: vless
+    server: 38.244.21.139
+    port: 443
+    uuid: f1dcdda0-b2d2-4e18-88e2-c87c9257128e
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    reality-opts:
+      public-key: 5iZBmQ9iLLxvEHo_XilfjC7OM2-EmYTPQp-bzxlTqUU
+      short-id: 4568f3e435322cc8
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_1
+    type: vless
+    server: 38.244.21.139
+    port: 443
+    uuid: f1dcdda0-b2d2-4e18-88e2-c87c9257128e
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    reality-opts:
+      public-key: 5iZBmQ9iLLxvEHo_XilfjC7OM2-EmYTPQp-bzxlTqUU
+      short-id: 4568f3e435322cc8
+    skip-cert-verify: true
+    udp: true
+  - name: 德国(TG:@tccjd)
+    type: vless
+    server: 178.105.61.61
+    port: 2083
+    uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
+    servername: 178.105.61.61
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
+      short-id: af04ff8094115e93
+    skip-cert-verify: true
+    udp: true
+  - name: 德国(TG:@tccjd)_1
+    type: vless
+    server: 2.26.178.129
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_2
+    type: vless
+    server: 2.26.178.129
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰(TG:@tccjd)
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰(TG:@tccjd)_1
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰(TG:@tccjd)_2
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_3
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_4
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 (TG:@tccjd)
+    type: vless
+    server: 172.67.139.129
+    port: 443
+    uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+    network: ws
+    servername: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
+    tls: true
+    ws-opts:
+      path: /8qMLgNapWf6SBxo8fhQlVPYO
+      headers:
+        Host: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: 德国(TG:@tccjd)_2
+    type: vless
+    server: 151.242.17.99
+    port: 8443
+    uuid: a04814d9-d006-4e7b-ae20-8ab304b3b429
+    network: grpc
+    servername: de.emvservice.com
+    tls: true
+    reality-opts:
+      public-key: 6Yskxg5U0WxPGtuCAAGH9uD57T4U8LeGrErTBNvIrwM
+      short-id: bc
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_5
+    type: vless
+    server: 172.67.139.129
+    port: 443
+    uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+    network: ws
+    servername: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
+    tls: true
+    ws-opts:
+      path: /8qMLgNapWf6SBxo8fhQlVPYO
+      headers:
+        Host: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大(TG:@tccjd)
+    type: vless
+    server: 130.12.102.125
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_6
+    type: vless
+    server: 130.12.102.26
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 英国(TG:@tccjd)
+    type: vless
+    server: brightharbor.download
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 英国(TG:@tccjd)_1
+    type: vless
+    server: brightharbor.download
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 (TG:@tccjd)_1
+    type: vless
+    server: 130.12.102.26
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_7
+    type: vless
+    server: 130.12.102.26
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 英国(TG:@tccjd)_2
+    type: vless
+    server: 130.12.102.125
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_8
+    type: vless
+    server: freshjuniper.download
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_9
+    type: vless
+    server: freshjuniper.download
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: freshjuniper.download
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_10
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 美国(TG:@tccjd)_11
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: 摩尔多瓦(TG:@tccjd)
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd) 美国
+    type: vless
+    server: brightharbor.download
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd) 英国
+    type: vless
+    server: 2.26.178.129
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd) 美国_1
+    type: vless
+    server: brightharbor.download
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd) 英国_1
+    type: vless
+    server: brightharbor.download
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd)加拿大
+    type: vless
+    server: 130.12.102.26
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd) 加拿大
+    type: vless
+    server: 130.12.102.26
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd)加拿大_1
+    type: vless
+    server: 130.12.102.125
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd)加拿大_2
+    type: vless
+    server: 130.12.102.125
+    port: 443
+    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+    servername: localhost
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd)伊朗
+    type: vless
+    server: 31.59.150.174
+    port: 9443
+    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+    servername: hotcoals.aeternavpn.space
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    reality-opts:
+      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+      short-id: a1b2c3d4
+    skip-cert-verify: true
+    udp: true
+  - name: (TG:@tccjd)美国
+    type: vless
+    server: 104.21.92.49
+    port: 443
+    uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+    network: ws
+    servername: 7-m19.omAn-linK.KdNS.FR
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /CjBjB9sn5pCvaSwScc
+      headers:
+        Host: 7-m19.OmAn-link.kdnS.FR
     skip-cert-verify: true
     udp: true
   - name: 01(TG:@tccjd)
@@ -292,35 +753,7 @@ proxies:
       headers:
         Host: www.pleadcourt.org
     udp: true
-  - name: 美国(TG:@tccjd)
-    type: vless
-    server: 38.244.21.139
-    port: 443
-    uuid: f1dcdda0-b2d2-4e18-88e2-c87c9257128e
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: 5iZBmQ9iLLxvEHo_XilfjC7OM2-EmYTPQp-bzxlTqUU
-      short-id: 4568f3e435322cc8
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_1
-    type: vless
-    server: 38.244.21.139
-    port: 443
-    uuid: f1dcdda0-b2d2-4e18-88e2-c87c9257128e
-    servername: www.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: 5iZBmQ9iLLxvEHo_XilfjC7OM2-EmYTPQp-bzxlTqUU
-      short-id: 4568f3e435322cc8
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_2
+  - name: 美国(TG:@tccjd)_12
     type: trojan
     server: 167.82.76.27
     port: 443
@@ -334,307 +767,54 @@ proxies:
       headers:
         Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
     udp: true
-  - name: 德国(TG:@tccjd)
-    type: vless
-    server: 178.105.61.61
-    port: 2083
-    uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
-    servername: 178.105.61.61
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
-      short-id: af04ff8094115e93
-    skip-cert-verify: true
-    udp: true
-  - name: 德国(TG:@tccjd)_1
-    type: vless
-    server: 2.26.178.129
+  - name: (TG:@tccjd) 美国_2
+    type: trojan
+    server: 167.82.76.27
     port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    password: MiTiVPN
+    sni: ssl.fastly.com
+    alpn:
+      - http/1.1
     skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_3
-    type: vless
-    server: 2.26.178.129
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰(TG:@tccjd)
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰(TG:@tccjd)_1
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 荷兰(TG:@tccjd)_2
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_4
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_5
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 (TG:@tccjd)
-    type: vless
-    server: 172.67.139.129
-    port: 443
-    uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-    network: ws
-    servername: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    tls: true
     ws-opts:
-      path: /8qMLgNapWf6SBxo8fhQlVPYO
+      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
       headers:
-        Host: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    skip-cert-verify: true
+        Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
     udp: true
-  - name: 德国(TG:@tccjd)_2
-    type: vless
-    server: 151.242.17.99
+  - name: (TG:@tccjd) 美国_3
+    type: trojan
+    server: 151.101.56.7
+    port: 443
+    password: MiTiVPN
+    sni: ssl.fastly.com
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    ws-opts:
+      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+      headers:
+        Host: mitivpn---ss--s---mitivpn-2.global.ssl.fastly.net
+    udp: true
+  - name: (TG:@tccjd)美国_1
+    type: trojan
+    server: 151.101.56.6
+    port: 443
+    password: MiTiVPN
+    sni: ssl.fastly.com
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    ws-opts:
+      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+      headers:
+        Host: mitivpn---ss--s---mitivpn-1.global.ssl.fastly.net
+    udp: true
+  - name: 🇳🇱 荷兰 | NLD_1
+    type: hysteria2
+    server: 46.229.243.145
     port: 8443
-    uuid: a04814d9-d006-4e7b-ae20-8ab304b3b429
-    network: grpc
-    servername: de.emvservice.com
-    tls: true
-    reality-opts:
-      public-key: 6Yskxg5U0WxPGtuCAAGH9uD57T4U8LeGrErTBNvIrwM
-      short-id: bc
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_6
-    type: vless
-    server: 172.67.139.129
-    port: 443
-    uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-    network: ws
-    servername: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    tls: true
-    ws-opts:
-      path: /8qMLgNapWf6SBxo8fhQlVPYO
-      headers:
-        Host: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: 加拿大(TG:@tccjd)
-    type: vless
-    server: 130.12.102.125
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_7
-    type: vless
-    server: 130.12.102.26
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 英国(TG:@tccjd)
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 英国(TG:@tccjd)_1
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 (TG:@tccjd)_1
-    type: vless
-    server: 130.12.102.26
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_8
-    type: vless
-    server: 130.12.102.26
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 英国(TG:@tccjd)_2
-    type: vless
-    server: 130.12.102.125
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_9
-    type: vless
-    server: freshjuniper.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_10
-    type: vless
-    server: freshjuniper.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: freshjuniper.download
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_11
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 美国(TG:@tccjd)_12
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: 摩尔多瓦(TG:@tccjd)
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
+    password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+    sni: grape-turbo-fr.roxa.org
     skip-cert-verify: true
     udp: true
   - name: 法国(TG:@tccjd)
@@ -687,90 +867,12 @@ proxies:
     obfs: salamander
     obfs-password: a34f3990b69f44bfa0d32385
     udp: true
-  - name: (TG:@tccjd) Nofound
-    type: vmess
-    server: 165.140.217.2
-    port: 443
-    uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd) 美国
-    type: trojan
-    server: 167.82.76.27
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
-    udp: true
-  - name: (TG:@tccjd) 美国_1
-    type: trojan
-    server: 151.101.56.7
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn---ss--s---mitivpn-2.global.ssl.fastly.net
-    udp: true
-  - name: (TG:@tccjd)美国
-    type: trojan
-    server: 151.101.56.6
-    port: 443
-    password: MiTiVPN
-    sni: ssl.fastly.com
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    ws-opts:
-      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: mitivpn---ss--s---mitivpn-1.global.ssl.fastly.net
-    udp: true
   - name: (TG:@tccjd) 法国
     type: hysteria2
     server: 62.210.7.139
     port: 60111
     password: github.com/Alvin9999-newpac/fanqiang
     sni: bing.com
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd) 美国_2
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd) 英国
-    type: vless
-    server: 2.26.178.129
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
     skip-cert-verify: true
     udp: true
   - name: (TG:@tccjd) 法国_1
@@ -781,114 +883,12 @@ proxies:
     sni: speedtest.tinkoff.ru
     skip-cert-verify: true
     udp: true
-  - name: (TG:@tccjd) 美国_3
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd) 英国_1
-    type: vless
-    server: brightharbor.download
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd)加拿大
-    type: vless
-    server: 130.12.102.26
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd) 加拿大
-    type: vless
-    server: 130.12.102.26
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd)加拿大_1
-    type: vless
-    server: 130.12.102.125
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd)美国_1
+  - name: (TG:@tccjd)美国_2
     type: hysteria2
     server: 205.237.109.165
     port: 8443
     password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
     sni: hopp-netherland-new.dynuddns.net
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd)加拿大_2
-    type: vless
-    server: 130.12.102.125
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    servername: localhost
-    tls: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd)伊朗
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    servername: hotcoals.aeternavpn.space
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    skip-cert-verify: true
-    udp: true
-  - name: (TG:@tccjd)美国_2
-    type: vless
-    server: 104.21.92.49
-    port: 443
-    uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-    network: ws
-    servername: 7-m19.omAn-linK.KdNS.FR
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /CjBjB9sn5pCvaSwScc
-      headers:
-        Host: 7-m19.OmAn-link.kdnS.FR
     skip-cert-verify: true
     udp: true
   - name: (TG:@tccjd)美国_3
@@ -907,15 +907,50 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - (TG:@tccjd) Nofound
       - 🇮🇳 印度 | IND
       - 🇳🇴 挪威 | NOR
-      - 🇳🇱 荷兰 | NLD
       - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
       - 🇷🇴 罗马尼亚 | ROU
       - 🇩🇪 德国 | DEU_1
-      - 🇳🇱 荷兰 | NLD_1
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇴 罗马尼亚 | ROU_1
+      - 美国(TG:@tccjd)
+      - 美国(TG:@tccjd)_1
+      - 德国(TG:@tccjd)
+      - 德国(TG:@tccjd)_1
+      - 美国(TG:@tccjd)_2
+      - 荷兰(TG:@tccjd)
+      - 荷兰(TG:@tccjd)_1
+      - 荷兰(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_3
+      - 美国(TG:@tccjd)_4
+      - 美国 (TG:@tccjd)
+      - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_5
+      - 加拿大(TG:@tccjd)
+      - 美国(TG:@tccjd)_6
+      - 英国(TG:@tccjd)
+      - 英国(TG:@tccjd)_1
+      - 美国 (TG:@tccjd)_1
+      - 美国(TG:@tccjd)_7
+      - 英国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_8
+      - 美国(TG:@tccjd)_9
+      - 美国(TG:@tccjd)_10
+      - 美国(TG:@tccjd)_11
+      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国
+      - (TG:@tccjd) 英国
+      - (TG:@tccjd) 美国_1
+      - (TG:@tccjd) 英国_1
+      - (TG:@tccjd)加拿大
+      - (TG:@tccjd) 加拿大
+      - (TG:@tccjd)加拿大_1
+      - (TG:@tccjd)加拿大_2
+      - (TG:@tccjd)伊朗
+      - (TG:@tccjd)美国
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
@@ -928,68 +963,68 @@ proxy-groups:
       - 10(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
-      - 美国(TG:@tccjd)
-      - 美国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_2
-      - 德国(TG:@tccjd)
-      - 德国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_3
-      - 荷兰(TG:@tccjd)
-      - 荷兰(TG:@tccjd)_1
-      - 荷兰(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_4
-      - 美国(TG:@tccjd)_5
-      - 美国 (TG:@tccjd)
-      - 德国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_6
-      - 加拿大(TG:@tccjd)
-      - 美国(TG:@tccjd)_7
-      - 英国(TG:@tccjd)
-      - 英国(TG:@tccjd)_1
-      - 美国 (TG:@tccjd)_1
-      - 美国(TG:@tccjd)_8
-      - 英国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_9
-      - 美国(TG:@tccjd)_10
-      - 美国(TG:@tccjd)_11
       - 美国(TG:@tccjd)_12
-      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国_2
+      - (TG:@tccjd) 美国_3
+      - (TG:@tccjd)美国_1
+      - 🇳🇱 荷兰 | NLD_1
       - 法国(TG:@tccjd)
       - 法国(TG:@tccjd)_1
       - 法国(TG:@tccjd)_2
       - 法国 (TG:@tccjd)
       - 阿联酋(TG:@tccjd)
       - 澳大利亚(TG:@tccjd)
-      - (TG:@tccjd) Nofound
-      - (TG:@tccjd) 美国
-      - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)美国
       - (TG:@tccjd) 法国
-      - (TG:@tccjd) 美国_2
-      - (TG:@tccjd) 英国
       - (TG:@tccjd) 法国_1
-      - (TG:@tccjd) 美国_3
-      - (TG:@tccjd) 英国_1
-      - (TG:@tccjd)加拿大
-      - (TG:@tccjd) 加拿大
-      - (TG:@tccjd)加拿大_1
-      - (TG:@tccjd)美国_1
-      - (TG:@tccjd)加拿大_2
-      - (TG:@tccjd)伊朗
       - (TG:@tccjd)美国_2
       - (TG:@tccjd)美国_3
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - (TG:@tccjd) Nofound
       - 🇮🇳 印度 | IND
       - 🇳🇴 挪威 | NOR
-      - 🇳🇱 荷兰 | NLD
       - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
       - 🇷🇴 罗马尼亚 | ROU
       - 🇩🇪 德国 | DEU_1
-      - 🇳🇱 荷兰 | NLD_1
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇴 罗马尼亚 | ROU_1
+      - 美国(TG:@tccjd)
+      - 美国(TG:@tccjd)_1
+      - 德国(TG:@tccjd)
+      - 德国(TG:@tccjd)_1
+      - 美国(TG:@tccjd)_2
+      - 荷兰(TG:@tccjd)
+      - 荷兰(TG:@tccjd)_1
+      - 荷兰(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_3
+      - 美国(TG:@tccjd)_4
+      - 美国 (TG:@tccjd)
+      - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_5
+      - 加拿大(TG:@tccjd)
+      - 美国(TG:@tccjd)_6
+      - 英国(TG:@tccjd)
+      - 英国(TG:@tccjd)_1
+      - 美国 (TG:@tccjd)_1
+      - 美国(TG:@tccjd)_7
+      - 英国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_8
+      - 美国(TG:@tccjd)_9
+      - 美国(TG:@tccjd)_10
+      - 美国(TG:@tccjd)_11
+      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国
+      - (TG:@tccjd) 英国
+      - (TG:@tccjd) 美国_1
+      - (TG:@tccjd) 英国_1
+      - (TG:@tccjd)加拿大
+      - (TG:@tccjd) 加拿大
+      - (TG:@tccjd)加拿大_1
+      - (TG:@tccjd)加拿大_2
+      - (TG:@tccjd)伊朗
+      - (TG:@tccjd)美国
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
@@ -1002,54 +1037,19 @@ proxy-groups:
       - 10(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
-      - 美国(TG:@tccjd)
-      - 美国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_2
-      - 德国(TG:@tccjd)
-      - 德国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_3
-      - 荷兰(TG:@tccjd)
-      - 荷兰(TG:@tccjd)_1
-      - 荷兰(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_4
-      - 美国(TG:@tccjd)_5
-      - 美国 (TG:@tccjd)
-      - 德国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_6
-      - 加拿大(TG:@tccjd)
-      - 美国(TG:@tccjd)_7
-      - 英国(TG:@tccjd)
-      - 英国(TG:@tccjd)_1
-      - 美国 (TG:@tccjd)_1
-      - 美国(TG:@tccjd)_8
-      - 英国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_9
-      - 美国(TG:@tccjd)_10
-      - 美国(TG:@tccjd)_11
       - 美国(TG:@tccjd)_12
-      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国_2
+      - (TG:@tccjd) 美国_3
+      - (TG:@tccjd)美国_1
+      - 🇳🇱 荷兰 | NLD_1
       - 法国(TG:@tccjd)
       - 法国(TG:@tccjd)_1
       - 法国(TG:@tccjd)_2
       - 法国 (TG:@tccjd)
       - 阿联酋(TG:@tccjd)
       - 澳大利亚(TG:@tccjd)
-      - (TG:@tccjd) Nofound
-      - (TG:@tccjd) 美国
-      - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)美国
       - (TG:@tccjd) 法国
-      - (TG:@tccjd) 美国_2
-      - (TG:@tccjd) 英国
       - (TG:@tccjd) 法国_1
-      - (TG:@tccjd) 美国_3
-      - (TG:@tccjd) 英国_1
-      - (TG:@tccjd)加拿大
-      - (TG:@tccjd) 加拿大
-      - (TG:@tccjd)加拿大_1
-      - (TG:@tccjd)美国_1
-      - (TG:@tccjd)加拿大_2
-      - (TG:@tccjd)伊朗
       - (TG:@tccjd)美国_2
       - (TG:@tccjd)美国_3
     url: http://www.gstatic.com/generate_204
@@ -1061,15 +1061,50 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - (TG:@tccjd) Nofound
       - 🇮🇳 印度 | IND
       - 🇳🇴 挪威 | NOR
-      - 🇳🇱 荷兰 | NLD
       - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
       - 🇷🇴 罗马尼亚 | ROU
       - 🇩🇪 德国 | DEU_1
-      - 🇳🇱 荷兰 | NLD_1
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇴 罗马尼亚 | ROU_1
+      - 美国(TG:@tccjd)
+      - 美国(TG:@tccjd)_1
+      - 德国(TG:@tccjd)
+      - 德国(TG:@tccjd)_1
+      - 美国(TG:@tccjd)_2
+      - 荷兰(TG:@tccjd)
+      - 荷兰(TG:@tccjd)_1
+      - 荷兰(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_3
+      - 美国(TG:@tccjd)_4
+      - 美国 (TG:@tccjd)
+      - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_5
+      - 加拿大(TG:@tccjd)
+      - 美国(TG:@tccjd)_6
+      - 英国(TG:@tccjd)
+      - 英国(TG:@tccjd)_1
+      - 美国 (TG:@tccjd)_1
+      - 美国(TG:@tccjd)_7
+      - 英国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_8
+      - 美国(TG:@tccjd)_9
+      - 美国(TG:@tccjd)_10
+      - 美国(TG:@tccjd)_11
+      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国
+      - (TG:@tccjd) 英国
+      - (TG:@tccjd) 美国_1
+      - (TG:@tccjd) 英国_1
+      - (TG:@tccjd)加拿大
+      - (TG:@tccjd) 加拿大
+      - (TG:@tccjd)加拿大_1
+      - (TG:@tccjd)加拿大_2
+      - (TG:@tccjd)伊朗
+      - (TG:@tccjd)美国
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
@@ -1082,54 +1117,19 @@ proxy-groups:
       - 10(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
-      - 美国(TG:@tccjd)
-      - 美国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_2
-      - 德国(TG:@tccjd)
-      - 德国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_3
-      - 荷兰(TG:@tccjd)
-      - 荷兰(TG:@tccjd)_1
-      - 荷兰(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_4
-      - 美国(TG:@tccjd)_5
-      - 美国 (TG:@tccjd)
-      - 德国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_6
-      - 加拿大(TG:@tccjd)
-      - 美国(TG:@tccjd)_7
-      - 英国(TG:@tccjd)
-      - 英国(TG:@tccjd)_1
-      - 美国 (TG:@tccjd)_1
-      - 美国(TG:@tccjd)_8
-      - 英国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_9
-      - 美国(TG:@tccjd)_10
-      - 美国(TG:@tccjd)_11
       - 美国(TG:@tccjd)_12
-      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国_2
+      - (TG:@tccjd) 美国_3
+      - (TG:@tccjd)美国_1
+      - 🇳🇱 荷兰 | NLD_1
       - 法国(TG:@tccjd)
       - 法国(TG:@tccjd)_1
       - 法国(TG:@tccjd)_2
       - 法国 (TG:@tccjd)
       - 阿联酋(TG:@tccjd)
       - 澳大利亚(TG:@tccjd)
-      - (TG:@tccjd) Nofound
-      - (TG:@tccjd) 美国
-      - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)美国
       - (TG:@tccjd) 法国
-      - (TG:@tccjd) 美国_2
-      - (TG:@tccjd) 英国
       - (TG:@tccjd) 法国_1
-      - (TG:@tccjd) 美国_3
-      - (TG:@tccjd) 英国_1
-      - (TG:@tccjd)加拿大
-      - (TG:@tccjd) 加拿大
-      - (TG:@tccjd)加拿大_1
-      - (TG:@tccjd)美国_1
-      - (TG:@tccjd)加拿大_2
-      - (TG:@tccjd)伊朗
       - (TG:@tccjd)美国_2
       - (TG:@tccjd)美国_3
   - name: 📲 电报信息
@@ -1137,15 +1137,50 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - (TG:@tccjd) Nofound
       - 🇮🇳 印度 | IND
       - 🇳🇴 挪威 | NOR
-      - 🇳🇱 荷兰 | NLD
       - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
       - 🇷🇴 罗马尼亚 | ROU
       - 🇩🇪 德国 | DEU_1
-      - 🇳🇱 荷兰 | NLD_1
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇴 罗马尼亚 | ROU_1
+      - 美国(TG:@tccjd)
+      - 美国(TG:@tccjd)_1
+      - 德国(TG:@tccjd)
+      - 德国(TG:@tccjd)_1
+      - 美国(TG:@tccjd)_2
+      - 荷兰(TG:@tccjd)
+      - 荷兰(TG:@tccjd)_1
+      - 荷兰(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_3
+      - 美国(TG:@tccjd)_4
+      - 美国 (TG:@tccjd)
+      - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_5
+      - 加拿大(TG:@tccjd)
+      - 美国(TG:@tccjd)_6
+      - 英国(TG:@tccjd)
+      - 英国(TG:@tccjd)_1
+      - 美国 (TG:@tccjd)_1
+      - 美国(TG:@tccjd)_7
+      - 英国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_8
+      - 美国(TG:@tccjd)_9
+      - 美国(TG:@tccjd)_10
+      - 美国(TG:@tccjd)_11
+      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国
+      - (TG:@tccjd) 英国
+      - (TG:@tccjd) 美国_1
+      - (TG:@tccjd) 英国_1
+      - (TG:@tccjd)加拿大
+      - (TG:@tccjd) 加拿大
+      - (TG:@tccjd)加拿大_1
+      - (TG:@tccjd)加拿大_2
+      - (TG:@tccjd)伊朗
+      - (TG:@tccjd)美国
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
@@ -1158,54 +1193,19 @@ proxy-groups:
       - 10(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
-      - 美国(TG:@tccjd)
-      - 美国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_2
-      - 德国(TG:@tccjd)
-      - 德国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_3
-      - 荷兰(TG:@tccjd)
-      - 荷兰(TG:@tccjd)_1
-      - 荷兰(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_4
-      - 美国(TG:@tccjd)_5
-      - 美国 (TG:@tccjd)
-      - 德国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_6
-      - 加拿大(TG:@tccjd)
-      - 美国(TG:@tccjd)_7
-      - 英国(TG:@tccjd)
-      - 英国(TG:@tccjd)_1
-      - 美国 (TG:@tccjd)_1
-      - 美国(TG:@tccjd)_8
-      - 英国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_9
-      - 美国(TG:@tccjd)_10
-      - 美国(TG:@tccjd)_11
       - 美国(TG:@tccjd)_12
-      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国_2
+      - (TG:@tccjd) 美国_3
+      - (TG:@tccjd)美国_1
+      - 🇳🇱 荷兰 | NLD_1
       - 法国(TG:@tccjd)
       - 法国(TG:@tccjd)_1
       - 法国(TG:@tccjd)_2
       - 法国 (TG:@tccjd)
       - 阿联酋(TG:@tccjd)
       - 澳大利亚(TG:@tccjd)
-      - (TG:@tccjd) Nofound
-      - (TG:@tccjd) 美国
-      - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)美国
       - (TG:@tccjd) 法国
-      - (TG:@tccjd) 美国_2
-      - (TG:@tccjd) 英国
       - (TG:@tccjd) 法国_1
-      - (TG:@tccjd) 美国_3
-      - (TG:@tccjd) 英国_1
-      - (TG:@tccjd)加拿大
-      - (TG:@tccjd) 加拿大
-      - (TG:@tccjd)加拿大_1
-      - (TG:@tccjd)美国_1
-      - (TG:@tccjd)加拿大_2
-      - (TG:@tccjd)伊朗
       - (TG:@tccjd)美国_2
       - (TG:@tccjd)美国_3
   - name: Ⓜ️ 微软服务
@@ -1213,15 +1213,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - (TG:@tccjd) Nofound
       - 🇮🇳 印度 | IND
       - 🇳🇴 挪威 | NOR
-      - 🇳🇱 荷兰 | NLD
       - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
       - 🇷🇴 罗马尼亚 | ROU
       - 🇩🇪 德国 | DEU_1
-      - 🇳🇱 荷兰 | NLD_1
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇴 罗马尼亚 | ROU_1
+      - 美国(TG:@tccjd)
+      - 美国(TG:@tccjd)_1
+      - 德国(TG:@tccjd)
+      - 德国(TG:@tccjd)_1
+      - 美国(TG:@tccjd)_2
+      - 荷兰(TG:@tccjd)
+      - 荷兰(TG:@tccjd)_1
+      - 荷兰(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_3
+      - 美国(TG:@tccjd)_4
+      - 美国 (TG:@tccjd)
+      - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_5
+      - 加拿大(TG:@tccjd)
+      - 美国(TG:@tccjd)_6
+      - 英国(TG:@tccjd)
+      - 英国(TG:@tccjd)_1
+      - 美国 (TG:@tccjd)_1
+      - 美国(TG:@tccjd)_7
+      - 英国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_8
+      - 美国(TG:@tccjd)_9
+      - 美国(TG:@tccjd)_10
+      - 美国(TG:@tccjd)_11
+      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国
+      - (TG:@tccjd) 英国
+      - (TG:@tccjd) 美国_1
+      - (TG:@tccjd) 英国_1
+      - (TG:@tccjd)加拿大
+      - (TG:@tccjd) 加拿大
+      - (TG:@tccjd)加拿大_1
+      - (TG:@tccjd)加拿大_2
+      - (TG:@tccjd)伊朗
+      - (TG:@tccjd)美国
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
@@ -1234,54 +1269,19 @@ proxy-groups:
       - 10(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
-      - 美国(TG:@tccjd)
-      - 美国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_2
-      - 德国(TG:@tccjd)
-      - 德国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_3
-      - 荷兰(TG:@tccjd)
-      - 荷兰(TG:@tccjd)_1
-      - 荷兰(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_4
-      - 美国(TG:@tccjd)_5
-      - 美国 (TG:@tccjd)
-      - 德国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_6
-      - 加拿大(TG:@tccjd)
-      - 美国(TG:@tccjd)_7
-      - 英国(TG:@tccjd)
-      - 英国(TG:@tccjd)_1
-      - 美国 (TG:@tccjd)_1
-      - 美国(TG:@tccjd)_8
-      - 英国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_9
-      - 美国(TG:@tccjd)_10
-      - 美国(TG:@tccjd)_11
       - 美国(TG:@tccjd)_12
-      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国_2
+      - (TG:@tccjd) 美国_3
+      - (TG:@tccjd)美国_1
+      - 🇳🇱 荷兰 | NLD_1
       - 法国(TG:@tccjd)
       - 法国(TG:@tccjd)_1
       - 法国(TG:@tccjd)_2
       - 法国 (TG:@tccjd)
       - 阿联酋(TG:@tccjd)
       - 澳大利亚(TG:@tccjd)
-      - (TG:@tccjd) Nofound
-      - (TG:@tccjd) 美国
-      - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)美国
       - (TG:@tccjd) 法国
-      - (TG:@tccjd) 美国_2
-      - (TG:@tccjd) 英国
       - (TG:@tccjd) 法国_1
-      - (TG:@tccjd) 美国_3
-      - (TG:@tccjd) 英国_1
-      - (TG:@tccjd)加拿大
-      - (TG:@tccjd) 加拿大
-      - (TG:@tccjd)加拿大_1
-      - (TG:@tccjd)美国_1
-      - (TG:@tccjd)加拿大_2
-      - (TG:@tccjd)伊朗
       - (TG:@tccjd)美国_2
       - (TG:@tccjd)美国_3
   - name: 🍎 苹果服务
@@ -1289,15 +1289,50 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - (TG:@tccjd) Nofound
       - 🇮🇳 印度 | IND
       - 🇳🇴 挪威 | NOR
-      - 🇳🇱 荷兰 | NLD
       - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
       - 🇷🇴 罗马尼亚 | ROU
       - 🇩🇪 德国 | DEU_1
-      - 🇳🇱 荷兰 | NLD_1
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇴 罗马尼亚 | ROU_1
+      - 美国(TG:@tccjd)
+      - 美国(TG:@tccjd)_1
+      - 德国(TG:@tccjd)
+      - 德国(TG:@tccjd)_1
+      - 美国(TG:@tccjd)_2
+      - 荷兰(TG:@tccjd)
+      - 荷兰(TG:@tccjd)_1
+      - 荷兰(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_3
+      - 美国(TG:@tccjd)_4
+      - 美国 (TG:@tccjd)
+      - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_5
+      - 加拿大(TG:@tccjd)
+      - 美国(TG:@tccjd)_6
+      - 英国(TG:@tccjd)
+      - 英国(TG:@tccjd)_1
+      - 美国 (TG:@tccjd)_1
+      - 美国(TG:@tccjd)_7
+      - 英国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_8
+      - 美国(TG:@tccjd)_9
+      - 美国(TG:@tccjd)_10
+      - 美国(TG:@tccjd)_11
+      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国
+      - (TG:@tccjd) 英国
+      - (TG:@tccjd) 美国_1
+      - (TG:@tccjd) 英国_1
+      - (TG:@tccjd)加拿大
+      - (TG:@tccjd) 加拿大
+      - (TG:@tccjd)加拿大_1
+      - (TG:@tccjd)加拿大_2
+      - (TG:@tccjd)伊朗
+      - (TG:@tccjd)美国
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
@@ -1310,54 +1345,19 @@ proxy-groups:
       - 10(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
-      - 美国(TG:@tccjd)
-      - 美国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_2
-      - 德国(TG:@tccjd)
-      - 德国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_3
-      - 荷兰(TG:@tccjd)
-      - 荷兰(TG:@tccjd)_1
-      - 荷兰(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_4
-      - 美国(TG:@tccjd)_5
-      - 美国 (TG:@tccjd)
-      - 德国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_6
-      - 加拿大(TG:@tccjd)
-      - 美国(TG:@tccjd)_7
-      - 英国(TG:@tccjd)
-      - 英国(TG:@tccjd)_1
-      - 美国 (TG:@tccjd)_1
-      - 美国(TG:@tccjd)_8
-      - 英国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_9
-      - 美国(TG:@tccjd)_10
-      - 美国(TG:@tccjd)_11
       - 美国(TG:@tccjd)_12
-      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国_2
+      - (TG:@tccjd) 美国_3
+      - (TG:@tccjd)美国_1
+      - 🇳🇱 荷兰 | NLD_1
       - 法国(TG:@tccjd)
       - 法国(TG:@tccjd)_1
       - 法国(TG:@tccjd)_2
       - 法国 (TG:@tccjd)
       - 阿联酋(TG:@tccjd)
       - 澳大利亚(TG:@tccjd)
-      - (TG:@tccjd) Nofound
-      - (TG:@tccjd) 美国
-      - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)美国
       - (TG:@tccjd) 法国
-      - (TG:@tccjd) 美国_2
-      - (TG:@tccjd) 英国
       - (TG:@tccjd) 法国_1
-      - (TG:@tccjd) 美国_3
-      - (TG:@tccjd) 英国_1
-      - (TG:@tccjd)加拿大
-      - (TG:@tccjd) 加拿大
-      - (TG:@tccjd)加拿大_1
-      - (TG:@tccjd)美国_1
-      - (TG:@tccjd)加拿大_2
-      - (TG:@tccjd)伊朗
       - (TG:@tccjd)美国_2
       - (TG:@tccjd)美国_3
   - name: 🎯 全球直连
@@ -1382,15 +1382,50 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - (TG:@tccjd) Nofound
       - 🇮🇳 印度 | IND
       - 🇳🇴 挪威 | NOR
-      - 🇳🇱 荷兰 | NLD
       - 🇦🇹 奥地利 | AUT
       - 🇩🇪 德国 | DEU
       - 🇷🇴 罗马尼亚 | ROU
       - 🇩🇪 德国 | DEU_1
-      - 🇳🇱 荷兰 | NLD_1
+      - 🇳🇱 荷兰 | NLD
       - 🇷🇴 罗马尼亚 | ROU_1
+      - 美国(TG:@tccjd)
+      - 美国(TG:@tccjd)_1
+      - 德国(TG:@tccjd)
+      - 德国(TG:@tccjd)_1
+      - 美国(TG:@tccjd)_2
+      - 荷兰(TG:@tccjd)
+      - 荷兰(TG:@tccjd)_1
+      - 荷兰(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_3
+      - 美国(TG:@tccjd)_4
+      - 美国 (TG:@tccjd)
+      - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_5
+      - 加拿大(TG:@tccjd)
+      - 美国(TG:@tccjd)_6
+      - 英国(TG:@tccjd)
+      - 英国(TG:@tccjd)_1
+      - 美国 (TG:@tccjd)_1
+      - 美国(TG:@tccjd)_7
+      - 英国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_8
+      - 美国(TG:@tccjd)_9
+      - 美国(TG:@tccjd)_10
+      - 美国(TG:@tccjd)_11
+      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国
+      - (TG:@tccjd) 英国
+      - (TG:@tccjd) 美国_1
+      - (TG:@tccjd) 英国_1
+      - (TG:@tccjd)加拿大
+      - (TG:@tccjd) 加拿大
+      - (TG:@tccjd)加拿大_1
+      - (TG:@tccjd)加拿大_2
+      - (TG:@tccjd)伊朗
+      - (TG:@tccjd)美国
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 03(TG:@tccjd)
@@ -1403,54 +1438,19 @@ proxy-groups:
       - 10(TG:@tccjd)
       - 01(TG:@tccjd)_1
       - 02(TG:@tccjd)_1
-      - 美国(TG:@tccjd)
-      - 美国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_2
-      - 德国(TG:@tccjd)
-      - 德国(TG:@tccjd)_1
-      - 美国(TG:@tccjd)_3
-      - 荷兰(TG:@tccjd)
-      - 荷兰(TG:@tccjd)_1
-      - 荷兰(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_4
-      - 美国(TG:@tccjd)_5
-      - 美国 (TG:@tccjd)
-      - 德国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_6
-      - 加拿大(TG:@tccjd)
-      - 美国(TG:@tccjd)_7
-      - 英国(TG:@tccjd)
-      - 英国(TG:@tccjd)_1
-      - 美国 (TG:@tccjd)_1
-      - 美国(TG:@tccjd)_8
-      - 英国(TG:@tccjd)_2
-      - 美国(TG:@tccjd)_9
-      - 美国(TG:@tccjd)_10
-      - 美国(TG:@tccjd)_11
       - 美国(TG:@tccjd)_12
-      - 摩尔多瓦(TG:@tccjd)
+      - (TG:@tccjd) 美国_2
+      - (TG:@tccjd) 美国_3
+      - (TG:@tccjd)美国_1
+      - 🇳🇱 荷兰 | NLD_1
       - 法国(TG:@tccjd)
       - 法国(TG:@tccjd)_1
       - 法国(TG:@tccjd)_2
       - 法国 (TG:@tccjd)
       - 阿联酋(TG:@tccjd)
       - 澳大利亚(TG:@tccjd)
-      - (TG:@tccjd) Nofound
-      - (TG:@tccjd) 美国
-      - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)美国
       - (TG:@tccjd) 法国
-      - (TG:@tccjd) 美国_2
-      - (TG:@tccjd) 英国
       - (TG:@tccjd) 法国_1
-      - (TG:@tccjd) 美国_3
-      - (TG:@tccjd) 英国_1
-      - (TG:@tccjd)加拿大
-      - (TG:@tccjd) 加拿大
-      - (TG:@tccjd)加拿大_1
-      - (TG:@tccjd)美国_1
-      - (TG:@tccjd)加拿大_2
-      - (TG:@tccjd)伊朗
       - (TG:@tccjd)美国_2
       - (TG:@tccjd)美国_3
 rule-providers:
